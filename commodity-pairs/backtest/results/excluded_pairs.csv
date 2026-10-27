@@ -1,0 +1,14 @@
+pair_id,leg_a,leg_b,type,group,stage,reason
+PPC_DBA,PPC,DBA,inverse,agriculture,screen,"leg B DBA: liquidity (median $vol 252d=20.1M, post-COVID=12.4M; need >20M both)"
+GPRE_CORN,GPRE,CORN,inverse,agriculture,screen,"leg A GPRE: liquidity (median $vol 252d=19.6M, post-COVID=20.9M; need >20M both) | leg B CORN: liquidity (median $vol 252d=4.7M, post-COVID=1.7M; need >20M both)"
+MOO_ADM,MOO,ADM,coint,agriculture,screen,"leg A MOO: liquidity (median $vol 252d=17.2M, post-COVID=5.7M; need >20M both)"
+CPER_COPX,CPER,COPX,coint,base_metals_steel,data,"leg A CPER: unresolved data errors [identical_close_run_ge5(2)] | leg A CPER: liquidity (median $vol 252d=21.0M, post-COVID=3.9M; need >20M both)"
+USO_BNO,USO,BNO,coint,crude_refining,screen,"leg B BNO: liquidity (median $vol 252d=80.7M, post-COVID=16.7M; need >20M both)"
+CF_LXU,CF,LXU,leadlag,natgas_coal_chem,screen,"leg B LXU: liquidity (median $vol 252d=8.0M, post-COVID=4.9M; need >20M both)"
+AMR_HCC,AMR,HCC,coint,natgas_coal_chem,screen,"history: first joint OOS window start 2023-04-06 > 2022-01-04 (first dates {'AMR': '2021-02-08', 'HCC': '2017-04-13'})"
+PPLT_PALL,PPLT,PALL,coint,precious_metals,screen,"leg A PPLT: liquidity (median $vol 252d=45.5M, post-COVID=14.2M; need >20M both) | leg B PALL: liquidity (median $vol 252d=27.0M, post-COVID=8.4M; need >20M both)"
+CEG_VST,CEG,VST,coint,transition_metals,screen,"history: first joint OOS window start 2024-04-09 > 2022-01-04 (first dates {'CEG': '2022-01-19', 'VST': '2016-10-05'})"
+CEG_CCJ,CEG,CCJ,leadlag,transition_metals,screen,"history: first joint OOS window start 2024-04-09 > 2022-01-04 (first dates {'CEG': '2022-01-19', 'CCJ': '2014-10-01'})"
+LEU_CCJ,LEU,CCJ,coint,transition_metals,screen,"leg A LEU: liquidity (median $vol 252d=154.5M, post-COVID=12.5M; need >20M both)"
+MP_GM,MP,GM,inverse,transition_metals,screen,"history: first joint OOS window start 2022-07-07 > 2022-01-04 (first dates {'MP': '2020-06-22', 'GM': '2014-10-01'})"
+NXE_CCJ,NXE,CCJ,coint,transition_metals,data,leg A NXE: unresolved data errors [identical_close_run_ge5(6)]

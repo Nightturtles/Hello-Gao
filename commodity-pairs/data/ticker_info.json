@@ -1,0 +1,596 @@
+{
+ "AA": {
+  "quoteType": "EQUITY",
+  "longName": "Alcoa Corporation",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "ADM": {
+  "quoteType": "EQUITY",
+  "longName": "Archer-Daniels-Midland Company",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "AEM": {
+  "quoteType": "EQUITY",
+  "longName": "Agnico Eagle Mines Limited",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "AEP": {
+  "quoteType": "EQUITY",
+  "longName": "American Electric Power Company, Inc.",
+  "exchange": "NMS",
+  "error": ""
+ },
+ "AGCO": {
+  "quoteType": "EQUITY",
+  "longName": "AGCO Corporation",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "ALB": {
+  "quoteType": "EQUITY",
+  "longName": "Albemarle Corporation",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "AMR": {
+  "quoteType": "EQUITY",
+  "longName": "Alpha Metallurgical Resources, Inc.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "AR": {
+  "quoteType": "EQUITY",
+  "longName": "Antero Resources Corporation",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "B": {
+  "quoteType": "EQUITY",
+  "longName": "Barrick Mining Corporation",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "BALL": {
+  "quoteType": "EQUITY",
+  "longName": "Ball Corporation",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "BG": {
+  "quoteType": "EQUITY",
+  "longName": "Bunge Global SA",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "BHP": {
+  "quoteType": "EQUITY",
+  "longName": "BHP Group Limited",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "BNO": {
+  "quoteType": "ETF",
+  "longName": "United States Brent Oil Fund, LP",
+  "exchange": "PCX",
+  "error": ""
+ },
+ "BTU": {
+  "quoteType": "EQUITY",
+  "longName": "Peabody Energy Corporation",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "CAT": {
+  "quoteType": "EQUITY",
+  "longName": "Caterpillar Inc.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "CCJ": {
+  "quoteType": "EQUITY",
+  "longName": "Cameco Corporation",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "CEG": {
+  "quoteType": "EQUITY",
+  "longName": "Constellation Energy Corporation",
+  "exchange": "NMS",
+  "error": ""
+ },
+ "CENX": {
+  "quoteType": "EQUITY",
+  "longName": "Century Aluminum Company",
+  "exchange": "NMS",
+  "error": ""
+ },
+ "CF": {
+  "quoteType": "EQUITY",
+  "longName": "CF Industries Holdings, Inc.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "CLF": {
+  "quoteType": "EQUITY",
+  "longName": "Cleveland-Cliffs Inc.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "CNR": {
+  "quoteType": "EQUITY",
+  "longName": "Core Natural Resources, Inc.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "CNX": {
+  "quoteType": "EQUITY",
+  "longName": "CNX Resources Corporation",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "COPX": {
+  "quoteType": "ETF",
+  "longName": "Global X Copper Miners ETF",
+  "exchange": "PCX",
+  "error": ""
+ },
+ "CORN": {
+  "quoteType": "ETF",
+  "longName": "Teucrium Corn Fund",
+  "exchange": "PCX",
+  "error": ""
+ },
+ "CPER": {
+  "quoteType": "ETF",
+  "longName": "United States Copper Index Fund, LP",
+  "exchange": "PCX",
+  "error": ""
+ },
+ "CRK": {
+  "quoteType": "EQUITY",
+  "longName": "Comstock Resources, Inc.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "CTVA": {
+  "quoteType": "EQUITY",
+  "longName": "Corteva, Inc.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "CVE": {
+  "quoteType": "EQUITY",
+  "longName": "Cenovus Energy Inc.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "CVX": {
+  "quoteType": "EQUITY",
+  "longName": "Chevron Corporation",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "DBA": {
+  "quoteType": "ETF",
+  "longName": "Invesco DB Agriculture Fund",
+  "exchange": "PCX",
+  "error": ""
+ },
+ "DE": {
+  "quoteType": "EQUITY",
+  "longName": "Deere & Company",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "DHT": {
+  "quoteType": "EQUITY",
+  "longName": "DHT Holdings, Inc.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "DNN": {
+  "quoteType": "EQUITY",
+  "longName": "Denison Mines Corp.",
+  "exchange": "ASE",
+  "error": ""
+ },
+ "DOW": {
+  "quoteType": "EQUITY",
+  "longName": "Dow Inc.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "EPD": {
+  "quoteType": "EQUITY",
+  "longName": "Enterprise Products Partners L.P.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "EQT": {
+  "quoteType": "EQUITY",
+  "longName": "EQT Corporation",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "ET": {
+  "quoteType": "EQUITY",
+  "longName": "Energy Transfer LP",
+  "exchange": "TEX",
+  "error": ""
+ },
+ "FANG": {
+  "quoteType": "EQUITY",
+  "longName": "Diamondback Energy, Inc.",
+  "exchange": "NMS",
+  "error": ""
+ },
+ "FCX": {
+  "quoteType": "EQUITY",
+  "longName": "Freeport-McMoRan Inc.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "FMC": {
+  "quoteType": "EQUITY",
+  "longName": "FMC Corporation",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "FNV": {
+  "quoteType": "EQUITY",
+  "longName": "Franco-Nevada Corporation",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "FRO": {
+  "quoteType": "EQUITY",
+  "longName": "Frontline plc",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "GDX": {
+  "quoteType": "ETF",
+  "longName": "VanEck Gold Miners ETF",
+  "exchange": "PCX",
+  "error": ""
+ },
+ "GDXJ": {
+  "quoteType": "ETF",
+  "longName": "VanEck Junior Gold Miners ETF",
+  "exchange": "PCX",
+  "error": ""
+ },
+ "GLD": {
+  "quoteType": "ETF",
+  "longName": "SPDR Gold Shares",
+  "exchange": "PCX",
+  "error": ""
+ },
+ "GM": {
+  "quoteType": "EQUITY",
+  "longName": "General Motors Company",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "GPRE": {
+  "quoteType": "EQUITY",
+  "longName": "Green Plains Inc.",
+  "exchange": "NMS",
+  "error": ""
+ },
+ "HAL": {
+  "quoteType": "EQUITY",
+  "longName": "Halliburton Company",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "HBM": {
+  "quoteType": "EQUITY",
+  "longName": "Hudbay Minerals Inc.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "HCC": {
+  "quoteType": "EQUITY",
+  "longName": "Warrior Met Coal, Inc.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "HL": {
+  "quoteType": "EQUITY",
+  "longName": "Hecla Mining Company",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "JETS": {
+  "quoteType": "ETF",
+  "longName": "U.S. Global Jets ETF",
+  "exchange": "PCX",
+  "error": ""
+ },
+ "LEU": {
+  "quoteType": "EQUITY",
+  "longName": "Centrus Energy Corp.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "LXU": {
+  "quoteType": "EQUITY",
+  "longName": "LSB Industries, Inc.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "LYB": {
+  "quoteType": "EQUITY",
+  "longName": "LyondellBasell Industries N.V.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "MOO": {
+  "quoteType": "ETF",
+  "longName": "VanEck Agribusiness ETF",
+  "exchange": "PCX",
+  "error": ""
+ },
+ "MOS": {
+  "quoteType": "EQUITY",
+  "longName": "The Mosaic Company",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "MP": {
+  "quoteType": "EQUITY",
+  "longName": "MP Materials Corp.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "MPC": {
+  "quoteType": "EQUITY",
+  "longName": "Marathon Petroleum Corporation",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "MT": {
+  "quoteType": "EQUITY",
+  "longName": "ArcelorMittal S.A.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "MTDR": {
+  "quoteType": "EQUITY",
+  "longName": "Matador Resources Company",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "NEM": {
+  "quoteType": "EQUITY",
+  "longName": "Newmont Corporation",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "NTR": {
+  "quoteType": "EQUITY",
+  "longName": "Nutrien Ltd.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "NUE": {
+  "quoteType": "EQUITY",
+  "longName": "Nucor Corporation",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "NXE": {
+  "quoteType": "EQUITY",
+  "longName": "NexGen Energy Ltd.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "OIH": {
+  "quoteType": "ETF",
+  "longName": "VanEck Oil Services ETF",
+  "exchange": "PCX",
+  "error": ""
+ },
+ "PAAS": {
+  "quoteType": "EQUITY",
+  "longName": "Pan American Silver Corp.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "PALL": {
+  "quoteType": "ETF",
+  "longName": "abrdn Physical Palladium Shares ETF",
+  "exchange": "PCX",
+  "error": ""
+ },
+ "PPC": {
+  "quoteType": "EQUITY",
+  "longName": "Pilgrim's Pride Corporation",
+  "exchange": "NMS",
+  "error": ""
+ },
+ "PPLT": {
+  "quoteType": "ETF",
+  "longName": "abrdn Physical Platinum Shares ETF",
+  "exchange": "PCX",
+  "error": ""
+ },
+ "PR": {
+  "quoteType": "EQUITY",
+  "longName": "Permian Resources Corporation",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "RGLD": {
+  "quoteType": "EQUITY",
+  "longName": "Royal Gold, Inc.",
+  "exchange": "NMS",
+  "error": ""
+ },
+ "RIO": {
+  "quoteType": "EQUITY",
+  "longName": "Rio Tinto Group",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "RRC": {
+  "quoteType": "EQUITY",
+  "longName": "Range Resources Corporation",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "SCCO": {
+  "quoteType": "EQUITY",
+  "longName": "Southern Copper Corporation",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "SIG": {
+  "quoteType": "EQUITY",
+  "longName": "Signet Jewelers Limited",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "SIL": {
+  "quoteType": "ETF",
+  "longName": "Global X Silver Miners ETF",
+  "exchange": "PCX",
+  "error": ""
+ },
+ "SILJ": {
+  "quoteType": "ETF",
+  "longName": "Amplify Junior Silver Miners ETF",
+  "exchange": "PCX",
+  "error": ""
+ },
+ "SLB": {
+  "quoteType": "EQUITY",
+  "longName": "SLB N.V.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "SLV": {
+  "quoteType": "ETF",
+  "longName": "iShares Silver Trust",
+  "exchange": "PCX",
+  "error": ""
+ },
+ "SPY": {
+  "quoteType": "ETF",
+  "longName": "State Street SPDR S&P 500 ETF Trust",
+  "exchange": "PCX",
+  "error": ""
+ },
+ "SQM": {
+  "quoteType": "EQUITY",
+  "longName": "Sociedad Qu\u00edmica y Minera de Chile S.A.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "STLD": {
+  "quoteType": "EQUITY",
+  "longName": "Steel Dynamics, Inc.",
+  "exchange": "NMS",
+  "error": ""
+ },
+ "SU": {
+  "quoteType": "EQUITY",
+  "longName": "Suncor Energy Inc.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "TSLA": {
+  "quoteType": "EQUITY",
+  "longName": "Tesla, Inc.",
+  "exchange": "NMS",
+  "error": ""
+ },
+ "TSN": {
+  "quoteType": "EQUITY",
+  "longName": "Tyson Foods, Inc.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "UEC": {
+  "quoteType": "EQUITY",
+  "longName": "Uranium Energy Corp.",
+  "exchange": "ASE",
+  "error": ""
+ },
+ "URA": {
+  "quoteType": "ETF",
+  "longName": "Global X Uranium ETF",
+  "exchange": "PCX",
+  "error": ""
+ },
+ "URNM": {
+  "quoteType": "ETF",
+  "longName": "Sprott Uranium Miners ETF",
+  "exchange": "PCX",
+  "error": ""
+ },
+ "USO": {
+  "quoteType": "ETF",
+  "longName": "United States Oil Fund, LP",
+  "exchange": "PCX",
+  "error": ""
+ },
+ "UUUU": {
+  "quoteType": "EQUITY",
+  "longName": "Energy Fuels Inc.",
+  "exchange": "ASE",
+  "error": ""
+ },
+ "VALE": {
+  "quoteType": "EQUITY",
+  "longName": "Vale S.A.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "VLO": {
+  "quoteType": "EQUITY",
+  "longName": "Valero Energy Corporation",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "VST": {
+  "quoteType": "EQUITY",
+  "longName": "Vistra Corp.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "WPM": {
+  "quoteType": "EQUITY",
+  "longName": "Wheaton Precious Metals Corp.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "XLE": {
+  "quoteType": "ETF",
+  "longName": "State Street Energy Select Sector SPDR ETF",
+  "exchange": "PCX",
+  "error": ""
+ },
+ "XME": {
+  "quoteType": "ETF",
+  "longName": "State Street SPDR S&P Metals & Mining ETF",
+  "exchange": "PCX",
+  "error": ""
+ },
+ "XOM": {
+  "quoteType": "EQUITY",
+  "longName": "ExxonMobil Holdings Corporation",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "XOP": {
+  "quoteType": "ETF",
+  "longName": "State Street SPDR S&P Oil & Gas Exploration & Production ETF",
+  "exchange": "PCX",
+  "error": ""
+ }
+}

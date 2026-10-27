@@ -138,3 +138,9 @@ These use the cache provider, so they need no network.
 5. **Next-open fill:** a signal on d fills at d+1's open with the correct slippage, commission and share count.
 6. **Parity:** a historical dry run (for example, picks over 2026-08-03 → 2026-10-23 using the cache) produces the same position-sign series as the backtest trial file for the same dates.
 7. **Controls:** `stop`, `extend` and `report` behave as specified.
+
+## Addendum: account risk, the same as the backtest
+- After step 3 (mark to close), the simulator calls `backtest.walkforward.account_check(equity, gross_exposure)`.
+- **`"margin_call"`:** replace the strategy state with `strategies.force_flat(rule, state)` and queue a flat target for the next open, with the reason `margin call …`.
+- **`"ruin"`:** do the same, and also never trade that pick again.
+- Never size an order from equity ≤ 0.

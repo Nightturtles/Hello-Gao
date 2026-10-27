@@ -1,0 +1,1018 @@
+ticker,check,severity,count,detail
+AA,nonpositive_price,info,0,
+AA,nan_price,info,0,
+AA,ohlc_inconsistent,info,0,
+AA,identical_close_run_ge5,info,0,
+AA,abs_adjret_gt_25pct,warning,1,2020-03-24:+28.2%:genuine_large_move_no_split
+AA,splits_in_history,info,2,2016-10-06:0.3333333333333333;2016-11-01:1.2484394506866416
+AA,missing_nyse_sessions,info,0,
+AA,non_session_dates,info,0,
+AA,last_bar_date,info,0,2026-10-26
+AA,zero_volume_days,info,0,
+AA,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+ADM,nonpositive_price,info,0,
+ADM,nan_price,info,0,
+ADM,ohlc_inconsistent,info,0,
+ADM,identical_close_run_ge5,info,0,
+ADM,abs_adjret_gt_25pct,info,0,
+ADM,missing_nyse_sessions,info,0,
+ADM,non_session_dates,info,0,
+ADM,last_bar_date,info,0,2026-10-26
+ADM,zero_volume_days,info,0,
+ADM,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+AEM,nonpositive_price,info,0,
+AEM,nan_price,info,0,
+AEM,ohlc_inconsistent,info,0,
+AEM,identical_close_run_ge5,info,0,
+AEM,abs_adjret_gt_25pct,info,0,
+AEM,missing_nyse_sessions,info,0,
+AEM,non_session_dates,info,0,
+AEM,last_bar_date,info,0,2026-10-26
+AEM,zero_volume_days,info,0,
+AEM,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+AEP,nonpositive_price,info,0,
+AEP,nan_price,info,0,
+AEP,ohlc_inconsistent,info,0,
+AEP,identical_close_run_ge5,info,0,
+AEP,abs_adjret_gt_25pct,info,0,
+AEP,missing_nyse_sessions,info,0,
+AEP,non_session_dates,info,0,
+AEP,last_bar_date,info,0,2026-10-26
+AEP,zero_volume_days,info,0,
+AEP,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+AGCO,nonpositive_price,info,0,
+AGCO,nan_price,info,0,
+AGCO,ohlc_inconsistent,info,0,
+AGCO,identical_close_run_ge5,info,0,
+AGCO,abs_adjret_gt_25pct,info,0,
+AGCO,missing_nyse_sessions,info,0,
+AGCO,non_session_dates,info,0,
+AGCO,last_bar_date,info,0,2026-10-26
+AGCO,zero_volume_days,info,0,
+AGCO,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+ALB,nonpositive_price,info,0,
+ALB,nan_price,info,0,
+ALB,ohlc_inconsistent,info,0,
+ALB,identical_close_run_ge5,info,0,
+ALB,abs_adjret_gt_25pct,info,0,
+ALB,missing_nyse_sessions,info,0,
+ALB,non_session_dates,info,0,
+ALB,last_bar_date,info,0,2026-10-26
+ALB,zero_volume_days,info,0,
+ALB,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+AMR,nonpositive_price,info,0,
+AMR,nan_price,info,0,
+AMR,ohlc_inconsistent,info,0,
+AMR,identical_close_run_ge5,info,0,
+AMR,abs_adjret_gt_25pct,info,0,
+AMR,missing_nyse_sessions,info,0,
+AMR,non_session_dates,info,0,
+AMR,last_bar_date,info,0,2026-10-26
+AMR,zero_volume_days,info,0,
+AMR,rows,info,1436,2021-02-08 -> 2026-10-26; first usable training sample 2021-04-07
+AR,nonpositive_price,info,0,
+AR,nan_price,info,0,
+AR,ohlc_inconsistent,info,0,
+AR,identical_close_run_ge5,info,0,
+AR,abs_adjret_gt_25pct,warning,2,2020-04-08:+33.7%:genuine_large_move_no_split;2020-06-08:+25.5%:genuine_large_move_no_split
+AR,missing_nyse_sessions,info,0,
+AR,non_session_dates,info,0,
+AR,last_bar_date,info,0,2026-10-26
+AR,zero_volume_days,info,0,
+AR,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+B,nonpositive_price,info,0,
+B,nan_price,info,0,
+B,ohlc_inconsistent,info,0,
+B,identical_close_run_ge5,info,0,
+B,abs_adjret_gt_25pct,info,0,
+B,missing_nyse_sessions,info,0,
+B,non_session_dates,info,0,
+B,last_bar_date,info,0,2026-10-26
+B,zero_volume_days,info,0,
+B,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+BALL,nonpositive_price,info,0,
+BALL,nan_price,info,0,
+BALL,ohlc_inconsistent,info,0,
+BALL,identical_close_run_ge5,info,0,
+BALL,abs_adjret_gt_25pct,info,0,
+BALL,splits_in_history,info,1,2017-05-17:2.0
+BALL,missing_nyse_sessions,info,0,
+BALL,non_session_dates,info,0,
+BALL,last_bar_date,info,0,2026-10-26
+BALL,zero_volume_days,info,0,
+BALL,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+BG,nonpositive_price,info,0,
+BG,nan_price,info,0,
+BG,ohlc_inconsistent,info,0,
+BG,identical_close_run_ge5,info,0,
+BG,abs_adjret_gt_25pct,info,0,
+BG,missing_nyse_sessions,info,0,
+BG,non_session_dates,info,0,
+BG,last_bar_date,info,0,2026-10-26
+BG,zero_volume_days,info,0,
+BG,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+BHP,nonpositive_price,info,0,
+BHP,nan_price,info,0,
+BHP,ohlc_inconsistent,info,0,
+BHP,identical_close_run_ge5,info,0,
+BHP,abs_adjret_gt_25pct,info,0,
+BHP,splits_in_history,info,1,2022-06-02:1.121
+BHP,missing_nyse_sessions,info,0,
+BHP,non_session_dates,info,0,
+BHP,last_bar_date,info,0,2026-10-26
+BHP,zero_volume_days,info,0,
+BHP,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+BNO,nonpositive_price,info,0,
+BNO,nan_price,info,0,
+BNO,ohlc_inconsistent,info,0,
+BNO,identical_close_run_ge5,info,0,
+BNO,abs_adjret_gt_25pct,info,0,
+BNO,missing_nyse_sessions,info,0,
+BNO,non_session_dates,info,0,
+BNO,last_bar_date,info,0,2026-10-26
+BNO,zero_volume_days,info,0,
+BNO,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+BTU,nonpositive_price,info,0,
+BTU,nan_price,info,0,
+BTU,ohlc_inconsistent,info,0,
+BTU,identical_close_run_ge5,info,0,
+BTU,abs_adjret_gt_25pct,warning,10,2020-02-05:+25.6%:genuine_large_move_no_split;2020-03-13:+35.3%:genuine_large_move_no_split;2020-03-17:+26.1%:genuine_large_move_no_split;2020-05-08:+35.5%:genuine_large_move_no_split;2020-06-05:+29.7%:genuine_large_move_no_split;2020-12-08:+33.6%:genuine_large_move_no_split;2020-12-10:+37.8%:genuine_large_move_no_split;2020-12-28:+39.5%:genuine_large_move_no_split;2021-01-27:+26.2%:genuine_large_move_no_split;2021-05-17:+32.3%:genuine_large_move_no_split
+BTU,missing_nyse_sessions,info,0,
+BTU,non_session_dates,info,0,
+BTU,last_bar_date,info,0,2026-10-26
+BTU,zero_volume_days,info,0,
+BTU,rows,info,2405,2017-04-03 -> 2026-10-26; first usable training sample 2017-04-04
+CAT,nonpositive_price,info,0,
+CAT,nan_price,info,0,
+CAT,ohlc_inconsistent,info,0,
+CAT,identical_close_run_ge5,info,0,
+CAT,abs_adjret_gt_25pct,info,0,
+CAT,missing_nyse_sessions,info,0,
+CAT,non_session_dates,info,0,
+CAT,last_bar_date,info,0,2026-10-26
+CAT,zero_volume_days,info,0,
+CAT,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+CCJ,nonpositive_price,info,0,
+CCJ,nan_price,info,0,
+CCJ,ohlc_inconsistent,info,0,
+CCJ,identical_close_run_ge5,info,0,
+CCJ,abs_adjret_gt_25pct,info,0,
+CCJ,missing_nyse_sessions,info,0,
+CCJ,non_session_dates,info,0,
+CCJ,last_bar_date,info,0,2026-10-26
+CCJ,zero_volume_days,info,0,
+CCJ,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+CEG,nonpositive_price,info,0,
+CEG,nan_price,info,0,
+CEG,ohlc_inconsistent,info,0,
+CEG,identical_close_run_ge5,info,0,
+CEG,abs_adjret_gt_25pct,warning,1,2025-01-10:+25.2%:genuine_large_move_no_split
+CEG,missing_nyse_sessions,info,0,
+CEG,non_session_dates,info,0,
+CEG,last_bar_date,info,0,2026-10-26
+CEG,zero_volume_days,info,0,
+CEG,rows,info,1197,2022-01-19 -> 2026-10-26; first usable training sample 2022-04-05
+CENX,nonpositive_price,info,0,
+CENX,nan_price,info,0,
+CENX,ohlc_inconsistent,info,0,
+CENX,identical_close_run_ge5,info,0,
+CENX,abs_adjret_gt_25pct,warning,1,2015-08-07:-37.0%:genuine_large_move_no_split
+CENX,missing_nyse_sessions,info,0,
+CENX,non_session_dates,info,0,
+CENX,last_bar_date,info,0,2026-10-26
+CENX,zero_volume_days,info,0,
+CENX,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+CF,nonpositive_price,info,0,
+CF,nan_price,info,0,
+CF,ohlc_inconsistent,info,0,
+CF,identical_close_run_ge5,info,0,
+CF,abs_adjret_gt_25pct,info,0,
+CF,splits_in_history,info,1,2015-06-18:5.0
+CF,missing_nyse_sessions,info,0,
+CF,non_session_dates,info,0,
+CF,last_bar_date,info,0,2026-10-26
+CF,zero_volume_days,info,0,
+CF,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+CLF,nonpositive_price,info,0,
+CLF,nan_price,info,0,
+CLF,ohlc_inconsistent,info,0,
+CLF,identical_close_run_ge5,info,0,
+CLF,abs_adjret_gt_25pct,warning,2,2016-04-28:+25.1%:genuine_large_move_no_split;2016-05-31:+39.4%:genuine_large_move_no_split
+CLF,missing_nyse_sessions,info,0,
+CLF,non_session_dates,info,0,
+CLF,last_bar_date,info,0,2026-10-26
+CLF,zero_volume_days,info,0,
+CLF,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+CNR,nonpositive_price,info,0,
+CNR,nan_price,info,0,
+CNR,ohlc_inconsistent,info,0,
+CNR,identical_close_run_ge5,warning,1,2017-11-16x7(zero-vol 6) [before first usable training sample 2018-01-03; not used]
+CNR,abs_adjret_gt_25pct,warning,5,2020-02-05:+26.6%:genuine_large_move_no_split;2020-03-17:+50.0%:genuine_large_move_no_split;2020-03-23:-31.0%:genuine_large_move_no_split;2020-04-09:+27.7%:genuine_large_move_no_split;2020-04-30:+26.5%:genuine_large_move_no_split
+CNR,missing_nyse_sessions,info,0,
+CNR,non_session_dates,info,0,
+CNR,last_bar_date,info,0,2026-10-26
+CNR,zero_volume_days,info,6,
+CNR,rows,info,2248,2017-11-14 -> 2026-10-26; first usable training sample 2018-01-03
+CNX,nonpositive_price,info,0,
+CNX,nan_price,info,0,
+CNX,ohlc_inconsistent,info,0,
+CNX,identical_close_run_ge5,info,0,
+CNX,abs_adjret_gt_25pct,warning,2,2019-07-30:+26.3%:genuine_large_move_no_split;2020-03-13:+28.2%:genuine_large_move_no_split
+CNX,splits_in_history,info,1,2017-11-29:1.2
+CNX,missing_nyse_sessions,info,0,
+CNX,non_session_dates,info,0,
+CNX,last_bar_date,info,0,2026-10-26
+CNX,zero_volume_days,info,0,
+CNX,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+COPX,nonpositive_price,info,0,
+COPX,nan_price,info,0,
+COPX,ohlc_inconsistent,info,0,
+COPX,identical_close_run_ge5,info,0,
+COPX,abs_adjret_gt_25pct,info,0,
+COPX,splits_in_history,info,1,2015-11-18:0.3333333333333333
+COPX,missing_nyse_sessions,info,0,
+COPX,non_session_dates,info,0,
+COPX,last_bar_date,info,0,2026-10-26
+COPX,zero_volume_days,info,0,
+COPX,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+CORN,nonpositive_price,info,0,
+CORN,nan_price,info,0,
+CORN,ohlc_inconsistent,info,0,
+CORN,identical_close_run_ge5,info,0,
+CORN,abs_adjret_gt_25pct,info,0,
+CORN,missing_nyse_sessions,info,0,
+CORN,non_session_dates,info,0,
+CORN,last_bar_date,info,0,2026-10-26
+CORN,zero_volume_days,info,0,
+CORN,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+CPER,nonpositive_price,info,0,
+CPER,nan_price,info,0,
+CPER,ohlc_inconsistent,info,0,
+CPER,identical_close_run_ge5,error,2,2015-10-19x8(zero-vol 7);2017-07-10x5(zero-vol 4)
+CPER,abs_adjret_gt_25pct,warning,4,2014-12-04:-33.1%:genuine_large_move_no_split;2014-12-05:+49.9%:genuine_large_move_no_split;2015-02-02:-28.7%:genuine_large_move_no_split;2015-02-03:+45.7%:genuine_large_move_no_split
+CPER,missing_nyse_sessions,info,0,
+CPER,non_session_dates,info,0,
+CPER,last_bar_date,info,0,2026-10-26
+CPER,zero_volume_days,info,123,
+CPER,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+CRK,nonpositive_price,info,0,
+CRK,nan_price,info,0,
+CRK,ohlc_inconsistent,info,0,
+CRK,identical_close_run_ge5,info,0,
+CRK,abs_adjret_gt_25pct,warning,17,2015-02-02:+25.2%:genuine_large_move_no_split;2015-08-06:+33.6%:genuine_large_move_no_split;2015-08-12:+67.4%:genuine_large_move_no_split;2015-08-27:+68.4%:genuine_large_move_no_split;2015-09-03:+28.4%:genuine_large_move_no_split;2016-01-14:+27.6%:genuine_large_move_no_split;2016-01-20:+26.9%:genuine_large_move_no_split;2016-01-25:-38.2%:genuine_large_move_no_split;2016-01-26:+51.4%:genuine_large_move_no_split;2016-03-04:+31.9%:genuine_large_move_no_split;2016-03-07:+36.3%:genuine_large_move_no_split;2016-03-08:-41.1%:genuine_large_move_no_split
+CRK,splits_in_history,info,1,2016-08-01:0.2
+CRK,missing_nyse_sessions,info,0,
+CRK,non_session_dates,info,0,
+CRK,last_bar_date,info,0,2026-10-26
+CRK,zero_volume_days,info,0,
+CRK,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+CTVA,nonpositive_price,info,0,
+CTVA,nan_price,info,0,
+CTVA,ohlc_inconsistent,info,0,
+CTVA,identical_close_run_ge5,info,0,
+CTVA,abs_adjret_gt_25pct,info,0,
+CTVA,splits_in_history,info,1,2026-10-01:6.665
+CTVA,missing_nyse_sessions,info,0,
+CTVA,non_session_dates,info,0,
+CTVA,last_bar_date,info,0,2026-10-26
+CTVA,zero_volume_days,info,0,
+CTVA,rows,info,1866,2019-05-24 -> 2026-10-26; first usable training sample 2019-07-08
+CVE,nonpositive_price,info,0,
+CVE,nan_price,info,0,
+CVE,ohlc_inconsistent,info,0,
+CVE,identical_close_run_ge5,info,0,
+CVE,abs_adjret_gt_25pct,warning,1,2020-03-09:-52.5%:genuine_large_move_no_split
+CVE,missing_nyse_sessions,info,0,
+CVE,non_session_dates,info,0,
+CVE,last_bar_date,info,0,2026-10-26
+CVE,zero_volume_days,info,0,
+CVE,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+CVX,nonpositive_price,info,0,
+CVX,nan_price,info,0,
+CVX,ohlc_inconsistent,info,0,
+CVX,identical_close_run_ge5,info,0,
+CVX,abs_adjret_gt_25pct,info,0,
+CVX,missing_nyse_sessions,info,0,
+CVX,non_session_dates,info,0,
+CVX,last_bar_date,info,0,2026-10-26
+CVX,zero_volume_days,info,0,
+CVX,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+DBA,nonpositive_price,info,0,
+DBA,nan_price,info,0,
+DBA,ohlc_inconsistent,info,0,
+DBA,identical_close_run_ge5,info,0,
+DBA,abs_adjret_gt_25pct,info,0,
+DBA,missing_nyse_sessions,info,0,
+DBA,non_session_dates,info,0,
+DBA,last_bar_date,info,0,2026-10-26
+DBA,zero_volume_days,info,0,
+DBA,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+DE,nonpositive_price,info,0,
+DE,nan_price,info,0,
+DE,ohlc_inconsistent,info,0,
+DE,identical_close_run_ge5,info,0,
+DE,abs_adjret_gt_25pct,info,0,
+DE,missing_nyse_sessions,info,0,
+DE,non_session_dates,info,0,
+DE,last_bar_date,info,0,2026-10-26
+DE,zero_volume_days,info,0,
+DE,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+DHT,nonpositive_price,info,0,
+DHT,nan_price,info,0,
+DHT,ohlc_inconsistent,info,0,
+DHT,identical_close_run_ge5,info,0,
+DHT,abs_adjret_gt_25pct,info,0,
+DHT,missing_nyse_sessions,info,0,
+DHT,non_session_dates,info,0,
+DHT,last_bar_date,info,0,2026-10-26
+DHT,zero_volume_days,info,0,
+DHT,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+DNN,nonpositive_price,info,0,
+DNN,nan_price,info,0,
+DNN,ohlc_inconsistent,info,0,
+DNN,identical_close_run_ge5,warning,7,2017-05-09x5(zero-vol 0);2017-05-30x5(zero-vol 0);2018-03-07x6(zero-vol 0);2018-05-03x5(zero-vol 0);2018-07-03x5(zero-vol 0);2019-05-08x6(zero-vol 0);2020-10-16x5(zero-vol 0)
+DNN,abs_adjret_gt_25pct,warning,2,2020-04-16:+27.6%:genuine_large_move_no_split;2021-02-16:+34.2%:genuine_large_move_no_split
+DNN,missing_nyse_sessions,info,0,
+DNN,non_session_dates,info,0,
+DNN,last_bar_date,info,0,2026-10-26
+DNN,zero_volume_days,info,0,
+DNN,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+DOW,nonpositive_price,info,0,
+DOW,nan_price,info,0,
+DOW,ohlc_inconsistent,info,0,
+DOW,identical_close_run_ge5,info,0,
+DOW,abs_adjret_gt_25pct,info,0,
+DOW,missing_nyse_sessions,info,0,
+DOW,non_session_dates,info,0,
+DOW,last_bar_date,info,0,2026-10-26
+DOW,zero_volume_days,info,0,
+DOW,rows,info,1912,2019-03-20 -> 2026-10-26; first usable training sample 2019-04-05
+EPD,nonpositive_price,info,0,
+EPD,nan_price,info,0,
+EPD,ohlc_inconsistent,info,0,
+EPD,identical_close_run_ge5,info,0,
+EPD,abs_adjret_gt_25pct,info,0,
+EPD,missing_nyse_sessions,info,0,
+EPD,non_session_dates,info,0,
+EPD,last_bar_date,info,0,2026-10-26
+EPD,zero_volume_days,info,0,
+EPD,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+EQT,nonpositive_price,info,0,
+EQT,nan_price,info,0,
+EQT,ohlc_inconsistent,info,0,
+EQT,identical_close_run_ge5,info,0,
+EQT,abs_adjret_gt_25pct,warning,1,2020-03-13:+37.3%:genuine_large_move_no_split
+EQT,splits_in_history,info,1,2018-11-13:1.837
+EQT,missing_nyse_sessions,info,0,
+EQT,non_session_dates,info,0,
+EQT,last_bar_date,info,0,2026-10-26
+EQT,zero_volume_days,info,0,
+EQT,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+ET,nonpositive_price,info,0,
+ET,nan_price,info,0,
+ET,ohlc_inconsistent,info,0,
+ET,identical_close_run_ge5,info,0,
+ET,abs_adjret_gt_25pct,warning,3,2016-01-22:+33.9%:genuine_large_move_no_split;2016-02-08:-42.0%:genuine_large_move_no_split;2020-03-09:-27.8%:genuine_large_move_no_split
+ET,splits_in_history,info,1,2015-07-27:2.0
+ET,missing_nyse_sessions,info,0,
+ET,non_session_dates,info,0,
+ET,last_bar_date,info,0,2026-10-26
+ET,zero_volume_days,info,0,
+ET,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+FANG,nonpositive_price,info,0,
+FANG,nan_price,info,0,
+FANG,ohlc_inconsistent,info,0,
+FANG,identical_close_run_ge5,info,0,
+FANG,abs_adjret_gt_25pct,warning,2,2020-03-09:-44.6%:genuine_large_move_no_split;2020-11-09:+31.0%:genuine_large_move_no_split
+FANG,missing_nyse_sessions,info,0,
+FANG,non_session_dates,info,0,
+FANG,last_bar_date,info,0,2026-10-26
+FANG,zero_volume_days,info,0,
+FANG,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+FCX,nonpositive_price,info,0,
+FCX,nan_price,info,0,
+FCX,ohlc_inconsistent,info,0,
+FCX,identical_close_run_ge5,info,0,
+FCX,abs_adjret_gt_25pct,warning,2,2015-08-27:+28.7%:genuine_large_move_no_split;2020-03-24:+29.7%:genuine_large_move_no_split
+FCX,missing_nyse_sessions,info,0,
+FCX,non_session_dates,info,0,
+FCX,last_bar_date,info,0,2026-10-26
+FCX,zero_volume_days,info,0,
+FCX,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+FMC,nonpositive_price,info,0,
+FMC,nan_price,info,0,
+FMC,ohlc_inconsistent,info,0,
+FMC,identical_close_run_ge5,info,0,
+FMC,abs_adjret_gt_25pct,warning,3,2025-02-05:-33.5%:genuine_large_move_no_split;2025-10-30:-46.5%:genuine_large_move_no_split;2026-10-15:-30.5%:genuine_large_move_no_split
+FMC,splits_in_history,info,1,2019-03-04:1.153
+FMC,missing_nyse_sessions,info,0,
+FMC,non_session_dates,info,0,
+FMC,last_bar_date,info,0,2026-10-26
+FMC,zero_volume_days,info,0,
+FMC,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+FNV,nonpositive_price,info,0,
+FNV,nan_price,info,0,
+FNV,ohlc_inconsistent,info,0,
+FNV,identical_close_run_ge5,info,0,
+FNV,abs_adjret_gt_25pct,info,0,
+FNV,missing_nyse_sessions,info,0,
+FNV,non_session_dates,info,0,
+FNV,last_bar_date,info,0,2026-10-26
+FNV,zero_volume_days,info,0,
+FNV,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+FRO,nonpositive_price,info,0,
+FRO,nan_price,info,0,
+FRO,ohlc_inconsistent,info,0,
+FRO,identical_close_run_ge5,info,0,
+FRO,abs_adjret_gt_25pct,warning,4,2014-12-12:+38.0%:genuine_large_move_no_split;2014-12-15:+27.6%:genuine_large_move_no_split;2020-03-10:+27.6%:genuine_large_move_no_split;2023-01-10:+25.7%:genuine_large_move_no_split
+FRO,splits_in_history,info,1,2016-02-03:0.2
+FRO,missing_nyse_sessions,info,0,
+FRO,non_session_dates,info,0,
+FRO,last_bar_date,info,0,2026-10-26
+FRO,zero_volume_days,info,0,
+FRO,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+GDX,nonpositive_price,info,0,
+GDX,nan_price,info,0,
+GDX,ohlc_inconsistent,info,0,
+GDX,identical_close_run_ge5,info,0,
+GDX,abs_adjret_gt_25pct,info,0,
+GDX,missing_nyse_sessions,info,0,
+GDX,non_session_dates,info,0,
+GDX,last_bar_date,info,0,2026-10-26
+GDX,zero_volume_days,info,0,
+GDX,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+GDXJ,nonpositive_price,info,0,
+GDXJ,nan_price,info,0,
+GDXJ,ohlc_inconsistent,info,0,
+GDXJ,identical_close_run_ge5,info,0,
+GDXJ,abs_adjret_gt_25pct,warning,1,2020-03-12:-26.3%:genuine_large_move_no_split
+GDXJ,missing_nyse_sessions,info,0,
+GDXJ,non_session_dates,info,0,
+GDXJ,last_bar_date,info,0,2026-10-26
+GDXJ,zero_volume_days,info,0,
+GDXJ,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+GLD,nonpositive_price,info,0,
+GLD,nan_price,info,0,
+GLD,ohlc_inconsistent,info,0,
+GLD,identical_close_run_ge5,info,0,
+GLD,abs_adjret_gt_25pct,info,0,
+GLD,missing_nyse_sessions,info,0,
+GLD,non_session_dates,info,0,
+GLD,last_bar_date,info,0,2026-10-26
+GLD,zero_volume_days,info,0,
+GLD,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+GM,nonpositive_price,info,0,
+GM,nan_price,info,0,
+GM,ohlc_inconsistent,info,0,
+GM,identical_close_run_ge5,info,0,
+GM,abs_adjret_gt_25pct,info,0,
+GM,missing_nyse_sessions,info,0,
+GM,non_session_dates,info,0,
+GM,last_bar_date,info,0,2026-10-26
+GM,zero_volume_days,info,0,
+GM,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+GPRE,nonpositive_price,info,0,
+GPRE,nan_price,info,0,
+GPRE,ohlc_inconsistent,info,0,
+GPRE,identical_close_run_ge5,info,0,
+GPRE,abs_adjret_gt_25pct,warning,3,2020-03-09:-43.2%:genuine_large_move_no_split;2020-03-13:+26.1%:genuine_large_move_no_split;2020-05-20:+30.6%:genuine_large_move_no_split
+GPRE,missing_nyse_sessions,info,0,
+GPRE,non_session_dates,info,0,
+GPRE,last_bar_date,info,0,2026-10-26
+GPRE,zero_volume_days,info,0,
+GPRE,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+HAL,nonpositive_price,info,0,
+HAL,nan_price,info,0,
+HAL,ohlc_inconsistent,info,0,
+HAL,identical_close_run_ge5,info,0,
+HAL,abs_adjret_gt_25pct,warning,2,2020-03-09:-37.6%:genuine_large_move_no_split;2020-03-24:+26.5%:genuine_large_move_no_split
+HAL,missing_nyse_sessions,info,0,
+HAL,non_session_dates,info,0,
+HAL,last_bar_date,info,0,2026-10-26
+HAL,zero_volume_days,info,0,
+HAL,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+HBM,nonpositive_price,info,0,
+HBM,nan_price,info,0,
+HBM,ohlc_inconsistent,info,0,
+HBM,identical_close_run_ge5,info,0,
+HBM,abs_adjret_gt_25pct,info,0,
+HBM,missing_nyse_sessions,info,0,
+HBM,non_session_dates,info,0,
+HBM,last_bar_date,info,0,2026-10-26
+HBM,zero_volume_days,info,0,
+HBM,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+HCC,nonpositive_price,info,0,
+HCC,nan_price,info,0,
+HCC,ohlc_inconsistent,info,0,
+HCC,identical_close_run_ge5,info,0,
+HCC,abs_adjret_gt_25pct,info,0,
+HCC,missing_nyse_sessions,info,0,
+HCC,non_session_dates,info,0,
+HCC,last_bar_date,info,0,2026-10-26
+HCC,zero_volume_days,info,0,
+HCC,rows,info,2397,2017-04-13 -> 2026-10-26; first usable training sample 2017-07-05
+HL,nonpositive_price,info,0,
+HL,nan_price,info,0,
+HL,ohlc_inconsistent,info,0,
+HL,identical_close_run_ge5,info,0,
+HL,abs_adjret_gt_25pct,warning,1,2021-02-01:+28.3%:genuine_large_move_no_split
+HL,missing_nyse_sessions,info,0,
+HL,non_session_dates,info,0,
+HL,last_bar_date,info,0,2026-10-26
+HL,zero_volume_days,info,1,
+HL,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+JETS,nonpositive_price,info,0,
+JETS,nan_price,info,0,
+JETS,ohlc_inconsistent,info,0,
+JETS,identical_close_run_ge5,info,0,
+JETS,abs_adjret_gt_25pct,info,0,
+JETS,missing_nyse_sessions,info,0,
+JETS,non_session_dates,info,0,
+JETS,last_bar_date,info,0,2026-10-26
+JETS,zero_volume_days,info,0,
+JETS,rows,info,2890,2015-04-30 -> 2026-10-26; first usable training sample 2015-07-06
+LEU,nonpositive_price,info,0,
+LEU,nan_price,info,0,
+LEU,ohlc_inconsistent,info,0,
+LEU,identical_close_run_ge5,info,0,
+LEU,abs_adjret_gt_25pct,warning,10,2015-03-23:+29.7%:genuine_large_move_no_split;2016-03-08:+115.1%:genuine_large_move_no_split;2016-03-22:+30.8%:genuine_large_move_no_split;2016-03-30:+37.0%:genuine_large_move_no_split;2018-09-04:+29.4%:genuine_large_move_no_split;2018-12-26:+28.5%:genuine_large_move_no_split;2022-11-09:-31.4%:genuine_large_move_no_split;2024-10-16:+26.2%:genuine_large_move_no_split;2024-11-04:-28.8%:genuine_large_move_no_split;2025-02-07:+33.1%:genuine_large_move_no_split
+LEU,missing_nyse_sessions,info,0,
+LEU,non_session_dates,info,0,
+LEU,last_bar_date,info,0,2026-10-26
+LEU,zero_volume_days,info,2,
+LEU,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+LXU,nonpositive_price,info,0,
+LXU,nan_price,info,0,
+LXU,ohlc_inconsistent,info,0,
+LXU,identical_close_run_ge5,info,0,
+LXU,abs_adjret_gt_25pct,warning,15,2015-08-07:-34.4%:genuine_large_move_no_split;2015-11-06:-44.0%:genuine_large_move_no_split;2016-03-02:+29.9%:genuine_large_move_no_split;2016-05-05:-32.4%:genuine_large_move_no_split;2016-05-06:+28.6%:genuine_large_move_no_split;2016-05-12:+34.3%:genuine_large_move_no_split;2017-04-25:+30.7%:genuine_large_move_no_split;2017-07-26:-28.0%:genuine_large_move_no_split;2019-07-30:+29.2%:genuine_large_move_no_split;2020-06-08:+27.6%:genuine_large_move_no_split;2020-08-10:+29.8%:genuine_large_move_no_split;2020-08-17:+40.3%:genuine_large_move_no_split
+LXU,splits_in_history,info,1,2021-10-12:1.3
+LXU,missing_nyse_sessions,info,0,
+LXU,non_session_dates,info,0,
+LXU,last_bar_date,info,0,2026-10-26
+LXU,zero_volume_days,info,0,
+LXU,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+LYB,nonpositive_price,info,0,
+LYB,nan_price,info,0,
+LYB,ohlc_inconsistent,info,0,
+LYB,identical_close_run_ge5,info,0,
+LYB,abs_adjret_gt_25pct,warning,1,2020-03-16:-25.5%:genuine_large_move_no_split
+LYB,missing_nyse_sessions,info,0,
+LYB,non_session_dates,info,0,
+LYB,last_bar_date,info,0,2026-10-26
+LYB,zero_volume_days,info,0,
+LYB,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+MOO,nonpositive_price,info,0,
+MOO,nan_price,info,0,
+MOO,ohlc_inconsistent,info,0,
+MOO,identical_close_run_ge5,info,0,
+MOO,abs_adjret_gt_25pct,info,0,
+MOO,missing_nyse_sessions,info,0,
+MOO,non_session_dates,info,0,
+MOO,last_bar_date,info,0,2026-10-26
+MOO,zero_volume_days,info,0,
+MOO,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+MOS,nonpositive_price,info,0,
+MOS,nan_price,info,0,
+MOS,ohlc_inconsistent,info,0,
+MOS,identical_close_run_ge5,info,0,
+MOS,abs_adjret_gt_25pct,warning,1,2020-03-18:-27.5%:genuine_large_move_no_split
+MOS,missing_nyse_sessions,info,0,
+MOS,non_session_dates,info,0,
+MOS,last_bar_date,info,0,2026-10-26
+MOS,zero_volume_days,info,0,
+MOS,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+MP,nonpositive_price,info,0,
+MP,nan_price,info,0,
+MP,ohlc_inconsistent,info,0,
+MP,identical_close_run_ge5,info,0,
+MP,abs_adjret_gt_25pct,warning,1,2025-07-10:+50.6%:genuine_large_move_no_split
+MP,missing_nyse_sessions,info,0,
+MP,non_session_dates,info,0,
+MP,last_bar_date,info,0,2026-10-26
+MP,zero_volume_days,info,0,
+MP,rows,info,1595,2020-06-22 -> 2026-10-26; first usable training sample 2020-07-07
+MPC,nonpositive_price,info,0,
+MPC,nan_price,info,0,
+MPC,ohlc_inconsistent,info,0,
+MPC,identical_close_run_ge5,info,0,
+MPC,abs_adjret_gt_25pct,warning,1,2020-03-12:-27.0%:genuine_large_move_no_split
+MPC,splits_in_history,info,1,2015-06-11:2.0
+MPC,missing_nyse_sessions,info,0,
+MPC,non_session_dates,info,0,
+MPC,last_bar_date,info,0,2026-10-26
+MPC,zero_volume_days,info,0,
+MPC,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+MT,nonpositive_price,info,0,
+MT,nan_price,info,0,
+MT,ohlc_inconsistent,info,0,
+MT,identical_close_run_ge5,info,0,
+MT,abs_adjret_gt_25pct,info,0,
+MT,splits_in_history,info,1,2017-05-22:0.3333333333333333
+MT,missing_nyse_sessions,info,0,
+MT,non_session_dates,info,0,
+MT,last_bar_date,info,0,2026-10-26
+MT,zero_volume_days,info,0,
+MT,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+MTDR,nonpositive_price,info,0,
+MTDR,nan_price,info,0,
+MTDR,ohlc_inconsistent,info,0,
+MTDR,identical_close_run_ge5,info,0,
+MTDR,abs_adjret_gt_25pct,warning,8,2020-03-06:-27.9%:genuine_large_move_no_split;2020-03-09:-64.1%:genuine_large_move_no_split;2020-03-13:+30.7%:genuine_large_move_no_split;2020-03-16:-33.7%:genuine_large_move_no_split;2020-03-19:+29.2%:genuine_large_move_no_split;2020-03-24:+35.9%:genuine_large_move_no_split;2020-04-29:+35.9%:genuine_large_move_no_split;2020-11-09:+28.4%:genuine_large_move_no_split
+MTDR,missing_nyse_sessions,info,0,
+MTDR,non_session_dates,info,0,
+MTDR,last_bar_date,info,0,2026-10-26
+MTDR,zero_volume_days,info,0,
+MTDR,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+NEM,nonpositive_price,info,0,
+NEM,nan_price,info,0,
+NEM,ohlc_inconsistent,info,0,
+NEM,identical_close_run_ge5,info,0,
+NEM,abs_adjret_gt_25pct,info,0,
+NEM,missing_nyse_sessions,info,0,
+NEM,non_session_dates,info,0,
+NEM,last_bar_date,info,0,2026-10-26
+NEM,zero_volume_days,info,0,
+NEM,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+NTR,nonpositive_price,info,0,
+NTR,nan_price,info,0,
+NTR,ohlc_inconsistent,info,0,
+NTR,identical_close_run_ge5,info,0,
+NTR,abs_adjret_gt_25pct,info,0,
+NTR,missing_nyse_sessions,info,0,
+NTR,non_session_dates,info,0,
+NTR,last_bar_date,info,0,2026-10-26
+NTR,zero_volume_days,info,0,
+NTR,rows,info,2216,2018-01-02 -> 2026-10-26; first usable training sample 2018-01-03
+NUE,nonpositive_price,info,0,
+NUE,nan_price,info,0,
+NUE,ohlc_inconsistent,info,0,
+NUE,identical_close_run_ge5,info,0,
+NUE,abs_adjret_gt_25pct,info,0,
+NUE,missing_nyse_sessions,info,0,
+NUE,non_session_dates,info,0,
+NUE,last_bar_date,info,0,2026-10-26
+NUE,zero_volume_days,info,0,
+NUE,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+NXE,nonpositive_price,info,0,
+NXE,nan_price,info,0,
+NXE,ohlc_inconsistent,info,0,
+NXE,identical_close_run_ge5,error,6,2014-10-31x5(zero-vol 5);2014-11-26x9(zero-vol 8);2014-12-12x8(zero-vol 8);2014-12-24x6(zero-vol 5);2015-02-09x6(zero-vol 5);2015-03-04x5(zero-vol 5)
+NXE,abs_adjret_gt_25pct,warning,5,2015-06-11:+28.0%:genuine_large_move_no_split;2015-07-22:+27.3%:genuine_large_move_no_split;2015-07-24:-26.0%:genuine_large_move_no_split;2016-03-03:+26.1%:genuine_large_move_no_split;2017-11-09:+26.6%:genuine_large_move_no_split
+NXE,missing_nyse_sessions,info,0,
+NXE,non_session_dates,info,0,
+NXE,last_bar_date,info,0,2026-10-26
+NXE,zero_volume_days,info,114,
+NXE,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+OIH,nonpositive_price,info,0,
+OIH,nan_price,info,0,
+OIH,ohlc_inconsistent,info,0,
+OIH,identical_close_run_ge5,info,0,
+OIH,abs_adjret_gt_25pct,warning,1,2020-03-09:-32.2%:genuine_large_move_no_split
+OIH,splits_in_history,info,1,2020-04-15:0.05
+OIH,missing_nyse_sessions,info,0,
+OIH,non_session_dates,info,0,
+OIH,last_bar_date,info,0,2026-10-26
+OIH,zero_volume_days,info,0,
+OIH,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+PAAS,nonpositive_price,info,0,
+PAAS,nan_price,info,0,
+PAAS,ohlc_inconsistent,info,0,
+PAAS,identical_close_run_ge5,info,0,
+PAAS,abs_adjret_gt_25pct,info,0,
+PAAS,missing_nyse_sessions,info,0,
+PAAS,non_session_dates,info,0,
+PAAS,last_bar_date,info,0,2026-10-26
+PAAS,zero_volume_days,info,0,
+PAAS,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+PALL,nonpositive_price,info,0,
+PALL,nan_price,info,0,
+PALL,ohlc_inconsistent,info,0,
+PALL,identical_close_run_ge5,info,0,
+PALL,abs_adjret_gt_25pct,info,0,
+PALL,splits_in_history,info,1,2026-05-18:5.0
+PALL,missing_nyse_sessions,info,0,
+PALL,non_session_dates,info,0,
+PALL,last_bar_date,info,0,2026-10-26
+PALL,zero_volume_days,info,0,
+PALL,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+PPC,nonpositive_price,info,0,
+PPC,nan_price,info,0,
+PPC,ohlc_inconsistent,info,0,
+PPC,identical_close_run_ge5,info,0,
+PPC,abs_adjret_gt_25pct,info,0,
+PPC,missing_nyse_sessions,info,0,
+PPC,non_session_dates,info,0,
+PPC,last_bar_date,info,0,2026-10-26
+PPC,zero_volume_days,info,0,
+PPC,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+PPLT,nonpositive_price,info,0,
+PPLT,nan_price,info,0,
+PPLT,ohlc_inconsistent,info,0,
+PPLT,identical_close_run_ge5,info,0,
+PPLT,abs_adjret_gt_25pct,info,0,
+PPLT,splits_in_history,info,1,2026-05-18:10.0
+PPLT,missing_nyse_sessions,info,0,
+PPLT,non_session_dates,info,0,
+PPLT,last_bar_date,info,0,2026-10-26
+PPLT,zero_volume_days,info,0,
+PPLT,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+PR,nonpositive_price,info,0,
+PR,nan_price,info,0,
+PR,ohlc_inconsistent,info,0,
+PR,identical_close_run_ge5,warning,2,2016-04-15x11(zero-vol 9);2016-05-05x5(zero-vol 4) [before first usable training sample 2016-07-05; not used]
+PR,abs_adjret_gt_25pct,warning,10,2019-09-16:+31.5%:genuine_large_move_no_split;2020-03-09:-63.2%:genuine_large_move_no_split;2020-03-17:-33.3%:genuine_large_move_no_split;2020-03-19:+48.0%:genuine_large_move_no_split;2020-03-30:-26.6%:genuine_large_move_no_split;2020-04-22:+29.4%:genuine_large_move_no_split;2020-04-23:+31.4%:genuine_large_move_no_split;2020-04-29:+30.2%:genuine_large_move_no_split;2020-06-05:+29.6%:genuine_large_move_no_split;2020-06-08:+44.3%:genuine_large_move_no_split
+PR,missing_nyse_sessions,info,0,
+PR,non_session_dates,info,0,
+PR,last_bar_date,info,0,2026-10-26
+PR,zero_volume_days,info,30,
+PR,rows,info,2648,2016-04-15 -> 2026-10-26; first usable training sample 2016-07-05
+RGLD,nonpositive_price,info,0,
+RGLD,nan_price,info,0,
+RGLD,ohlc_inconsistent,info,0,
+RGLD,identical_close_run_ge5,info,0,
+RGLD,abs_adjret_gt_25pct,info,0,
+RGLD,missing_nyse_sessions,info,0,
+RGLD,non_session_dates,info,0,
+RGLD,last_bar_date,info,0,2026-10-26
+RGLD,zero_volume_days,info,0,
+RGLD,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+RIO,nonpositive_price,info,0,
+RIO,nan_price,info,0,
+RIO,ohlc_inconsistent,info,0,
+RIO,identical_close_run_ge5,info,0,
+RIO,abs_adjret_gt_25pct,info,0,
+RIO,missing_nyse_sessions,info,0,
+RIO,non_session_dates,info,0,
+RIO,last_bar_date,info,0,2026-10-26
+RIO,zero_volume_days,info,0,
+RIO,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+RRC,nonpositive_price,info,0,
+RRC,nan_price,info,0,
+RRC,ohlc_inconsistent,info,0,
+RRC,identical_close_run_ge5,info,0,
+RRC,abs_adjret_gt_25pct,warning,1,2020-03-13:+36.2%:genuine_large_move_no_split
+RRC,missing_nyse_sessions,info,0,
+RRC,non_session_dates,info,0,
+RRC,last_bar_date,info,0,2026-10-26
+RRC,zero_volume_days,info,0,
+RRC,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+SCCO,nonpositive_price,info,0,
+SCCO,nan_price,info,0,
+SCCO,ohlc_inconsistent,info,0,
+SCCO,identical_close_run_ge5,info,0,
+SCCO,abs_adjret_gt_25pct,info,0,
+SCCO,splits_in_history,info,8,2024-08-09:1.005;2024-11-06:1.006;2025-05-02:1.009;2025-08-15:1.01;2025-11-12:1.008;2026-02-10:1.008;2026-05-13:1.01;2026-08-11:1.012
+SCCO,missing_nyse_sessions,info,0,
+SCCO,non_session_dates,info,0,
+SCCO,last_bar_date,info,0,2026-10-26
+SCCO,zero_volume_days,info,0,
+SCCO,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+SIG,nonpositive_price,info,0,
+SIG,nan_price,info,0,
+SIG,ohlc_inconsistent,info,0,
+SIG,identical_close_run_ge5,info,0,
+SIG,abs_adjret_gt_25pct,warning,8,2017-11-21:-30.4%:genuine_large_move_no_split;2019-09-05:+26.9%:genuine_large_move_no_split;2020-01-16:+40.2%:genuine_large_move_no_split;2020-03-16:-25.5%:genuine_large_move_no_split;2020-03-18:-33.0%:genuine_large_move_no_split;2020-03-26:+29.9%:genuine_large_move_no_split;2020-05-08:+26.9%:genuine_large_move_no_split;2020-06-03:+26.3%:genuine_large_move_no_split
+SIG,missing_nyse_sessions,info,0,
+SIG,non_session_dates,info,0,
+SIG,last_bar_date,info,0,2026-10-26
+SIG,zero_volume_days,info,0,
+SIG,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+SIL,nonpositive_price,info,0,
+SIL,nan_price,info,0,
+SIL,ohlc_inconsistent,info,0,
+SIL,identical_close_run_ge5,info,0,
+SIL,abs_adjret_gt_25pct,info,0,
+SIL,splits_in_history,info,1,2015-11-18:0.3333333333333333
+SIL,missing_nyse_sessions,info,0,
+SIL,non_session_dates,info,0,
+SIL,last_bar_date,info,0,2026-10-26
+SIL,zero_volume_days,info,0,
+SIL,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+SILJ,nonpositive_price,info,0,
+SILJ,nan_price,info,0,
+SILJ,ohlc_inconsistent,info,0,
+SILJ,identical_close_run_ge5,info,0,
+SILJ,abs_adjret_gt_25pct,info,0,
+SILJ,missing_nyse_sessions,info,0,
+SILJ,non_session_dates,info,0,
+SILJ,last_bar_date,info,0,2026-10-26
+SILJ,zero_volume_days,info,5,
+SILJ,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+SLB,nonpositive_price,info,0,
+SLB,nan_price,info,0,
+SLB,ohlc_inconsistent,info,0,
+SLB,identical_close_run_ge5,info,0,
+SLB,abs_adjret_gt_25pct,warning,1,2020-03-09:-27.4%:genuine_large_move_no_split
+SLB,missing_nyse_sessions,info,0,
+SLB,non_session_dates,info,0,
+SLB,last_bar_date,info,0,2026-10-26
+SLB,zero_volume_days,info,0,
+SLB,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+SLV,nonpositive_price,info,0,
+SLV,nan_price,info,0,
+SLV,ohlc_inconsistent,info,0,
+SLV,identical_close_run_ge5,info,0,
+SLV,abs_adjret_gt_25pct,warning,1,2026-01-30:-28.5%:genuine_large_move_no_split
+SLV,missing_nyse_sessions,info,0,
+SLV,non_session_dates,info,0,
+SLV,last_bar_date,info,0,2026-10-26
+SLV,zero_volume_days,info,0,
+SLV,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+SPY,nonpositive_price,info,0,
+SPY,nan_price,info,0,
+SPY,ohlc_inconsistent,info,0,
+SPY,identical_close_run_ge5,info,0,
+SPY,abs_adjret_gt_25pct,info,0,
+SPY,missing_nyse_sessions,info,0,
+SPY,non_session_dates,info,0,
+SPY,last_bar_date,info,0,2026-10-26
+SPY,zero_volume_days,info,0,
+SPY,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+SQM,nonpositive_price,info,0,
+SQM,nan_price,info,0,
+SQM,ohlc_inconsistent,info,0,
+SQM,identical_close_run_ge5,info,0,
+SQM,abs_adjret_gt_25pct,info,0,
+SQM,splits_in_history,info,1,2016-04-27:1.027
+SQM,missing_nyse_sessions,info,0,
+SQM,non_session_dates,info,0,
+SQM,last_bar_date,info,0,2026-10-26
+SQM,zero_volume_days,info,0,
+SQM,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+STLD,nonpositive_price,info,0,
+STLD,nan_price,info,0,
+STLD,ohlc_inconsistent,info,0,
+STLD,identical_close_run_ge5,info,0,
+STLD,abs_adjret_gt_25pct,info,0,
+STLD,missing_nyse_sessions,info,0,
+STLD,non_session_dates,info,0,
+STLD,last_bar_date,info,0,2026-10-26
+STLD,zero_volume_days,info,0,
+STLD,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+SU,nonpositive_price,info,0,
+SU,nan_price,info,0,
+SU,ohlc_inconsistent,info,0,
+SU,identical_close_run_ge5,info,0,
+SU,abs_adjret_gt_25pct,info,0,
+SU,missing_nyse_sessions,info,0,
+SU,non_session_dates,info,0,
+SU,last_bar_date,info,0,2026-10-26
+SU,zero_volume_days,info,0,
+SU,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+TSLA,nonpositive_price,info,0,
+TSLA,nan_price,info,0,
+TSLA,ohlc_inconsistent,info,0,
+TSLA,identical_close_run_ge5,info,0,
+TSLA,abs_adjret_gt_25pct,info,0,
+TSLA,splits_in_history,info,2,2020-08-31:5.0;2022-08-25:3.0
+TSLA,missing_nyse_sessions,info,0,
+TSLA,non_session_dates,info,0,
+TSLA,last_bar_date,info,0,2026-10-26
+TSLA,zero_volume_days,info,0,
+TSLA,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+TSN,nonpositive_price,info,0,
+TSN,nan_price,info,0,
+TSN,ohlc_inconsistent,info,0,
+TSN,identical_close_run_ge5,info,0,
+TSN,abs_adjret_gt_25pct,info,0,
+TSN,missing_nyse_sessions,info,0,
+TSN,non_session_dates,info,0,
+TSN,last_bar_date,info,0,2026-10-26
+TSN,zero_volume_days,info,0,
+TSN,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+UEC,nonpositive_price,info,0,
+UEC,nan_price,info,0,
+UEC,ohlc_inconsistent,info,0,
+UEC,identical_close_run_ge5,warning,1,2016-11-11x7(zero-vol 0)
+UEC,abs_adjret_gt_25pct,warning,5,2015-06-19:-25.6%:genuine_large_move_no_split;2019-07-12:-25.7%:genuine_large_move_no_split;2020-03-12:-25.5%:genuine_large_move_no_split;2020-03-13:+36.8%:genuine_large_move_no_split;2020-03-17:+30.4%:genuine_large_move_no_split
+UEC,missing_nyse_sessions,info,0,
+UEC,non_session_dates,info,0,
+UEC,last_bar_date,info,0,2026-10-26
+UEC,zero_volume_days,info,0,
+UEC,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+URA,nonpositive_price,info,0,
+URA,nan_price,info,0,
+URA,ohlc_inconsistent,info,0,
+URA,identical_close_run_ge5,info,0,
+URA,abs_adjret_gt_25pct,info,0,
+URA,splits_in_history,info,1,2015-11-18:0.5
+URA,missing_nyse_sessions,info,0,
+URA,non_session_dates,info,0,
+URA,last_bar_date,info,0,2026-10-26
+URA,zero_volume_days,info,0,
+URA,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+URNM,nonpositive_price,info,0,
+URNM,nan_price,info,0,
+URNM,ohlc_inconsistent,info,0,
+URNM,identical_close_run_ge5,info,0,
+URNM,abs_adjret_gt_25pct,info,0,
+URNM,splits_in_history,info,1,2022-12-21:2.0
+URNM,missing_nyse_sessions,info,0,
+URNM,non_session_dates,info,0,
+URNM,last_bar_date,info,0,2026-10-26
+URNM,zero_volume_days,info,1,
+URNM,rows,info,1732,2019-12-04 -> 2026-10-26; first usable training sample 2020-01-06
+USO,nonpositive_price,info,0,
+USO,nan_price,info,0,
+USO,ohlc_inconsistent,info,0,
+USO,identical_close_run_ge5,info,0,
+USO,abs_adjret_gt_25pct,warning,2,2020-03-09:-25.3%:genuine_large_move_no_split;2020-04-21:-25.1%:genuine_large_move_no_split
+USO,splits_in_history,info,1,2020-04-29:0.125
+USO,missing_nyse_sessions,info,0,
+USO,non_session_dates,info,0,
+USO,last_bar_date,info,0,2026-10-26
+USO,zero_volume_days,info,0,
+USO,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+UUUU,nonpositive_price,info,0,
+UUUU,nan_price,info,0,
+UUUU,ohlc_inconsistent,info,0,
+UUUU,identical_close_run_ge5,info,0,
+UUUU,abs_adjret_gt_25pct,warning,2,2016-09-15:-25.6%:genuine_large_move_no_split;2019-07-12:-36.5%:genuine_large_move_no_split
+UUUU,missing_nyse_sessions,info,0,
+UUUU,non_session_dates,info,0,
+UUUU,last_bar_date,info,0,2026-10-26
+UUUU,zero_volume_days,info,0,
+UUUU,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+VALE,nonpositive_price,info,0,
+VALE,nan_price,info,0,
+VALE,ohlc_inconsistent,info,0,
+VALE,identical_close_run_ge5,info,0,
+VALE,abs_adjret_gt_25pct,info,0,
+VALE,missing_nyse_sessions,info,0,
+VALE,non_session_dates,info,0,
+VALE,last_bar_date,info,0,2026-10-26
+VALE,zero_volume_days,info,0,
+VALE,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+VLO,nonpositive_price,info,0,
+VLO,nan_price,info,0,
+VLO,ohlc_inconsistent,info,0,
+VLO,identical_close_run_ge5,info,0,
+VLO,abs_adjret_gt_25pct,warning,1,2020-11-09:+31.2%:genuine_large_move_no_split
+VLO,missing_nyse_sessions,info,0,
+VLO,non_session_dates,info,0,
+VLO,last_bar_date,info,0,2026-10-26
+VLO,zero_volume_days,info,0,
+VLO,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+VST,nonpositive_price,info,0,
+VST,nan_price,info,0,
+VST,ohlc_inconsistent,info,0,
+VST,identical_close_run_ge5,info,0,
+VST,abs_adjret_gt_25pct,warning,1,2025-01-27:-28.3%:genuine_large_move_no_split
+VST,missing_nyse_sessions,info,0,
+VST,non_session_dates,info,0,
+VST,last_bar_date,info,0,2026-10-26
+VST,zero_volume_days,info,1,
+VST,rows,info,2528,2016-10-05 -> 2026-10-26; first usable training sample 2017-01-03
+WPM,nonpositive_price,info,0,
+WPM,nan_price,info,0,
+WPM,ohlc_inconsistent,info,0,
+WPM,identical_close_run_ge5,info,0,
+WPM,abs_adjret_gt_25pct,info,0,
+WPM,missing_nyse_sessions,info,0,
+WPM,non_session_dates,info,0,
+WPM,last_bar_date,info,0,2026-10-26
+WPM,zero_volume_days,info,0,
+WPM,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+XLE,nonpositive_price,info,0,
+XLE,nan_price,info,0,
+XLE,ohlc_inconsistent,info,0,
+XLE,identical_close_run_ge5,info,0,
+XLE,abs_adjret_gt_25pct,info,0,
+XLE,splits_in_history,info,1,2025-12-05:2.0
+XLE,missing_nyse_sessions,info,0,
+XLE,non_session_dates,info,0,
+XLE,last_bar_date,info,0,2026-10-26
+XLE,zero_volume_days,info,0,
+XLE,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+XME,nonpositive_price,info,0,
+XME,nan_price,info,0,
+XME,ohlc_inconsistent,info,0,
+XME,identical_close_run_ge5,info,0,
+XME,abs_adjret_gt_25pct,info,0,
+XME,missing_nyse_sessions,info,0,
+XME,non_session_dates,info,0,
+XME,last_bar_date,info,0,2026-10-26
+XME,zero_volume_days,info,0,
+XME,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+XOM,nonpositive_price,info,0,
+XOM,nan_price,info,0,
+XOM,ohlc_inconsistent,info,0,
+XOM,identical_close_run_ge5,info,0,
+XOM,abs_adjret_gt_25pct,info,0,
+XOM,missing_nyse_sessions,info,0,
+XOM,non_session_dates,info,0,
+XOM,last_bar_date,info,0,2026-10-26
+XOM,zero_volume_days,info,0,
+XOM,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02
+XOP,nonpositive_price,info,0,
+XOP,nan_price,info,0,
+XOP,ohlc_inconsistent,info,0,
+XOP,identical_close_run_ge5,info,0,
+XOP,abs_adjret_gt_25pct,warning,1,2020-03-09:-36.9%:genuine_large_move_no_split
+XOP,splits_in_history,info,1,2020-03-30:0.25
+XOP,missing_nyse_sessions,info,0,
+XOP,non_session_dates,info,0,
+XOP,last_bar_date,info,0,2026-10-26
+XOP,zero_volume_days,info,0,
+XOP,rows,info,3035,2014-10-01 -> 2026-10-26; first usable training sample 2014-10-02

@@ -1,0 +1,992 @@
+{
+ "AA": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:28:49+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "2675ceea1979427b384a256bd80b67eecace8b209e68a80c51ca2a642687e4c4",
+  "error": ""
+ },
+ "ADM": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:28:50+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "282dc1a698f4a2de83475bf1eee0a26d7ee9be7baf7db59244e36d7eaebbe218",
+  "error": ""
+ },
+ "AEM": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:28:50+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "887b93d0dd39970f8eb2c26ee30af05ba1fafd190a2f45944d27c2eeb6907f90",
+  "error": ""
+ },
+ "AEP": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:28:51+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "76c1f8bd6c9b3026c577ab57bbd4aa8ef9d10367b9b9fe43da5f6a7c51bbd77f",
+  "error": ""
+ },
+ "AGCO": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:28:51+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "ca7a35f63a30b66f939a8d2d6e88c6b6f876b54f28c6840208311b0c4a0781a5",
+  "error": ""
+ },
+ "ALB": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:28:51+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "0f9acd921a405e2f4070aa767c87b761054bf724279439d3bbcbfbf4d48e562d",
+  "error": ""
+ },
+ "AMR": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:28:52+00:00",
+  "status": "ok",
+  "rows": 1436,
+  "first": "2021-02-08",
+  "last": "2026-10-26",
+  "sha256": "7f24db1d31f5a2c517c39ac1dcaa91da7c623827abd4874e11aa8770178966c4",
+  "error": ""
+ },
+ "AR": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:28:52+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "a8b4e63a86b42872428ce309498b6b6dda33dc74ce8edbbb6a26196357dee390",
+  "error": ""
+ },
+ "B": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:28:53+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "c94045a5db1fe6fc5b418427633412f8d20d3f8b83aeb63dbf2126a4923ebe21",
+  "error": ""
+ },
+ "BALL": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:28:53+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "17fbcb0213d4b7eb22ea0b3d28ae57766f765a31d6715822c89115c24eaaa854",
+  "error": ""
+ },
+ "BG": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:28:54+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "8966f6e968152b9d3e88fb1355112c3d5aae3babec4b2d4ab481a55c13892c14",
+  "error": ""
+ },
+ "BHP": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:28:54+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "dfcb4b7457801768ba97235c5da69125b3b6c6c08af621b8d342672863cb9ef1",
+  "error": ""
+ },
+ "BNO": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:28:54+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "680e080b8e19f5255623a286cb591da089e80718f6d296beac7fe405b15d4de3",
+  "error": ""
+ },
+ "BTU": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:28:55+00:00",
+  "status": "ok",
+  "rows": 2405,
+  "first": "2017-04-03",
+  "last": "2026-10-26",
+  "sha256": "49541008f889bfcc6c52151a7f32a309c7b13a2ca07d16ae1796af52d2026ab4",
+  "error": ""
+ },
+ "CAT": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:28:55+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "ef412769e925987af73b5f627cc06d4c0c8e986c1b6f3a17dafe863525143209",
+  "error": ""
+ },
+ "CCJ": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:28:56+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "4ace394597f7c34247ec07d32cd7fe3ceaf7b105b1d92bebacb67fcb21253c6c",
+  "error": ""
+ },
+ "CEG": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:28:56+00:00",
+  "status": "ok",
+  "rows": 1197,
+  "first": "2022-01-19",
+  "last": "2026-10-26",
+  "sha256": "93eac557525070944312834d81877a7e740921cec567ce16e7d971efc0d7a603",
+  "error": ""
+ },
+ "CENX": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:28:57+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "670584edb92d3cf9373a59c8042eb8370b1613b0b515856c8d2b2c1a63236532",
+  "error": ""
+ },
+ "CF": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:28:57+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "a48a5e3ecda4fe2cd49ba09be1cb11e0a15d8c842139623895f2718392444f18",
+  "error": ""
+ },
+ "CLF": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:28:57+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "e0c5b813bacef7d640eb5db24fa72b06bc4ba26ec8bf84da8408449d46000af3",
+  "error": ""
+ },
+ "CNR": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:28:58+00:00",
+  "status": "ok",
+  "rows": 2248,
+  "first": "2017-11-14",
+  "last": "2026-10-26",
+  "sha256": "805c4cf64f3e86fa1bd7501837c974bed21077f1d2a95764e5b4552125ac20a6",
+  "error": ""
+ },
+ "CNX": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:28:58+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "6933212edb8a51f8c7d373166794b349ed064fcdfa71b96493a7d85687444478",
+  "error": ""
+ },
+ "COPX": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:28:59+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "a8b75628ddfad769161f8f0b91fdb7198090fd35295852b5e303bb7bfcf4b43d",
+  "error": ""
+ },
+ "CORN": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:28:59+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "237943a06684a9733b079d41e30e5d43b9df5709ef947fe8c0f9b70348ae3992",
+  "error": ""
+ },
+ "CPER": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:28:59+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "a86ce601d168581c5610092b6ff93283f86a5e458058441ce25c0f1b4794ae71",
+  "error": ""
+ },
+ "CRK": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:00+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "00f776a6d5adf087da8cae5c432a97d2ecca8258486895a110a83c871d51bfb0",
+  "error": ""
+ },
+ "CTVA": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:00+00:00",
+  "status": "ok",
+  "rows": 1866,
+  "first": "2019-05-24",
+  "last": "2026-10-26",
+  "sha256": "9de1800aaf8f09fac1a0b73d9a44fbfe9f94b70154654b99610574cacc3a4d22",
+  "error": ""
+ },
+ "CVE": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:01+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "b25b1006993857dab51a61835c522ca6021a905b4cb0343ced94366cee587003",
+  "error": ""
+ },
+ "CVX": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:01+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "0a109fdc00cfd2243ee51aeca79d6049b7a19006608f99c1f877a796099dfa41",
+  "error": ""
+ },
+ "DBA": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:01+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "3e47e6b363c6a983f44d330979830e72c0353ff63a2455cd03d369232bcfb223",
+  "error": ""
+ },
+ "DE": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:02+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "a3c5cf5de0c72040df51959c2c9d4abd9f8d486721aaf734ea725759cb8bb413",
+  "error": ""
+ },
+ "DHT": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:02+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "782921d4203028cc9f4492a2dbb0e57d62fcaa61b73de34a02e0ca36ace32a29",
+  "error": ""
+ },
+ "DNN": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:03+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "bb89eb0a6a020de90a15722a00f09935f0000004ac182cb10405d60f1b475ef0",
+  "error": ""
+ },
+ "DOW": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:03+00:00",
+  "status": "ok",
+  "rows": 1912,
+  "first": "2019-03-20",
+  "last": "2026-10-26",
+  "sha256": "f701a266b96748faa34cb0b92aa85f0ee853588b2562ec5640c3d569f7f0aa29",
+  "error": ""
+ },
+ "EPD": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:04+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "a29807d7b79a46f5a023d9ae3f58d36dc37beb52d8566608233e020e71fc73dc",
+  "error": ""
+ },
+ "EQT": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:04+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "02a453495daea1ff0e7de02da2e5574089c7ac08f6306eb4977b8ab8431133aa",
+  "error": ""
+ },
+ "ET": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:05+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "9223a61775ec3fcfeb4506c137fdc7c504a72a73aa974783278ea816c796cfa1",
+  "error": ""
+ },
+ "FANG": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:05+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "aa43405c97cc49f90104bab65d47d69c69ad41c4a7cd30a15f83ff0a7bcac272",
+  "error": ""
+ },
+ "FCX": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:05+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "4a253e2d825b960f3b633f2f520c39f1ded4b936c96748560bdba8c760e3923f",
+  "error": ""
+ },
+ "FMC": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:06+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "e3a38358407533d0a9c4308b8f5af39ab505d3bdace8a65e1c899245a8955713",
+  "error": ""
+ },
+ "FNV": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:06+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "ff6e9f049ef50763b26bd831018c8304900368f383deae7a517dd9f2ef08e12f",
+  "error": ""
+ },
+ "FRO": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:07+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "ea2fd775193272e60ead7cb5d4f9c727d1f7ab47c158282317d28033f327ec74",
+  "error": ""
+ },
+ "GDX": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:07+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "7bac72121db0dec2a80eff792ea3b1cb8196a6adefbcb596fb84f55759364b93",
+  "error": ""
+ },
+ "GDXJ": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:07+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "1d415424f4bee8001b61dae3670eb398f421aa4eead636b7076208ba57cf03d5",
+  "error": ""
+ },
+ "GLD": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:08+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "ef75c5970d720c60c91e8479cf806f7d96a1b259145702973644125eacedfaf0",
+  "error": ""
+ },
+ "GM": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:08+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "4a9f48384bd0b65726e474586486d58b0b318274e69da597397ed85dad507aaf",
+  "error": ""
+ },
+ "GPRE": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:09+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "bcc66a1580580ac416ed608309940eb3cf6b3205d1c40f76d6c469ab29a5d7ac",
+  "error": ""
+ },
+ "HAL": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:09+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "3510e7748a7e734d83ad43579413d84aa32d957e301f64278a855e8aafb092f6",
+  "error": ""
+ },
+ "HBM": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:10+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "b364998c4c4cf80fabc721ec4c2716108d42b121c5badf1e4c675d75367c3bec",
+  "error": ""
+ },
+ "HCC": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:10+00:00",
+  "status": "ok",
+  "rows": 2397,
+  "first": "2017-04-13",
+  "last": "2026-10-26",
+  "sha256": "231b141002c21af5a787bf27f3d39897c8a89d366bcf6752e8837c65266d0862",
+  "error": ""
+ },
+ "HL": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:11+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "dbb620cfb1c4b595a6f9a7d8814a30c0e147098e0da0cc6b707d581960c8bf0d",
+  "error": ""
+ },
+ "JETS": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:11+00:00",
+  "status": "ok",
+  "rows": 2890,
+  "first": "2015-04-30",
+  "last": "2026-10-26",
+  "sha256": "6b8bdf8eaa51d7aa4c5d35a2b585d61949dd9fd4ad246874252ca7709a0ebe22",
+  "error": ""
+ },
+ "LEU": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:11+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "11f78d4caf185f972942ba63c0c341dcbafd568378e1c10fd93b01a5682bf377",
+  "error": ""
+ },
+ "LXU": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:12+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "dc7cfd89d00e5af9e8f2b78c3cbe3b2409112108981d5e2c600fc011d09a2a55",
+  "error": ""
+ },
+ "LYB": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:12+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "882d4dff3507e9b0eb46f28fc8254902185d6b2ba098c5f0f4ce7b7fcda34a00",
+  "error": ""
+ },
+ "MOO": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:13+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "b2f7bfa092e392fcb2c7ac6545eac7c6ff978117cd1822203befbd32086ce907",
+  "error": ""
+ },
+ "MOS": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:13+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "ce3ca56a16c2d1877c4e6ab924305857f4d6b5537d5a56ccdb136a541c804391",
+  "error": ""
+ },
+ "MP": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:13+00:00",
+  "status": "ok",
+  "rows": 1595,
+  "first": "2020-06-22",
+  "last": "2026-10-26",
+  "sha256": "490d8abdb5bc449aaf94db6fbd8cd771bc150e8b76a3dc6ec61f4399431ffcfd",
+  "error": ""
+ },
+ "MPC": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:14+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "096482affa0977541fae3019297ad41670dfacca4d0dfc03ea0840d91a7099d6",
+  "error": ""
+ },
+ "MT": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:14+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "57033044067677b6958987851b62cb886e3bbca8f4b523f53c4f7a49155f910f",
+  "error": ""
+ },
+ "MTDR": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:15+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "86298995462e8df318b106b8c2c47cfb220e9a730ec61d11da44b60cefb65bf3",
+  "error": ""
+ },
+ "NEM": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:15+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "715c8cf9c9776f6b54cd6ba09c33437ec138f3ab2941fbeb0aef4e5e1766167b",
+  "error": ""
+ },
+ "NTR": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:15+00:00",
+  "status": "ok",
+  "rows": 2216,
+  "first": "2018-01-02",
+  "last": "2026-10-26",
+  "sha256": "f2e3a099ff508e49cd2252eaaf74eea5a3f7179f87195759ed34425182acf4d5",
+  "error": ""
+ },
+ "NUE": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:16+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "0c00ba9c0c4dd1bb5fe71a41f07aa407582bd034bd15397938b0025d1c278380",
+  "error": ""
+ },
+ "NXE": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:16+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "2b87f6a062279366282fe2045de0115665ec3e5de8ab375e2cc8858658f67b30",
+  "error": ""
+ },
+ "OIH": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:17+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "2239ac1a42a85e4445f001a4ec74a498b5e28a4a28884f31b456bc520b4b9239",
+  "error": ""
+ },
+ "PAAS": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:17+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "6e29b766bf544492a6c757cc1c52dbe446c83ea5237f0ba3da4872d3db8c3503",
+  "error": ""
+ },
+ "PALL": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:18+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "f3146b9e839ce0faab1391acc5639b3d3e32f48126220b97df222e0e1d1fd681",
+  "error": ""
+ },
+ "PPC": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:18+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "a5d2fd67f7776dd1a09a3313c08b1d3f2006d684e31882976c836bb34c986fb9",
+  "error": ""
+ },
+ "PPLT": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:18+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "7f7b40f5b488229253e57f1afe6b436e213df76de8e254df71bdd85029e70ed9",
+  "error": ""
+ },
+ "PR": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:19+00:00",
+  "status": "ok",
+  "rows": 2648,
+  "first": "2016-04-15",
+  "last": "2026-10-26",
+  "sha256": "544323336f3224d5ff0d10773505ca797bacee35c272780dff264ae592aff740",
+  "error": ""
+ },
+ "RGLD": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:19+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "cc6ed283436a5ecb4bca150f3bc7ab5e128d839d905d6e6b26f2321803042a96",
+  "error": ""
+ },
+ "RIO": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:20+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "f51233fa3c67a274660153804475569b682b6e16e73284242c77360f92990b21",
+  "error": ""
+ },
+ "RRC": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:20+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "cc12033d192502965d8502e5a2e9fb067abe6880ad4b7b613bb615cabd3ed728",
+  "error": ""
+ },
+ "SCCO": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:21+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "f5de8d4c69e9ec7334afb8ca2180dc3b7414064169f101a7b261fac794839f2d",
+  "error": ""
+ },
+ "SIG": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:21+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "c693ac41b6479337570d83c76e871a3bc8c08110e61b65d54a0d95e5b61d041d",
+  "error": ""
+ },
+ "SIL": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:21+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "189ba3fbee81c781a90f78b0f7cbfd69d90ae5c993fca76a0f0f0f470f16466e",
+  "error": ""
+ },
+ "SILJ": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:22+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "18c13bfaa2b54899a9d1b326f23318d5ec724f3a3b8350f75ef467f66df2f414",
+  "error": ""
+ },
+ "SLB": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:22+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "52a1a05a0ca22d4ed384400fd12ce372ebded00419f3ad9f0160dc75d7cae014",
+  "error": ""
+ },
+ "SLV": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:23+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "07f2fe2e8ed324512eca62d29bb1a580d20d58fe0292854be841840d3ba824b0",
+  "error": ""
+ },
+ "SPY": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:23+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "dd19f200866d5e6805f95a82253e2efb7399bf64fc6cf28f4eae0e50b3b1013e",
+  "error": ""
+ },
+ "SQM": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:23+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "7e14b9301936acfe6e54f7394ed436b664461bb05571c102c5059d3a427bbb70",
+  "error": ""
+ },
+ "STLD": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:24+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "463f92f74bd177c08ab1058f298aa6c7dfd859e5123611cba8c092717569346c",
+  "error": ""
+ },
+ "SU": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:24+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "0a2939a4293ea4e00f94f6aa0c1594bb2516ae9a2b20406c6ade811d8757ee86",
+  "error": ""
+ },
+ "TSLA": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:25+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "ffa4ad00b8f72596882253e6d02bc36310450968cc85d4e3377cfa160ea50e36",
+  "error": ""
+ },
+ "TSN": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:25+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "a175162bdce72ce56a1e96e4aaaeae2e1dfa54f9405f4f9fdd26647e444e74df",
+  "error": ""
+ },
+ "UEC": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:25+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "a0b1f2e20cf6a3a7f882fbab449aa01f43616592839dce5a8b90314efe16798b",
+  "error": ""
+ },
+ "URA": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:26+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "78ea45e0e37a75efd9757b7daea050d58fb38f943c8f05379119640dd9cb27c8",
+  "error": ""
+ },
+ "URNM": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:26+00:00",
+  "status": "ok",
+  "rows": 1732,
+  "first": "2019-12-04",
+  "last": "2026-10-26",
+  "sha256": "e5033739b86d0e8375f89f8490cdae52eeb017791b8d7ea599871fd088a801a7",
+  "error": ""
+ },
+ "USO": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:27+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "a2418d31d901cb49eef6eccd18fd1df1c4ff4a54d1eb6c4adaf0cd536cc0f112",
+  "error": ""
+ },
+ "UUUU": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:27+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "c2e3973e1675fee70924ae062363f1010f7c137a147d89a3f5fd2635551b38df",
+  "error": ""
+ },
+ "VALE": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:27+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "58c32552e9ffc251b13934e03652ba5b2ab23d49b1554ff6d4e3f3e319048437",
+  "error": ""
+ },
+ "VLO": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:28+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "983efcc30f593743dc0514468c427cad6969b61a3810e611b6aaa2c0baaacfe2",
+  "error": ""
+ },
+ "VST": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:28+00:00",
+  "status": "ok",
+  "rows": 2528,
+  "first": "2016-10-05",
+  "last": "2026-10-26",
+  "sha256": "1652a5ff22973348435e125ae636444562b7e61f5d92dcd0c2eca6e211a0def3",
+  "error": ""
+ },
+ "WPM": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:29+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "614b14299928e4be02cbc70c16b2b3c0de5e478c5986bbcd168b563b394d8334",
+  "error": ""
+ },
+ "XLE": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:29+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "0da71a9d16e0dc702f73f65b7762ba0a6b7ca4fbe16db98b50c47d468f93839f",
+  "error": ""
+ },
+ "XME": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:29+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "9c4fd93cb7e4d91d29e38c161d192b87ce72b191d1d32856acdfb3fafbf4b9e3",
+  "error": ""
+ },
+ "XOM": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:30+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "f39a574d555fcbaca90587dbd8ffd1528d31ebc9a2b70bb60c0d40591d58685d",
+  "error": ""
+ },
+ "XOP": {
+  "source": "yfinance",
+  "download_utc": "2026-10-27T05:29:30+00:00",
+  "status": "ok",
+  "rows": 3035,
+  "first": "2014-10-01",
+  "last": "2026-10-26",
+  "sha256": "d2c31ce2cd0258442c7ede6f739c378da4a857daabef1fc99f3fa362bbd2f83b",
+  "error": ""
+ }
+}

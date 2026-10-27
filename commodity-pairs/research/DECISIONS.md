@@ -62,3 +62,24 @@ All of these were fixed **before any backtest results were seen**, so none of th
   - every Rule (a) threshold, measured on Jan 2022 → present only;
   - plus an explicit economic reason the relationship changed.
 - Pairs that only worked before COVID are rejected.
+
+## Post-audit engine fix (made AFTER the first results were seen, disclosed here)
+**What the review found.** A few trials showed impossible numbers: single-day returns of −3,300% and +1,700%, and a 90-day gain of 41,000% at nominal 1x gross. The price data was correct; the cause was the engine's account handling.
+- The engine held share counts constant while a losing trade's equity collapsed, so effective leverage grew without limit. PAAS/HL reached about 2,400× gross exposure to equity.
+- The z-score stop rarely fires on a trending spread, because the 60-day rolling mean follows the trend. So nothing closed these trades.
+- Once equity went negative, new trades were sized from negative equity, which flipped their direction.
+- A real margin account would have been liquidated long before any of this happened.
+
+**The fix applies identically to every trial, the random baseline and the live simulator:**
+- **Margin call:** if equity at the close is below 25% of gross position value, the position is liquidated at the next open. 25% is the FINRA Rule 4210 minimum maintenance requirement. The rule then goes flat and, for spread rules, disarms as it would after a stop.
+- **Ruin:** if equity is ≤ 0, the position is liquidated, the account never trades again, and the loss is capped at −100%.
+- Code: `walkforward.account_check` and `strategies.force_flat`. Tests: `tests/test_account_risk.py`.
+
+**Why this is not tuning:**
+- It never touches a signal parameter.
+- It only acts in catastrophic states.
+- It was applied to all 223 trials and the random baseline, and everything was re-run.
+- **The pass/fail outcome did not change:** 0 of 223 before and after.
+- The pre-fix gates are kept as `backtest/results/gates_pre_fix.csv` (sha256 `fff7d23dc8d10c85a07943de03cd91527045c3fa36a7e7a23edbbd7f68ec7d99`; 0 of 223 passed). The post-fix hash is in `backtest/results/RESULTS_HASH.txt`.
+
+**Known weakness, left unchanged:** the pre-registered z-score stop (|z| ≥ 3.5 on a 60-day rolling window) rarely triggers on a spread that keeps trending. That is a property of the rule as pre-registered. Changing it now, after seeing results, would be tuning.
