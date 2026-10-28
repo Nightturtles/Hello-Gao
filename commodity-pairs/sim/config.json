@@ -1,0 +1,226 @@
+{
+ "capital_per_pick": 100000.0,
+ "created_utc": "2026-10-28T23:33:00Z",
+ "end": "2026-12-02",
+ "picks": [
+  {
+   "backtest": {
+    "dsr_full": 0.04430521108,
+    "dsr_post": 0.07456000887,
+    "full_maxdd": 0.1779071763,
+    "full_round_trips": 25,
+    "full_sharpe": 0.6659470923,
+    "post_sharpe": 0.9418514578
+   },
+   "backtest_daily_returns_path": "backtest/results/trials/NTR_DE__coint_ols.csv.gz",
+   "backtest_trades_path": "backtest/results/trials/NTR_DE__coint_ols_trades.csv",
+   "borrow_rate": {
+    "DE": 0.005,
+    "NTR": 0.005
+   },
+   "fail_reasons": "rule(a) fails: full Sharpe 0.666 < 1.0; BH p full 0.7772 >= 0.05; BH p post 1.0000 >= 0.05; DSR full 0.044 < 0.95; coverage 0.676 < 0.8 || rule(b) fails: post Sharpe 0.942 < 1.0; BH p post 1.0000 >= 0.05; DSR post 0.075 < 0.95",
+   "group": "agriculture",
+   "leg_a": "NTR",
+   "leg_b": "DE",
+   "pair_id": "NTR_DE",
+   "params": {
+    "beta_max": 5.0,
+    "beta_min": 0.2,
+    "kalman_delta": 0.0001,
+    "kalman_p0": 0.01,
+    "kalman_ve": 0.001,
+    "ll_kmax": 10,
+    "ll_tmin": 2.0,
+    "ll_zx": 1.0,
+    "rot_lookback": 20,
+    "z_entry": 2.0,
+    "z_rearm": 2.0,
+    "z_stop": 3.5,
+    "z_window": 60
+   },
+   "pick_id": "pick_1",
+   "rule": "coint_ols",
+   "slippage_bps": {
+    "DE": 5.0,
+    "NTR": 10.0
+   },
+   "status": "FAILED_THE_BAR"
+  },
+  {
+   "backtest": {
+    "dsr_full": 3.166568056e-05,
+    "dsr_post": 0.05482642877,
+    "full_maxdd": 0.7568473255,
+    "full_round_trips": 235,
+    "full_sharpe": 0.0496811808,
+    "post_sharpe": 0.8741653817
+   },
+   "backtest_daily_returns_path": "backtest/results/trials/RRC_CRK__rotation.csv.gz",
+   "backtest_trades_path": "backtest/results/trials/RRC_CRK__rotation_trades.csv",
+   "borrow_rate": {
+    "CRK": 0.03,
+    "RRC": 0.005
+   },
+   "fail_reasons": "rule(a) fails: full Sharpe 0.050 < 1.0; full maxDD 0.757 > 0.2; BH p full 1.0000 >= 0.05; BH p post 1.0000 >= 0.05; DSR full 0.000 < 0.95 || rule(b) fails: post Sharpe 0.874 < 1.0; post maxDD 0.272 > 0.2; BH p post 1.0000 >= 0.05; DSR post 0.055 < 0.95",
+   "group": "natgas_coal_chem",
+   "leg_a": "RRC",
+   "leg_b": "CRK",
+   "pair_id": "RRC_CRK",
+   "params": {
+    "beta_max": 5.0,
+    "beta_min": 0.2,
+    "kalman_delta": 0.0001,
+    "kalman_p0": 0.01,
+    "kalman_ve": 0.001,
+    "ll_kmax": 10,
+    "ll_tmin": 2.0,
+    "ll_zx": 1.0,
+    "rot_lookback": 20,
+    "z_entry": 2.0,
+    "z_rearm": 2.0,
+    "z_stop": 3.5,
+    "z_window": 60
+   },
+   "pick_id": "pick_2",
+   "rule": "rotation",
+   "slippage_bps": {
+    "CRK": 10.0,
+    "RRC": 10.0
+   },
+   "status": "FAILED_THE_BAR"
+  },
+  {
+   "backtest": {
+    "dsr_full": 0.0008624819704,
+    "dsr_post": 0.03947248447,
+    "full_maxdd": 0.178956291,
+    "full_round_trips": 145,
+    "full_sharpe": 0.3394604042,
+    "post_sharpe": 0.77899464
+   },
+   "backtest_daily_returns_path": "backtest/results/trials/SLV_SILJ__leadlag.csv.gz",
+   "backtest_trades_path": "backtest/results/trials/SLV_SILJ__leadlag_trades.csv",
+   "borrow_rate": {
+    "SILJ": 0.03,
+    "SLV": 0.005
+   },
+   "fail_reasons": "rule(a) fails: full Sharpe 0.339 < 1.0; post Sharpe 0.779 < 0.8; BH p full 0.2246 >= 0.05; BH p post 1.0000 >= 0.05; DSR full 0.001 < 0.95 || rule(b) fails: post Sharpe 0.779 < 1.0; BH p post 1.0000 >= 0.05; DSR post 0.039 < 0.95",
+   "group": "precious_metals",
+   "leg_a": "SLV",
+   "leg_b": "SILJ",
+   "pair_id": "SLV_SILJ",
+   "params": {
+    "beta_max": 5.0,
+    "beta_min": 0.2,
+    "kalman_delta": 0.0001,
+    "kalman_p0": 0.01,
+    "kalman_ve": 0.001,
+    "ll_kmax": 10,
+    "ll_tmin": 2.0,
+    "ll_zx": 1.0,
+    "rot_lookback": 20,
+    "z_entry": 2.0,
+    "z_rearm": 2.0,
+    "z_stop": 3.5,
+    "z_window": 60
+   },
+   "pick_id": "pick_3",
+   "rule": "leadlag",
+   "slippage_bps": {
+    "SILJ": 10.0,
+    "SLV": 5.0
+   },
+   "status": "FAILED_THE_BAR"
+  },
+  {
+   "backtest": {
+    "dsr_full": 0.03934555519,
+    "dsr_post": 0.008231467401,
+    "full_maxdd": 0.2200933156,
+    "full_round_trips": 52,
+    "full_sharpe": 0.5377448941,
+    "post_sharpe": 0.5132996585
+   },
+   "backtest_daily_returns_path": "backtest/results/trials/YPF_VIST__leadlag.csv.gz",
+   "backtest_trades_path": "backtest/results/trials/YPF_VIST__leadlag_trades.csv",
+   "borrow_rate": {
+    "VIST": 0.03,
+    "YPF": 0.03
+   },
+   "fail_reasons": "rule(a) fails: full Sharpe 0.538 < 1.0; post Sharpe 0.513 < 0.8; full maxDD 0.220 > 0.2; BH p full 0.9279 >= 0.05; BH p post 1.0000 >= 0.05; DSR full 0.039 < 0.95; coverage 0.502 < 0.8 || rule(b) fails: post Sharpe 0.513 < 1.0; post maxDD 0.220 > 0.2; BH p post 1.0000 >= 0.05; DSR post 0.008 < 0.95",
+   "group": "r2_twin_producers",
+   "leg_a": "YPF",
+   "leg_b": "VIST",
+   "pair_id": "YPF_VIST",
+   "params": {
+    "beta_max": 5.0,
+    "beta_min": 0.2,
+    "kalman_delta": 0.0001,
+    "kalman_p0": 0.01,
+    "kalman_ve": 0.001,
+    "ll_kmax": 10,
+    "ll_tmin": 2.0,
+    "ll_zx": 1.0,
+    "rot_lookback": 20,
+    "z_entry": 2.0,
+    "z_rearm": 2.0,
+    "z_stop": 3.5,
+    "z_window": 60
+   },
+   "pick_id": "pick_4",
+   "rule": "leadlag",
+   "slippage_bps": {
+    "VIST": 10.0,
+    "YPF": 10.0
+   },
+   "status": "FAILED_THE_BAR"
+  },
+  {
+   "backtest": {
+    "dsr_full": 0.0005649816251,
+    "dsr_post": 0.02454181493,
+    "full_maxdd": 0.2832924087,
+    "full_round_trips": 45,
+    "full_sharpe": 0.2240165568,
+    "post_sharpe": 0.7029259807
+   },
+   "backtest_daily_returns_path": "backtest/results/trials/ET_EPD__coint_ols.csv.gz",
+   "backtest_trades_path": "backtest/results/trials/ET_EPD__coint_ols_trades.csv",
+   "borrow_rate": {
+    "EPD": 0.03,
+    "ET": 0.03
+   },
+   "fail_reasons": "rule(a) fails: full Sharpe 0.224 < 1.0; post Sharpe 0.703 < 0.8; full maxDD 0.283 > 0.2; BH p full 1.0000 >= 0.05; BH p post 0.9767 >= 0.05; DSR full 0.001 < 0.95 || rule(b) fails: post Sharpe 0.703 < 1.0; BH p post 0.9767 >= 0.05; DSR post 0.025 < 0.95",
+   "group": "crude_refining",
+   "leg_a": "ET",
+   "leg_b": "EPD",
+   "pair_id": "ET_EPD",
+   "params": {
+    "beta_max": 5.0,
+    "beta_min": 0.2,
+    "kalman_delta": 0.0001,
+    "kalman_p0": 0.01,
+    "kalman_ve": 0.001,
+    "ll_kmax": 10,
+    "ll_tmin": 2.0,
+    "ll_zx": 1.0,
+    "rot_lookback": 20,
+    "z_entry": 2.0,
+    "z_rearm": 2.0,
+    "z_stop": 3.5,
+    "z_window": 60
+   },
+   "pick_id": "pick_5",
+   "rule": "coint_ols",
+   "slippage_bps": {
+    "EPD": 10.0,
+    "ET": 10.0
+   },
+   "status": "FAILED_THE_BAR"
+  }
+ ],
+ "picks_source": "sim/picks.json",
+ "start": "2026-11-02",
+ "status": "running",
+ "version": 1
+}

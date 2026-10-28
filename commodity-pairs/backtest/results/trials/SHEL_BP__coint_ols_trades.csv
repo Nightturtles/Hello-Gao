@@ -1,0 +1,45 @@
+entry_date,exit_date,side,entry_reason,exit_reason,net_pnl,holding_days,beta,entry_equity,open_at_end
+2016-11-02,2016-12-29,short A / long B,entry short spread z=3.10,exit z=-0.03 crossed 0,950.5414418,39,1.010685036,100000,False
+2017-02-01,2017-03-13,short A / long B,entry short spread z=2.19,exit z=-0.19 crossed 0,-518.3406167,27,0.8676535499,100950.5414,False
+2017-07-19,2017-10-09,short A / long B,entry short spread z=2.05,exit z=-0.02 crossed 0,-1916.478556,57,0.9194851521,100432.2008,False
+2017-11-01,2017-11-15,long A / short B,entry long spread z=-2.08,exit z=0.18 crossed 0,1376.135951,10,1.047225399,98515.72227,False
+2017-12-06,2018-02-02,short A / long B,entry short spread z=2.17,exit z=-0.07 crossed 0,-539.2761886,39,1.047225399,99891.85822,False
+2018-04-02,2018-04-19,long A / short B,entry long spread z=-2.22,exit z=0.08 crossed 0,913.8739934,13,1.086696479,99352.58203,False
+2018-04-27,2018-07-12,long A / short B,entry long spread z=-2.58,exit z=0.05 crossed 0,-1748.562168,52,1.126317693,100266.456,False
+2018-09-27,2018-10-23,long A / short B,entry long spread z=-2.00,exit z=0.44 crossed 0,1138.470302,18,1.147799426,98517.89386,False
+2018-11-01,2018-11-05,long A / short B,entry long spread z=-2.06,exit z=0.30 crossed 0,491.0179238,2,1.065183527,99656.36416,False
+2018-12-28,2019-01-15,short A / long B,entry short spread z=2.42,exit z=-0.29 crossed 0,143.4375082,11,1.065183527,100147.3821,False
+2019-01-24,2019-02-01,long A / short B,entry long spread z=-2.24,exit z=0.20 crossed 0,1240.18206,6,0.9758466235,100290.8196,False
+2019-02-05,2019-02-06,short A / long B,entry short spread z=2.02,exit z=-0.67 crossed 0,800.8805416,1,0.9758466235,101531.0017,False
+2019-03-08,2019-04-30,long A / short B,entry long spread z=-2.20,exit z=0.52 crossed 0,283.2659592,36,0.9758466235,102331.8822,False
+2019-05-03,2019-08-02,short A / long B,entry short spread z=2.45,exit z=-1.49 crossed 0,-575.1799944,63,0.9060538689,102615.1482,False
+2019-10-30,2019-12-04,short A / long B,entry short spread z=3.02,exit z=-0.64 crossed 0,971.6219801,24,0.7076880655,102039.9682,False
+2019-12-12,2020-01-13,short A / long B,entry short spread z=2.16,exit z=-0.28 crossed 0,558.9668923,20,0.7076880655,103011.5901,False
+2020-01-22,2020-01-31,long A / short B,entry long spread z=-2.18,stop exit |z|=4.22>=3.5,-3334.436083,7,0.7105566428,103570.557,False
+2020-03-04,2020-04-03,long A / short B,entry long spread z=-2.03,exit z=0.00 crossed 0,-1068.118007,22,0.7105566428,100236.1209,False
+2020-04-13,2020-05-01,short A / long B,entry short spread z=2.08,exit z=-0.32 crossed 0,3217.867093,14,1.092776839,99168.00294,False
+2020-08-05,2020-08-25,long A / short B,entry long spread z=-2.80,exit z=0.17 crossed 0,2867.492829,14,1.113386955,102385.87,False
+2020-09-24,2021-01-08,short A / long B,entry short spread z=2.29,exit z=-0.84 crossed 0,-7345.910161,73,1.113386955,105253.3629,False
+2021-02-08,2021-02-23,short A / long B,entry short spread z=2.81,exit z=-0.19 crossed 0,2694.727547,10,1.030927263,97907.4527,False
+2021-07-19,2021-09-20,short A / long B,entry short spread z=2.41,exit z=-0.14 crossed 0,635.6684774,44,1.023032678,100602.1802,False
+2021-10-28,2021-10-29,short A / long B,entry short spread z=4.63,exit z=-0.07 crossed 0,1260.932427,1,1.006379506,101237.8487,False
+2021-11-02,2021-11-03,long A / short B,entry long spread z=-2.50,exit z=0.10 crossed 0,474.4075161,1,1.006379506,102498.7812,False
+2022-01-13,2022-01-27,long A / short B,entry long spread z=-2.08,exit z=0.00 crossed 0,1132.107557,9,1.005318617,102973.1887,False
+2022-02-01,2022-02-25,short A / long B,entry short spread z=2.01,stop exit |z|=3.50>=3.5,-2925.230393,17,1.005318617,104105.2962,False
+2022-03-08,2022-05-04,short A / long B,entry short spread z=2.44,exit z=-0.10 crossed 0,285.4109246,40,1.005318617,101180.0658,False
+2022-06-10,2022-06-29,long A / short B,entry long spread z=-2.18,exit z=0.07 crossed 0,1307.649318,12,1.094921657,101465.4768,False
+2022-08-05,2022-09-27,long A / short B,entry long spread z=-2.04,exit z=0.05 crossed 0,-834.1354552,36,1.146090059,102773.1261,False
+2022-10-26,2023-01-09,long A / short B,entry long spread z=-2.00,exit z=0.21 crossed 0,-436.0179795,50,1.065384981,101938.9906,False
+2023-01-27,2023-02-06,long A / short B,entry long spread z=-2.05,exit z=0.70 crossed 0,1120.986985,6,1.080796084,101502.9726,False
+2023-02-08,2023-02-09,long A / short B,entry long spread z=-3.53,stop exit |z|=4.50>=3.5,-1503.603631,1,1.080796084,102623.9596,False
+2023-05-03,2023-05-05,short A / long B,entry short spread z=3.07,stop exit |z|=4.40>=3.5,-1125.952347,2,0.9881565226,101120.356,False
+2023-09-07,2023-09-13,long A / short B,entry long spread z=-2.11,exit z=0.36 crossed 0,461.4596781,4,0.8782106692,99994.40364,False
+2023-10-06,2023-11-02,short A / long B,entry short spread z=2.07,stop exit |z|=3.65>=3.5,-4470.309099,19,0.8782106692,100455.8633,False
+2024-01-25,2024-03-21,long A / short B,entry long spread z=-2.10,exit z=0.01 crossed 0,979.5657597,39,0.7592332309,95985.55422,False
+2024-04-03,2024-04-08,short A / long B,entry short spread z=2.67,stop exit |z|=3.59>=3.5,-1502.305703,3,0.7592332309,96965.11998,False
+2024-04-18,2024-09-09,short A / long B,entry short spread z=2.15,exit z=-0.13 crossed 0,-4135.480616,98,0.7838658469,95462.81428,False
+2024-10-30,2024-10-31,short A / long B,entry short spread z=4.35,stop exit |z|=4.67>=3.5,-1009.312411,1,0.9467443201,91327.33366,False
+2025-10-23,2025-11-20,short A / long B,entry short spread z=2.41,exit z=-0.05 crossed 0,2041.084623,20,0.287426432,90318.02125,False
+2026-01-09,2026-01-15,long A / short B,entry long spread z=-2.43,exit z=0.39 crossed 0,1929.344051,4,0.287426432,92359.10588,False
+2026-02-11,2026-04-21,short A / long B,entry short spread z=3.01,exit z=-0.04 crossed 0,-2115.03215,47,0.4932783158,94288.44993,False
+2026-07-08,2026-10-26,short A / long B,entry short spread z=2.79,open at end of sample (marked to last close),-5429.065511,77,0.7037955357,92173.41778,True

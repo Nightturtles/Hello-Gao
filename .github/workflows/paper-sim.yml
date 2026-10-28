@@ -1,0 +1,105 @@
+# Daily paper-trading run for commodity-pairs/ (paper only: no brokerage, no real orders).
+#
+# Schedule: 21:30 UTC, Mon-Fri = 1:30pm Pacific Standard Time (2:30pm during PDT).
+# The simulator skips NYSE holidays itself and is idempotent, so a late, repeated
+# or manual run never double-trades.
+# Scheduled workflows only run from the default branch (master).
+#
+# Manual control: Actions tab -> paper-sim -> "Run workflow", then pick a command:
+#   run     process any new sessions (same as the schedule)
+#   status  print the simulation status
+#   stop    stop the simulation and write the final report
+#   extend  move the end date; put "--days 10" or "--until 2026-12-31" in "arg"
+#   report  write the final comparison report now, without stopping
+#   check   fetch the latest bars for every leg and SPY (a data connectivity check; changes nothing)
+#   init    (re)start the simulation; put "--start YYYY-MM-DD" in "arg" (1 month; replaces the current run)
+name: paper-sim
+
+on:
+  schedule:
+    - cron: "30 21 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      command:
+        description: "run | status | stop | extend | report | check | init"
+        required: true
+        default: run
+        type: choice
+        options: [run, status, stop, extend, report, check, init]
+      arg:
+        description: 'extend: "--days N" or "--until YYYY-MM-DD"; init: "--start YYYY-MM-DD"'
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: paper-sim
+  cancel-in-progress: false
+
+jobs:
+  sim:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: commodity-pairs
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+          cache-dependency-path: commodity-pairs/requirements.txt
+
+      - name: Install pinned dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Run simulator
+        env:
+          COMMAND: ${{ github.event_name == 'schedule' && 'run' || inputs.command }}
+          ARG: ${{ inputs.arg }}
+        run: |
+          case "$COMMAND" in
+            run)    python -m sim.run_daily ;;
+            status) python -m sim.ctl status ;;
+            stop)   python -m sim.ctl stop ;;
+            report) python -m sim.ctl report ;;
+            check)  python -m sim.ctl check-data ;;
+            init)
+              if [[ ! "$ARG" =~ ^--start\ [0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+                echo "::error::init needs arg '--start YYYY-MM-DD' (got '$ARG')"; exit 2
+              fi
+              # $ARG is validated above; word-splitting into flag + value is intended.
+              python -m sim.ctl init $ARG --months 1 --force ;;
+            extend)
+              if [[ ! "$ARG" =~ ^--(days\ [0-9]+|until\ [0-9]{4}-[0-9]{2}-[0-9]{2})$ ]]; then
+                echo "::error::extend needs arg '--days N' or '--until YYYY-MM-DD' (got '$ARG')"; exit 2
+              fi
+              # $ARG is validated above; word-splitting into flag + value is intended.
+              python -m sim.ctl extend $ARG ;;
+            *) echo "::error::unknown command '$COMMAND'"; exit 2 ;;
+          esac
+
+      # Runs even if the simulator exited non-zero (e.g. a data error), so the
+      # failure report and error log are committed and visible in the repo.
+      - name: Commit state and reports
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add --all -- sim reports   # sim/state may not exist before the first warm start
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "paper-sim: $(date -u +%Y-%m-%d) ${{ github.event_name }} run"
+          for attempt in 1 2 3 4; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            sleep $((attempt * 5))
+          done
+          echo "::error::could not push state after 4 attempts"; exit 1
