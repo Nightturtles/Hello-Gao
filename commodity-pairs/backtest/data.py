@@ -91,7 +91,9 @@ def _download_one(ticker: str, retries: int = 4) -> tuple[pd.DataFrame | None, s
     return None, last_err
 
 
-def _normalise(h: pd.DataFrame) -> pd.DataFrame:
+def _normalise(h: pd.DataFrame, end: str | None = None) -> pd.DataFrame:
+    """yfinance history -> cache columns, dates tz-naive, capped at `end` (default: the research snapshot end).
+    The live simulator passes its own `end`."""
     h = h.copy()
     idx = pd.DatetimeIndex(h.index)
     if idx.tz is not None:
@@ -108,7 +110,7 @@ def _normalise(h: pd.DataFrame) -> pd.DataFrame:
         "dividends": h["Dividends"].to_numpy() if "Dividends" in h else 0.0,
         "splits": h["Stock Splits"].to_numpy() if "Stock Splits" in h else 0.0,
     })
-    out = out[out["date"] <= pd.Timestamp(config.SNAPSHOT_END)]
+    out = out[out["date"] <= pd.Timestamp(end or config.SNAPSHOT_END)]
     out = out.drop_duplicates("date", keep="last").sort_values("date").reset_index(drop=True)
     return out[CACHE_COLS]
 

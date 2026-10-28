@@ -11,6 +11,8 @@
 #   stop    stop the simulation and write the final report
 #   extend  move the end date; put "--days 10" or "--until 2026-12-31" in "arg"
 #   report  write the final comparison report now, without stopping
+#   check   fetch the latest bars for every leg and SPY (a data connectivity check; changes nothing)
+#   init    (re)start the simulation; put "--start YYYY-MM-DD" in "arg" (1 month; replaces the current run)
 name: paper-sim
 
 on:
@@ -19,13 +21,13 @@ on:
   workflow_dispatch:
     inputs:
       command:
-        description: "run | status | stop | extend | report"
+        description: "run | status | stop | extend | report | check | init"
         required: true
         default: run
         type: choice
-        options: [run, status, stop, extend, report]
+        options: [run, status, stop, extend, report, check, init]
       arg:
-        description: 'Only for extend: "--days N" or "--until YYYY-MM-DD"'
+        description: 'extend: "--days N" or "--until YYYY-MM-DD"; init: "--start YYYY-MM-DD"'
         required: false
         default: ""
 
@@ -67,6 +69,13 @@ jobs:
             status) python -m sim.ctl status ;;
             stop)   python -m sim.ctl stop ;;
             report) python -m sim.ctl report ;;
+            check)  python -m sim.ctl check-data ;;
+            init)
+              if [[ ! "$ARG" =~ ^--start\ [0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]; then
+                echo "::error::init needs arg '--start YYYY-MM-DD' (got '$ARG')"; exit 2
+              fi
+              # $ARG is validated above; word-splitting into flag + value is intended.
+              python -m sim.ctl init $ARG --months 1 --force ;;
             extend)
               if [[ ! "$ARG" =~ ^--(days\ [0-9]+|until\ [0-9]{4}-[0-9]{2}-[0-9]{2})$ ]]; then
                 echo "::error::extend needs arg '--days N' or '--until YYYY-MM-DD' (got '$ARG')"; exit 2

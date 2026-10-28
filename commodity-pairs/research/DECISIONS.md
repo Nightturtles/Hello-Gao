@@ -95,3 +95,14 @@ All of these were fixed **before any backtest results were seen**, so none of th
   - Before adding the rule I scanned all 145 tickers. CHRD is the only one with even a 5× one-day move, so the rule changes nothing else.
   - Round-1 trial files are byte-identical after the re-run.
 - **Result:** 0 of 336 trials pass. Per the approved plan, there will be no third round.
+
+## Paper-trading the near-misses (owner's decision after two rounds with 0 passes)
+- **What the simulator trades.** The owner chose to build the simulator anyway and paper-trade the 5 best near-misses. Every report labels them **FAILED THE BAR**.
+- **Purpose.** The live run is a system check: it tests that the live pipeline reproduces the backtest's signals, timing and costs. It is not a test of an edge.
+- **Selection was done by code** (`sim/select_picks.py`), using the review protocol's rule:
+  - rank by deflated Sharpe ratio (DSR), using the larger of the full and post-COVID values;
+  - skip a trial that shares a leg with an earlier pick;
+  - skip a trial whose daily returns correlate > 0.5 with an earlier pick's;
+  - prefer a commodity group not yet represented.
+- **Result:** NTR/DE `coint_ols`, RRC/CRK `rotation`, SLV/SILJ `leadlag`, YPF/VIST `leadlag`, ET/EPD `coint_ols`. BTU/EQT was skipped because its group was already represented. Details are in `research/near_miss_selection.md`.
+- **Warm start.** The simulator's first run replays the real backtest engine on live data sliced to dates ≤ start − 1, so it starts in the backtest's state. A test guards against look-ahead.
