@@ -107,6 +107,17 @@ HTB_FLAGS = {
     "NXE": "transition_metals.md: borrow likely limited",
     "DNN": "transition_metals.md: elevated borrow cost at times",
     "UUUU": "transition_metals.md: elevated borrow cost at times",
+    # Round 2 (same rule; tickers already classified in round 1 keep their round-1 tier so round 1 reproduces)
+    "TNK": "r2_midstream_transport.md: hard-to-borrow risk (tanker)",
+    "INSW": "r2_midstream_transport.md: hard-to-borrow risk (tanker)",
+    "SBLK": "r2_midstream_transport.md: hard-to-borrow risk (dry bulk)",
+    "GNK": "r2_midstream_transport.md: hard-to-borrow risk (dry bulk)",
+    "IXC": "r2_etf_structures.md: could be hard-to-borrow in stress",
+    "ICL": "r2_power_gas_consumers.md: hard-to-borrow risk elevated",
+    "HMY": "r2_twin_producers.md: may be hard-to-borrow at times",
+    "AG": "r2_twin_producers.md: may be hard-to-borrow at times",
+    "PUMP": "r2_twin_producers.md: may be hard-to-borrow",
+    "VIST": "r2_twin_producers.md: likely hard-to-borrow",
 }
 
 # fallback ETF list if yfinance .info fails
