@@ -1,2 +1,2 @@
-sha256(backtest/results/gates.csv) = 0858c9ae84f8b09abd362545f0af8f017f55323079bd5d91e1a2c65fe7c4272c
-rows = 223
+sha256(backtest/results/gates.csv) = e155b17eea57f385b69f16f8ff2ed8b99d2d65d4d14540fb7bde925a147e60d3
+rows = 336

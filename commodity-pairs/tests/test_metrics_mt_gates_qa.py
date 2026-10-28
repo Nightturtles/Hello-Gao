@@ -147,6 +147,13 @@ def test_qa_flags_each_problem_class():
     gm.iloc[200:, gm.columns.get_loc("adjclose")] *= 1.4
     res = data.qa_ticker("G", gm, sess)
     assert any(r["check"] == "abs_adjret_gt_25pct" and r["severity"] == "warning" for r in res)
+    # a 10x one-day jump with no split is a spliced security (cancelled equity -> new shares), not a move
+    sx = clean.copy()
+    sx.iloc[:200, sx.columns.get_loc("close")] *= 0.01
+    sx.iloc[:200, sx.columns.get_loc("adjclose")] *= 0.01
+    res = data.qa_ticker("X", sx, sess)
+    assert any(r["check"] == "abs_adjret_gt_25pct" and r["severity"] == "error" and "SECURITY_SPLICE_SUSPECT" in r["detail"]
+               for r in res)
     # stale prints: >=5 identical closes with zero volume
     st = clean.copy()
     st.iloc[300:308, st.columns.get_loc("close")] = 77.0

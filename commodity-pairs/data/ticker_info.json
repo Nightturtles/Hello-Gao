@@ -23,6 +23,12 @@
   "exchange": "NMS",
   "error": ""
  },
+ "AG": {
+  "quoteType": "EQUITY",
+  "longName": "First Majestic Silver Corp.",
+  "exchange": "NYQ",
+  "error": ""
+ },
  "AGCO": {
   "quoteType": "EQUITY",
   "longName": "AGCO Corporation",
@@ -44,6 +50,18 @@
  "AR": {
   "quoteType": "EQUITY",
   "longName": "Antero Resources Corporation",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "ATO": {
+  "quoteType": "EQUITY",
+  "longName": "Atmos Energy Corporation",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "AU": {
+  "quoteType": "EQUITY",
+  "longName": "AngloGold Ashanti plc",
   "exchange": "NYQ",
   "error": ""
  },
@@ -77,6 +95,12 @@
   "exchange": "PCX",
   "error": ""
  },
+ "BP": {
+  "quoteType": "EQUITY",
+  "longName": "BP p.l.c.",
+  "exchange": "NYQ",
+  "error": ""
+ },
  "BTU": {
   "quoteType": "EQUITY",
   "longName": "Peabody Energy Corporation",
@@ -92,6 +116,12 @@
  "CCJ": {
   "quoteType": "EQUITY",
   "longName": "Cameco Corporation",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "CCK": {
+  "quoteType": "EQUITY",
+  "longName": "Crown Holdings, Inc.",
   "exchange": "NYQ",
   "error": ""
  },
@@ -113,9 +143,21 @@
   "exchange": "NYQ",
   "error": ""
  },
+ "CHRD": {
+  "quoteType": "EQUITY",
+  "longName": "Chord Energy Corporation",
+  "exchange": "NMS",
+  "error": ""
+ },
  "CLF": {
   "quoteType": "EQUITY",
   "longName": "Cleveland-Cliffs Inc.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "CNI": {
+  "quoteType": "EQUITY",
+  "longName": "Canadian National Railway Company",
   "exchange": "NYQ",
   "error": ""
  },
@@ -131,6 +173,12 @@
   "exchange": "NYQ",
   "error": ""
  },
+ "COP": {
+  "quoteType": "EQUITY",
+  "longName": "ConocoPhillips",
+  "exchange": "NYQ",
+  "error": ""
+ },
  "COPX": {
   "quoteType": "ETF",
   "longName": "Global X Copper Miners ETF",
@@ -141,6 +189,12 @@
   "quoteType": "ETF",
   "longName": "Teucrium Corn Fund",
   "exchange": "PCX",
+  "error": ""
+ },
+ "CP": {
+  "quoteType": "EQUITY",
+  "longName": "Canadian Pacific Kansas City Limited",
+  "exchange": "NYQ",
   "error": ""
  },
  "CPER": {
@@ -173,6 +227,12 @@
   "exchange": "NYQ",
   "error": ""
  },
+ "DAR": {
+  "quoteType": "EQUITY",
+  "longName": "Darling Ingredients Inc.",
+  "exchange": "NYQ",
+  "error": ""
+ },
  "DBA": {
   "quoteType": "ETF",
   "longName": "Invesco DB Agriculture Fund",
@@ -191,6 +251,12 @@
   "exchange": "NYQ",
   "error": ""
  },
+ "DINO": {
+  "quoteType": "EQUITY",
+  "longName": "HF Sinclair Corporation",
+  "exchange": "NYQ",
+  "error": ""
+ },
  "DNN": {
   "quoteType": "EQUITY",
   "longName": "Denison Mines Corp.",
@@ -200,6 +266,12 @@
  "DOW": {
   "quoteType": "EQUITY",
   "longName": "Dow Inc.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "EOG": {
+  "quoteType": "EQUITY",
+  "longName": "EOG Resources, Inc.",
   "exchange": "NYQ",
   "error": ""
  },
@@ -219,6 +291,24 @@
   "quoteType": "EQUITY",
   "longName": "Energy Transfer LP",
   "exchange": "TEX",
+  "error": ""
+ },
+ "EWA": {
+  "quoteType": "ETF",
+  "longName": "iShares MSCI Australia ETF",
+  "exchange": "PCX",
+  "error": ""
+ },
+ "EWC": {
+  "quoteType": "ETF",
+  "longName": "iShares MSCI Canada ETF",
+  "exchange": "PCX",
+  "error": ""
+ },
+ "EWZ": {
+  "quoteType": "ETF",
+  "longName": "iShares MSCI Brazil ETF",
+  "exchange": "PCX",
   "error": ""
  },
  "FANG": {
@@ -263,6 +353,12 @@
   "exchange": "PCX",
   "error": ""
  },
+ "GFI": {
+  "quoteType": "EQUITY",
+  "longName": "Gold Fields Limited",
+  "exchange": "NYQ",
+  "error": ""
+ },
  "GLD": {
   "quoteType": "ETF",
   "longName": "SPDR Gold Shares",
@@ -272,6 +368,12 @@
  "GM": {
   "quoteType": "EQUITY",
   "longName": "General Motors Company",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "GNK": {
+  "quoteType": "EQUITY",
+  "longName": "Genco Shipping & Trading Limited",
   "exchange": "NYQ",
   "error": ""
  },
@@ -305,10 +407,58 @@
   "exchange": "NYQ",
   "error": ""
  },
+ "HMY": {
+  "quoteType": "EQUITY",
+  "longName": "Harmony Gold Mining Company Limited",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "ICL": {
+  "quoteType": "EQUITY",
+  "longName": "ICL Group Ltd",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "INSW": {
+  "quoteType": "EQUITY",
+  "longName": "International Seaways, Inc.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "IP": {
+  "quoteType": "EQUITY",
+  "longName": "International Paper Company",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "IXC": {
+  "quoteType": "ETF",
+  "longName": "iShares Global Energy ETF",
+  "exchange": "PCX",
+  "error": ""
+ },
  "JETS": {
   "quoteType": "ETF",
   "longName": "U.S. Global Jets ETF",
   "exchange": "PCX",
+  "error": ""
+ },
+ "KGC": {
+  "quoteType": "EQUITY",
+  "longName": "Kinross Gold Corporation",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "KMI": {
+  "quoteType": "EQUITY",
+  "longName": "Kinder Morgan, Inc.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "LBRT": {
+  "quoteType": "EQUITY",
+  "longName": "Liberty Energy Inc.",
+  "exchange": "NYQ",
   "error": ""
  },
  "LEU": {
@@ -371,6 +521,18 @@
   "exchange": "NYQ",
   "error": ""
  },
+ "NOG": {
+  "quoteType": "EQUITY",
+  "longName": "Northern Oil and Gas, Inc.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "NRG": {
+  "quoteType": "EQUITY",
+  "longName": "NRG Energy, Inc.",
+  "exchange": "NYQ",
+  "error": ""
+ },
  "NTR": {
   "quoteType": "EQUITY",
   "longName": "Nutrien Ltd.",
@@ -389,10 +551,28 @@
   "exchange": "NYQ",
   "error": ""
  },
+ "OGS": {
+  "quoteType": "EQUITY",
+  "longName": "ONE Gas, Inc.",
+  "exchange": "NYQ",
+  "error": ""
+ },
  "OIH": {
   "quoteType": "ETF",
   "longName": "VanEck Oil Services ETF",
   "exchange": "PCX",
+  "error": ""
+ },
+ "OKE": {
+  "quoteType": "EQUITY",
+  "longName": "ONEOK, Inc.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "OLN": {
+  "quoteType": "EQUITY",
+  "longName": "Olin Corporation",
+  "exchange": "NYQ",
   "error": ""
  },
  "PAAS": {
@@ -405,6 +585,24 @@
   "quoteType": "ETF",
   "longName": "abrdn Physical Palladium Shares ETF",
   "exchange": "PCX",
+  "error": ""
+ },
+ "PBF": {
+  "quoteType": "EQUITY",
+  "longName": "PBF Energy Inc.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "PICK": {
+  "quoteType": "ETF",
+  "longName": "iShares MSCI Global Metals & Mining Producers ETF",
+  "exchange": "BTS",
+  "error": ""
+ },
+ "PKG": {
+  "quoteType": "EQUITY",
+  "longName": "Packaging Corporation of America",
+  "exchange": "NYQ",
   "error": ""
  },
  "PPC": {
@@ -422,6 +620,12 @@
  "PR": {
   "quoteType": "EQUITY",
   "longName": "Permian Resources Corporation",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "PUMP": {
+  "quoteType": "EQUITY",
+  "longName": "ProPetro Holding Corp.",
   "exchange": "NYQ",
   "error": ""
  },
@@ -443,9 +647,27 @@
   "exchange": "NYQ",
   "error": ""
  },
+ "RYN": {
+  "quoteType": "EQUITY",
+  "longName": "Rayonier Inc.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "SBLK": {
+  "quoteType": "EQUITY",
+  "longName": "Star Bulk Carriers Corp.",
+  "exchange": "NMS",
+  "error": ""
+ },
  "SCCO": {
   "quoteType": "EQUITY",
   "longName": "Southern Copper Corporation",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "SHEL": {
+  "quoteType": "EQUITY",
+  "longName": "Shell plc",
   "exchange": "NYQ",
   "error": ""
  },
@@ -503,6 +725,18 @@
   "exchange": "NYQ",
   "error": ""
  },
+ "TNK": {
+  "quoteType": "EQUITY",
+  "longName": "Teekay Tankers Ltd.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "TRGP": {
+  "quoteType": "EQUITY",
+  "longName": "Targa Resources Corp.",
+  "exchange": "NYQ",
+  "error": ""
+ },
  "TSLA": {
   "quoteType": "EQUITY",
   "longName": "Tesla, Inc.",
@@ -512,6 +746,12 @@
  "TSN": {
   "quoteType": "EQUITY",
   "longName": "Tyson Foods, Inc.",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "TTE": {
+  "quoteType": "EQUITY",
+  "longName": "TotalEnergies SE",
   "exchange": "NYQ",
   "error": ""
  },
@@ -551,6 +791,12 @@
   "exchange": "NYQ",
   "error": ""
  },
+ "VIST": {
+  "quoteType": "EQUITY",
+  "longName": "Vista Energy, S.A.B. de C.V.",
+  "exchange": "NYQ",
+  "error": ""
+ },
  "VLO": {
   "quoteType": "EQUITY",
   "longName": "Valero Energy Corporation",
@@ -563,10 +809,34 @@
   "exchange": "NYQ",
   "error": ""
  },
+ "WLK": {
+  "quoteType": "EQUITY",
+  "longName": "Westlake Corporation",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "WMB": {
+  "quoteType": "EQUITY",
+  "longName": "The Williams Companies, Inc.",
+  "exchange": "NYQ",
+  "error": ""
+ },
  "WPM": {
   "quoteType": "EQUITY",
   "longName": "Wheaton Precious Metals Corp.",
   "exchange": "NYQ",
+  "error": ""
+ },
+ "WY": {
+  "quoteType": "EQUITY",
+  "longName": "Weyerhaeuser Company",
+  "exchange": "NYQ",
+  "error": ""
+ },
+ "XLB": {
+  "quoteType": "ETF",
+  "longName": "State Street Materials Select Sector SPDR ETF",
+  "exchange": "PCX",
   "error": ""
  },
  "XLE": {
@@ -591,6 +861,12 @@
   "quoteType": "ETF",
   "longName": "State Street SPDR S&P Oil & Gas Exploration & Production ETF",
   "exchange": "PCX",
+  "error": ""
+ },
+ "YPF": {
+  "quoteType": "EQUITY",
+  "longName": "YPF Sociedad An\u00f3nima",
+  "exchange": "NYQ",
   "error": ""
  }
 }

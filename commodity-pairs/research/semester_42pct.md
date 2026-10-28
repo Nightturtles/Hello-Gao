@@ -18,38 +18,46 @@ gold pairs than for random pairs?
 
 | strategies | rule | # | semesters ≥ +42% (1x) | semesters ≥ +42% (2x) | semesters ≤ −30% (2x) | median (2x) | best (2x) |
 |---|---|---|---|---|---|---|---|
-| all gold/precious-metal pairs | rotation | 13 | 0.2% | 1.4% | 7.0% | -5.8% | 189.2% |
-| all gold/precious-metal pairs | coint_ols | 13 | 0.0% | 0.4% | 4.0% | 0.0% | 87.7% |
-| 200 random pairs | rotation | 200 | 1.4% | 6.3% | 17.2% | -7.5% | 1168.9% |
-| 200 random pairs | coint_ols | 200 | 0.2% | 1.9% | 5.0% | 0.0% | 472.0% |
+| all gold/precious-metal pairs | rotation | 17 | 0.2% | 1.5% | 7.6% | -6.0% | 189.2% |
+| all gold/precious-metal pairs | coint_ols | 17 | 0.2% | 0.7% | 4.1% | 0.0% | 151.4% |
+| 200 random pairs | rotation | 200 | 1.0% | 6.1% | 16.5% | -7.5% | 1189.1% |
+| 200 random pairs | coint_ols | 200 | 0.1% | 1.7% | 4.7% | 0.0% | 333.4% |
 
 Per gold pair (2x gross):
 
 | pair | rule | semesters ≥ +42% | semesters ≤ −30% | median | best |
 |---|---|---|---|---|---|
+| AG_PAAS | coint_ols | 1.8% | 8.0% | -1.0% | 76.8% |
 | FNV_RGLD | coint_ols | 0.0% | 0.2% | 1.6% | 29.7% |
 | GDX_CAT | coint_ols | 0.4% | 6.1% | 0.0% | 48.3% |
 | GDX_GDXJ | coint_ols | 0.0% | 0.0% | 0.6% | 12.8% |
+| GFI_HMY | coint_ols | 1.1% | 7.3% | 1.4% | 55.3% |
 | GLD_GDX | coint_ols | 0.0% | 0.0% | 0.4% | 28.7% |
 | GLD_SIG | coint_ols | 0.0% | 0.3% | 0.0% | 23.0% |
 | GLD_SLV | coint_ols | 0.0% | 4.8% | -2.5% | 25.3% |
+| KGC_AU | coint_ols | 3.7% | 1.8% | -0.1% | 151.4% |
 | NEM_AEM | coint_ols | 0.1% | 10.4% | -1.7% | 79.3% |
 | NEM_B | coint_ols | 0.2% | 3.2% | 0.0% | 56.4% |
 | NEM_GLD | coint_ols | 0.8% | 3.6% | 1.1% | 87.7% |
 | PAAS_HL | coint_ols | 0.0% | 13.9% | 0.6% | 45.1% |
+| SIL_GDX | coint_ols | 0.0% | 0.4% | 0.8% | 22.3% |
 | SIL_SLV | coint_ols | 0.0% | 4.5% | 3.9% | 36.2% |
 | SLV_SILJ | coint_ols | 3.3% | 4.5% | 3.0% | 56.0% |
 | WPM_RGLD | coint_ols | 0.0% | 1.0% | 0.0% | 26.1% |
+| AG_PAAS | rotation | 2.7% | 7.9% | -7.9% | 97.9% |
 | FNV_RGLD | rotation | 0.0% | 0.7% | -5.5% | 40.5% |
 | GDX_CAT | rotation | 1.9% | 12.0% | -3.6% | 61.2% |
 | GDX_GDXJ | rotation | 0.0% | 0.0% | -3.2% | 16.9% |
+| GFI_HMY | rotation | 3.9% | 9.7% | -7.8% | 105.2% |
 | GLD_GDX | rotation | 0.0% | 4.2% | -5.0% | 28.5% |
 | GLD_SIG | rotation | 6.1% | 33.8% | -17.4% | 189.2% |
 | GLD_SLV | rotation | 0.5% | 2.1% | -4.8% | 104.0% |
+| KGC_AU | rotation | 0.2% | 20.9% | -18.3% | 47.5% |
 | NEM_AEM | rotation | 3.0% | 5.0% | -3.6% | 77.1% |
 | NEM_B | rotation | 0.0% | 3.0% | -2.7% | 39.0% |
 | NEM_GLD | rotation | 0.9% | 6.1% | -8.0% | 59.2% |
 | PAAS_HL | rotation | 4.7% | 13.0% | -2.5% | 144.4% |
+| SIL_GDX | rotation | 0.0% | 0.0% | -2.6% | 25.4% |
 | SIL_SLV | rotation | 0.1% | 2.7% | -10.1% | 48.2% |
 | SLV_SILJ | rotation | 1.4% | 6.0% | -7.9% | 67.9% |
 | WPM_RGLD | rotation | 0.0% | 2.9% | -9.5% | 29.6% |

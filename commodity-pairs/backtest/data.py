@@ -288,6 +288,11 @@ def qa_ticker(t: str, df: pd.DataFrame, sess: pd.DatetimeIndex, windows=None) ->
         if artifact:
             status = "SPLIT_ADJUSTMENT_SUSPECT"
             err_dates.append(d)
+        elif factor >= 10.0 or factor <= 0.1:
+            # a 10x one-day move with no split is a different security spliced under one ticker (e.g. CHRD: the
+            # cancelled pre-bankruptcy Oasis equity at $0.12 followed by the reorganised shares at $34)
+            status = "SECURITY_SPLICE_SUSPECT"
+            err_dates.append(d)
         elif mismatch:
             status = "RAW_ADJ_MISMATCH"
             err_dates.append(d)

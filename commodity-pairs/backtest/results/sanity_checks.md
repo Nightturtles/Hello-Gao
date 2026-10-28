@@ -29,19 +29,19 @@
 
 ## Equity identity (sum of trade P&L == final equity - start capital)
 
-- checked on all 223 trials; worst absolute difference: 0.000050 dollars
+- checked on all 336 trials; worst absolute difference: 0.000062 dollars
 
 ## Behavioural observations (computed)
 
 | rule | trials | median round trips | median avg hold (days) | median exposure | median cost drag (ann.) | median full Sharpe | share of windows allowing entries |
 |---|---|---|---|---|---|---|---|
-| coint_kalman | 54 | 90 | 2.9 | 0.11 | 0.020 | -0.26 | 1.00 |
-| coint_ols | 54 | 38 | 30.1 | 0.46 | 0.010 | 0.02 | 0.83 |
-| leadlag | 54 | 140 | 5.8 | 0.33 | 0.034 | -0.38 | 0.74 |
-| leadlag_rev | 7 | 116 | 6.2 | 0.34 | 0.027 | -0.53 | 0.70 |
-| rotation | 54 | 251 | 9.5 | 1.00 | 0.064 | -0.50 | 1.00 |
+| coint_kalman | 82 | 90 | 2.9 | 0.11 | 0.020 | -0.29 | 1.00 |
+| coint_ols | 82 | 38 | 30.5 | 0.47 | 0.011 | -0.03 | 0.87 |
+| leadlag | 82 | 140 | 5.7 | 0.33 | 0.033 | -0.45 | 0.76 |
+| leadlag_rev | 8 | 127 | 5.9 | 0.34 | 0.030 | -0.52 | 0.71 |
+| rotation | 82 | 251 | 9.6 | 1.00 | 0.061 | -0.51 | 1.00 |
 
-- leadlag: chosen lag k* by window = 1:163, 2:147, 3:180, 4:199, 5:179, 6:195, 7:157, 8:94, 9:178, 10:547; windows rejected: lead-lag |t| < 2 x493; lead-lag hedge ratio h <= 0 x28
-- leadlag_rev: chosen lag k* by window = 1:15, 2:18, 3:36, 4:13, 5:26, 6:21, 7:22, 8:7, 9:12, 10:104; windows rejected: lead-lag |t| < 2 x82
-- coint_ols windows with beta out of range: 341 of 2039
+- leadlag: chosen lag k* by window = 1:255, 2:224, 3:275, 4:298, 5:283, 6:284, 7:273, 8:180, 9:268, 10:818; windows rejected: lead-lag |t| < 2 x740; lead-lag hedge ratio h <= 0 x28
+- leadlag_rev: chosen lag k* by window = 1:18, 2:27, 3:43, 4:14, 5:30, 6:21, 7:22, 8:7, 9:18, 10:115; windows rejected: lead-lag |t| < 2 x92
+- coint_ols windows with beta out of range: 419 of 3158
 - FANG_PR: training windows 7, 8 start before 2016-10-11 (Centennial/Silver Run merger); their training samples include the pre-merger SPAC series (see IMPLEMENTATION_NOTES.md)

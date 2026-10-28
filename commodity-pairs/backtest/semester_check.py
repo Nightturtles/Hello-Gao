@@ -25,6 +25,8 @@ SEMESTER = 90
 TARGET = 0.42
 RULES = ("rotation", "coint_ols")
 N_RANDOM = 200
+# round-2 precious-metals pairs (scouted under structure-based groups rather than "precious_metals")
+R2_PRECIOUS = {"GFI_HMY", "KGC_AU", "AG_PAAS", "SIL_GDX"}
 OUT_MD = config.RESEARCH_DIR / "semester_42pct.md"
 OUT_CSV = config.RESULTS_DIR / "semester_42pct.csv"
 
@@ -72,7 +74,7 @@ def main() -> None:
     cands = data.candidate_pairs()
 
     rows, per_pair = [], []
-    gold = pool[pool["group"] == "precious_metals"]
+    gold = pool[(pool["group"] == "precious_metals") | pool["pair_id"].isin(R2_PRECIOUS)]
     for rule in RULES:
         series = []
         for r in gold.itertuples():

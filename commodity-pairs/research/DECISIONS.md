@@ -83,3 +83,15 @@ All of these were fixed **before any backtest results were seen**, so none of th
 - The pre-fix gates are kept as `backtest/results/gates_pre_fix.csv` (sha256 `fff7d23dc8d10c85a07943de03cd91527045c3fa36a7e7a23edbbd7f68ec7d99`; 0 of 223 passed). The post-fix hash is in `backtest/results/RESULTS_HASH.txt`.
 
 **Known weakness, left unchanged:** the pre-registered z-score stop (|z| ≥ 3.5 on a 60-day rolling window) rarely triggers on a spread that keeps trending. That is a property of the rule as pre-registered. Changing it now, after seeing results, would be tuning.
+
+## Round 2 (second and final scouting round, run at the owner's request after round 1 found 0 passes)
+- **No rule, parameter or gate changed.** Only new pairs were added: 34, proposed by four scouts organised by structure.
+- **Pre-registered merge exclusions:** a duplicate of a round-1 pair, a near-identical instrument, or a pending merger between the two legs. No proposal hit any of them.
+- **One multiple-testing family.** Rounds 1 and 2 were re-run together, so the BH family and the DSR's N (336) cover every trial. This is why the DSR bar rose from about 1.75 to about 1.83.
+- **Borrow tiers:** new tickers flagged hard-to-borrow by the scouts get 3%/yr, the same rule as round 1. Tickers classified in round 1 keep their tier, so round 1 reproduces exactly.
+- **Data check added after seeing round-2 data: `SECURITY_SPLICE_SUSPECT`.**
+  - A one-day adjusted-price factor of ≥ 10× or ≤ 0.1× with no split is now a data error.
+  - It caught CHRD, where Yahoo joins the cancelled pre-bankruptcy Oasis equity ($0.12 on 2020-11-20) to the reorganised shares ($34 on 2020-11-25). That jump drove two CHRD/NOG trials to ruin.
+  - Before adding the rule I scanned all 145 tickers. CHRD is the only one with even a 5× one-day move, so the rule changes nothing else.
+  - Round-1 trial files are byte-identical after the re-run.
+- **Result:** 0 of 336 trials pass. Per the approved plan, there will be no third round.

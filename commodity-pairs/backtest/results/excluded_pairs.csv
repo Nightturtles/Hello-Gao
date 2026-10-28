@@ -12,3 +12,9 @@ CEG_CCJ,CEG,CCJ,leadlag,transition_metals,screen,"history: first joint OOS windo
 LEU_CCJ,LEU,CCJ,coint,transition_metals,screen,"leg A LEU: liquidity (median $vol 252d=154.5M, post-COVID=12.5M; need >20M both)"
 MP_GM,MP,GM,inverse,transition_metals,screen,"history: first joint OOS window start 2022-07-07 > 2022-01-04 (first dates {'MP': '2020-06-22', 'GM': '2014-10-01'})"
 NXE_CCJ,NXE,CCJ,coint,transition_metals,data,leg A NXE: unresolved data errors [identical_close_run_ge5(6)]
+PICK_XME,PICK,XME,coint,r2_etf_structures,screen,"leg A PICK: liquidity (median $vol 252d=34.0M, post-COVID=11.6M; need >20M both)"
+TNK_INSW,TNK,INSW,coint,r2_midstream_transport,screen,"leg A TNK: liquidity (median $vol 252d=29.6M, post-COVID=17.9M; need >20M both)"
+SBLK_GNK,SBLK,GNK,coint,r2_midstream_transport,data,"leg B GNK: unresolved data errors [identical_close_run_ge5(5)] | leg B GNK: liquidity (median $vol 252d=8.4M, post-COVID=10.5M; need >20M both)"
+MOS_ICL,MOS,ICL,coint,r2_power_gas_consumers,screen,"leg B ICL: liquidity (median $vol 252d=6.8M, post-COVID=5.7M; need >20M both)"
+CHRD_NOG,CHRD,NOG,leadlag,r2_twin_producers,data,leg A CHRD: unresolved data errors [abs_adjret_gt_25pct(19)]
+LBRT_PUMP,LBRT,PUMP,coint,r2_twin_producers,screen,"leg B PUMP: liquidity (median $vol 252d=36.5M, post-COVID=12.7M; need >20M both)"
