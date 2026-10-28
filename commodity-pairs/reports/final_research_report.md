@@ -149,6 +149,18 @@ The round-1 trial files are byte-identical after the combined re-run. Full discl
 - **Costs are modest.** The model uses 5–10 bps slippage, $0.005/share commission, and 0.5–3% annual borrow. No result came close even before costs.
 - **Data source quirks.** Yahoo's ticker histories can splice different entities. The CHRD splice is caught, but milder cases remain and are documented in `backtest/results/IMPLEMENTATION_NOTES.md`: the Permian Resources ticker `PR` carries pre-merger SPAC prices from 2016, and `CNR` carries CONSOL's history.
 
+## The paper-trading simulator: a system check on the near-misses
+
+No pair passed, so there are no real picks. At your request, the simulator paper-trades the **5 best near-misses**: NTR/DE spread, RRC/CRK rotation, SLV/SILJ lead-lag, YPF/VIST lead-lag and ET/EPD spread. They were selected by code in `sim/select_picks.py`, as described in `research/near_miss_selection.md`.
+
+- **Labeling:** every report opens with a banner saying these pairs **failed the bar**.
+- **Purpose:** the run checks that the live system behaves exactly as backtested. It is not a test of an edge, and one month could not provide one.
+- **Historical dry run (2026-07-15 → 2026-10-26, frozen data):** the simulator's positions matched the backtest engine on **365 of 365** pick-sessions.
+- **Live smoke test with Yahoo data:**
+  - the warm start, fills, reports and idempotency all worked;
+  - a second run changed no files.
+- **Live run:** 2026-11-02 → 2026-12-02, $100,000 per pick, scheduled by GitHub Actions. How to run, stop or extend it is in `README.md`.
+
 ## Reproduce
 
 ```bash

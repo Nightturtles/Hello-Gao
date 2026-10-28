@@ -26,7 +26,7 @@ cd "$PROJECT_DIR"
 "$PYTHON" -m sim.run_daily
 status=$?
 
-git add sim/state sim/config.json reports
+git add --all -- sim reports   # sim/state may not exist before the first warm start
 if ! git diff --cached --quiet; then
   git commit -m "paper-sim: $(date -u +%Y-%m-%d) local launchd run" && git push origin "$BRANCH"
 fi

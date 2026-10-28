@@ -9,8 +9,8 @@ _Last updated: 2026-10-28_
 | 1b. Scouting, round 2 (4 structure scouts), the final round | ✅ 34 pairs |
 | 2–3. Data, screens, statistical tests, walk-forward backtest | ✅ 82 tradable pairs, 336 trials, **0 passed** (`backtest/results/summary.md`) |
 | 4. Pick selection (red team + council) | ⛔ not reached: no candidate cleared the quantitative gates |
-| 5. Paper-trading simulator | ⏸ waiting on the owner's decision (no picks to trade) |
-| 6. Scheduling (GitHub Actions + launchd backup) | ⏸ files drafted; activation waits on step 5 |
+| 5. Paper-trading simulator | ✅ built; trades the 5 best **near-misses**, labeled FAILED THE BAR. Run 2026-11-02 → 2026-12-02 (`reports/summary.md` once running) |
+| 6. Scheduling (GitHub Actions + launchd backup) | ⏳ ready; GitHub Actions activates once the PR into `master` is merged |
 | 7. Research report | ✅ `reports/final_research_report.md` |
 
 ## Picks approved
