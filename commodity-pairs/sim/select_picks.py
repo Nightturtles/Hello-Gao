@@ -93,7 +93,7 @@ def main() -> None:
         b = o["backtest"]
         lines.append(f"| {o['pick_id']} | {o['leg_a']} / {o['leg_b']} | `{o['rule']}` | {o['group']} | "
                      f"{b['full_sharpe']:.2f} / {b['post_sharpe']:.2f} | {b['full_maxdd']:.1%} | {b['full_round_trips']} | "
-                     f"{b['dsr_full']:.3f} / {b['dsr_post']:.3f} | {o['fail_reasons']} |")
+                     f"{b['dsr_full']:.3f} / {b['dsr_post']:.3f} | {o['fail_reasons'].replace('|', chr(92) + '|')} |")
     lines += ["", "Trials skipped on the way down the ranking:", ""]
     lines += [f"- {pid} `{rule}`: {why}" for pid, rule, why in log] or ["- none"]
     MD_PATH.write_text("\n".join(lines) + "\n")

@@ -1,6 +1,6 @@
 # Key decisions and why
 
-All of these were fixed **before any backtest results were seen**, so none of them could be tuned to make a pair pass.
+The sections before "Post-audit engine fix" were fixed **before any backtest results were seen**, so none of them could be tuned to make a pair pass. The sections from "Post-audit engine fix" onward are dated disclosures of changes made **after** results were seen; none changed a signal parameter or a gate.
 
 ## Process
 - **Scout and test the whole candidate pool once, then select picks one at a time** (confirmed by the owner). Every pair that is tested joins one multiple-testing family. Re-scouting before each pick would grow that family invisibly and make the corrections dishonest. Red-team and council still run separately for each pick.
@@ -10,7 +10,7 @@ All of these were fixed **before any backtest results were seen**, so none of th
 - **Source:** Yahoo Finance via `yfinance` (v8 chart API). It is free and was verified reachable from this environment. Stooq was blocked.
 - **Download window: Oct 2014 → present.** Oct 2014–Oct 2016 is used *only* as the first 2-year training window. That way, out-of-sample (OOS) trading covers the whole Oct 2016 → present period that was requested.
 - **Frozen snapshot committed to the repo** (`data/cache/`). Yahoo rewrites adjusted-close history after every dividend, so re-downloading would silently change results. Reruns read only the cache.
-- **Adjusted open = raw open × (adjclose / close).** Signals use day t's close and fill at day t+1's adjusted open, which matches the live simulator.
+- **Adjusted open = raw open × (adjclose / close).** Backtest signals use day t's close and fill at day t+1's adjusted open. The live simulator uses the same next-open timing but fills at the raw open and applies splits and dividends explicitly. The parity check compares position signs, not fill prices.
 - **Survivorship bias is unavoidable** with a free source, because the universe is built from tickers that still trade today. Mitigations:
   - Merged and delisted names are listed in the report.
   - ETFs are preferred.

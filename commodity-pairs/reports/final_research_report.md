@@ -166,7 +166,7 @@ No pair passed, so there are no real picks. At your request, the simulator paper
 ```bash
 cd commodity-pairs
 python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
-.venv/bin/python -m pytest -q                 # 57 tests
+.venv/bin/python -m pytest -q                 # the full test suite
 .venv/bin/python -m backtest.run_all          # about 2 minutes, reads only the frozen cache
 .venv/bin/python -m backtest.semester_check   # the 42% semester analysis
 ```

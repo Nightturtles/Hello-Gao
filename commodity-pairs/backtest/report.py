@@ -28,7 +28,8 @@ def md_table(df: pd.DataFrame, fmt: dict | None = None, default_nd: int = 2) -> 
         for c in cols:
             v = r[c]
             nd = fmt.get(c, default_nd)
-            cells.append(_f(v, nd) if not isinstance(v, str) else v)
+            # a literal "|" inside a cell would start a new Markdown column (e.g. joined exclusion reasons)
+            cells.append(_f(v, nd) if not isinstance(v, str) else v.replace("|", "\\|"))
         lines.append("| " + " | ".join(cells) + " |")
     return "\n".join(lines)
 

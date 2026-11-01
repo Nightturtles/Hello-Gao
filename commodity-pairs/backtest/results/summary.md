@@ -24,13 +24,13 @@ Tickers: 145 downloaded of 145 requested (141 pass data QA, 130 pass liquidity, 
 | pair_id | stage | reason |
 |---|---|---|
 | PPC_DBA | screen | leg B DBA: liquidity (median $vol 252d=20.1M, post-COVID=12.4M; need >20M both) |
-| GPRE_CORN | screen | leg A GPRE: liquidity (median $vol 252d=19.6M, post-COVID=20.9M; need >20M both) | leg B CORN: liquidity (median $vol 252d=4.7M, post-COVID=1.7M; need >20M both) |
+| GPRE_CORN | screen | leg A GPRE: liquidity (median $vol 252d=19.6M, post-COVID=20.9M; need >20M both) \| leg B CORN: liquidity (median $vol 252d=4.7M, post-COVID=1.7M; need >20M both) |
 | MOO_ADM | screen | leg A MOO: liquidity (median $vol 252d=17.2M, post-COVID=5.7M; need >20M both) |
-| CPER_COPX | data | leg A CPER: unresolved data errors [identical_close_run_ge5(2)] | leg A CPER: liquidity (median $vol 252d=21.0M, post-COVID=3.9M; need >20M both) |
+| CPER_COPX | data | leg A CPER: unresolved data errors [identical_close_run_ge5(2)] \| leg A CPER: liquidity (median $vol 252d=21.0M, post-COVID=3.9M; need >20M both) |
 | USO_BNO | screen | leg B BNO: liquidity (median $vol 252d=80.7M, post-COVID=16.7M; need >20M both) |
 | CF_LXU | screen | leg B LXU: liquidity (median $vol 252d=8.0M, post-COVID=4.9M; need >20M both) |
 | AMR_HCC | screen | history: first joint OOS window start 2023-04-06 > 2022-01-04 (first dates {'AMR': '2021-02-08', 'HCC': '2017-04-13'}) |
-| PPLT_PALL | screen | leg A PPLT: liquidity (median $vol 252d=45.5M, post-COVID=14.2M; need >20M both) | leg B PALL: liquidity (median $vol 252d=27.0M, post-COVID=8.4M; need >20M both) |
+| PPLT_PALL | screen | leg A PPLT: liquidity (median $vol 252d=45.5M, post-COVID=14.2M; need >20M both) \| leg B PALL: liquidity (median $vol 252d=27.0M, post-COVID=8.4M; need >20M both) |
 | CEG_VST | screen | history: first joint OOS window start 2024-04-09 > 2022-01-04 (first dates {'CEG': '2022-01-19', 'VST': '2016-10-05'}) |
 | CEG_CCJ | screen | history: first joint OOS window start 2024-04-09 > 2022-01-04 (first dates {'CEG': '2022-01-19', 'CCJ': '2014-10-01'}) |
 | LEU_CCJ | screen | leg A LEU: liquidity (median $vol 252d=154.5M, post-COVID=12.5M; need >20M both) |
@@ -38,7 +38,7 @@ Tickers: 145 downloaded of 145 requested (141 pass data QA, 130 pass liquidity, 
 | NXE_CCJ | data | leg A NXE: unresolved data errors [identical_close_run_ge5(6)] |
 | PICK_XME | screen | leg A PICK: liquidity (median $vol 252d=34.0M, post-COVID=11.6M; need >20M both) |
 | TNK_INSW | screen | leg A TNK: liquidity (median $vol 252d=29.6M, post-COVID=17.9M; need >20M both) |
-| SBLK_GNK | data | leg B GNK: unresolved data errors [identical_close_run_ge5(5)] | leg B GNK: liquidity (median $vol 252d=8.4M, post-COVID=10.5M; need >20M both) |
+| SBLK_GNK | data | leg B GNK: unresolved data errors [identical_close_run_ge5(5)] \| leg B GNK: liquidity (median $vol 252d=8.4M, post-COVID=10.5M; need >20M both) |
 | MOS_ICL | screen | leg B ICL: liquidity (median $vol 252d=6.8M, post-COVID=5.7M; need >20M both) |
 | CHRD_NOG | data | leg A CHRD: unresolved data errors [abs_adjret_gt_25pct(19)] |
 | LBRT_PUMP | screen | leg B PUMP: liquidity (median $vol 252d=36.5M, post-COVID=12.7M; need >20M both) |

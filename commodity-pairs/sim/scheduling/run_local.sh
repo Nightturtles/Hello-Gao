@@ -26,8 +26,16 @@ cd "$PROJECT_DIR"
 "$PYTHON" -m sim.run_daily
 status=$?
 
-git add --all -- sim reports   # sim/state may not exist before the first warm start
+# Stage only what the simulator writes, so local edits to code in this clone are never pushed.
+git add --all -- sim/config.json reports
+[ -d sim/state ] && git add --all -- sim/state   # sim/state does not exist before the first warm start
 if ! git diff --cached --quiet; then
-  git commit -m "paper-sim: $(date -u +%Y-%m-%d) local launchd run" && git push origin "$BRANCH"
+  git commit -m "paper-sim: $(date -u +%Y-%m-%d) local launchd run" || exit 1
+  # Rebase onto anything pushed meanwhile (e.g. by GitHub Actions); a stranded local commit would make the
+  # next run's `git pull --ff-only` fail, so a failed rebase or push must not be silent.
+  if ! { git pull --rebase --autostash origin "$BRANCH" && git push origin "$BRANCH"; }; then
+    echo "could not push simulator state; resolve the clone at $REPO_DIR manually" >&2
+    status=1
+  fi
 fi
 exit $status
