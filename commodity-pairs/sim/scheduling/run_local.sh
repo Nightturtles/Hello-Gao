@@ -27,8 +27,12 @@ cd "$PROJECT_DIR"
 status=$?
 
 # Stage only what the simulator writes, so local edits to code in this clone are never pushed.
-git add --all -- sim/config.json reports
-[ -d sim/state ] && git add --all -- sim/state   # sim/state does not exist before the first warm start
+# sim/state may be absent (before the first warm start, or right after `ctl init --force` removed it): stage it
+# whenever it exists or git still tracks files under it, so a reset's deletions are pushed too.
+git add --all -- sim/config.json reports || exit 1
+if [ -d sim/state ] || [ -n "$(git ls-files -- sim/state)" ]; then
+  git add --all -- sim/state || exit 1
+fi
 if ! git diff --cached --quiet; then
   git commit -m "paper-sim: $(date -u +%Y-%m-%d) local launchd run" || exit 1
   # Rebase onto anything pushed meanwhile (e.g. by GitHub Actions); a stranded local commit would make the
