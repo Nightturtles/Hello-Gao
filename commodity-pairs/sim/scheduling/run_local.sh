@@ -26,15 +26,16 @@ cd "$PROJECT_DIR"
 "$PYTHON" -m sim.run_daily
 status=$?
 
-# Stage only what the simulator writes, so local edits to code in this clone are never pushed.
-# sim/state may be absent (before the first warm start, or right after `ctl init --force` removed it): stage it
-# whenever it exists or git still tracks files under it, so a reset's deletions are pushed too.
-git add --all -- sim/config.json reports || exit 1
+# Stage and commit only what the simulator writes, so local edits to code in this clone (staged or not) are
+# never pushed. sim/state may be absent (before the first warm start, or right after `ctl init --force` removed
+# it): include it whenever it exists or git still tracks files under it, so a reset's deletions are pushed too.
+sim_paths=(sim/config.json reports)
 if [ -d sim/state ] || [ -n "$(git ls-files -- sim/state)" ]; then
-  git add --all -- sim/state || exit 1
+  sim_paths+=(sim/state)
 fi
-if ! git diff --cached --quiet; then
-  git commit -m "paper-sim: $(date -u +%Y-%m-%d) local launchd run" || exit 1
+git add --all -- "${sim_paths[@]}" || exit 1
+if ! git diff --cached --quiet -- "${sim_paths[@]}"; then
+  git commit -m "paper-sim: $(date -u +%Y-%m-%d) local launchd run" -- "${sim_paths[@]}" || exit 1
   # Rebase onto anything pushed meanwhile (e.g. by GitHub Actions); a stranded local commit would make the
   # next run's `git pull --ff-only` fail, so a failed rebase or push must not be silent.
   if ! { git pull --rebase --autostash origin "$BRANCH" && git push origin "$BRANCH"; }; then
