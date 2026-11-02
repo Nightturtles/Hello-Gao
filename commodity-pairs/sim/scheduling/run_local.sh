@@ -28,12 +28,18 @@ status=$?
 
 # Stage and commit only what the simulator writes, so local edits to code in this clone (staged or not) are
 # never pushed. sim/state may be absent (before the first warm start, or right after `ctl init --force` removed
-# it): include it whenever it exists or git still tracks files under it, so a reset's deletions are pushed too.
-sim_paths=(sim/config.json reports)
-if [ -d sim/state ] || [ -n "$(git ls-files -- sim/state)" ]; then
+# it), so a reset's deletions must still reach the commit:
+#   - it exists, or its deletion is not staged yet  -> stage it and commit it;
+#   - its deletion is already staged (e.g. `git rm`) -> commit it; there is nothing left to stage.
+sim_paths=(sim/config.json reports)    # committed
+add_paths=("${sim_paths[@]}")          # staged
+if [ -d sim/state ] || ! git diff --quiet -- sim/state; then
+  sim_paths+=(sim/state)
+  add_paths+=(sim/state)
+elif ! git diff --cached --quiet -- sim/state; then
   sim_paths+=(sim/state)
 fi
-git add --all -- "${sim_paths[@]}" || exit 1
+git add --all -- "${add_paths[@]}" || exit 1
 if ! git diff --cached --quiet -- "${sim_paths[@]}"; then
   git commit -m "paper-sim: $(date -u +%Y-%m-%d) local launchd run" -- "${sim_paths[@]}" || exit 1
   # Rebase onto anything pushed meanwhile (e.g. by GitHub Actions); a stranded local commit would make the
