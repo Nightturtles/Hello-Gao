@@ -1,0 +1,2 @@
+sha256(backtest/results/gates.csv) = e155b17eea57f385b69f16f8ff2ed8b99d2d65d4d14540fb7bde925a147e60d3
+rows = 336

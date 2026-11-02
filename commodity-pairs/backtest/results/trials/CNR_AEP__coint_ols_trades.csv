@@ -1,0 +1,7 @@
+entry_date,exit_date,side,entry_reason,exit_reason,net_pnl,holding_days,beta,entry_equity,open_at_end
+2021-05-18,2021-10-05,short A / long B,entry short spread z=2.01,margin call: equity 20.8% of gross exposure < 25%; liquidate,-71079.20427,97,0.9320450948,100000,False
+2022-01-24,2022-02-09,long A / short B,entry long spread z=-2.25,exit z=0.42 crossed 0,2483.902108,12,3.104674369,28920.79573,False
+2022-02-14,2022-03-15,short A / long B,entry short spread z=2.23,exit z=-0.10 crossed 0,2305.477989,20,3.104674369,31404.69784,False
+2023-08-04,2023-11-03,short A / long B,entry short spread z=2.00,exit z=-0.41 crossed 0,-3093.57105,64,3.91179697,33710.17583,False
+2023-12-14,2024-01-19,long A / short B,entry long spread z=-2.20,exit z=0.12 crossed 0,1390.566043,23,1.120535489,30616.60478,False
+2025-01-17,2025-05-07,long A / short B,entry long spread z=-2.16,exit z=0.18 crossed 0,-5825.106276,75,0.4807980413,32007.17082,False

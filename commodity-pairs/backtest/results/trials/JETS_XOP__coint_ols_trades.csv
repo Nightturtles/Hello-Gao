@@ -1,0 +1,16 @@
+entry_date,exit_date,side,entry_reason,exit_reason,net_pnl,holding_days,beta,entry_equity,open_at_end
+2017-08-21,2017-10-04,long A / short B,entry long spread z=-2.06,exit z=0.41 crossed 0,2492.032262,31,0.2168573197,100000,False
+2018-03-14,2018-03-23,short A / long B,entry short spread z=2.16,exit z=-0.32 crossed 0,4264.327699,7,0.2129633344,102492.0323,False
+2020-06-09,2020-07-31,short A / long B,entry short spread z=2.38,exit z=-0.08 crossed 0,14649.38542,37,0.2739543418,106756.36,False
+2020-08-31,2021-01-05,short A / long B,entry short spread z=2.11,exit z=-0.31 crossed 0,-8278.541518,87,0.5129171323,121405.7454,False
+2021-01-06,2021-03-16,long A / short B,entry long spread z=-2.13,exit z=0.89 crossed 0,2373.519043,47,0.6883147935,113127.2039,False
+2021-03-19,2021-04-29,short A / long B,entry short spread z=2.03,exit z=-0.50 crossed 0,5798.661914,28,0.6883147935,115500.7229,False
+2021-05-13,2021-08-06,long A / short B,entry long spread z=-2.12,exit z=0.06 crossed 0,-5115.30067,59,0.7546995902,121299.3848,False
+2021-09-16,2021-12-27,long A / short B,entry long spread z=-2.19,exit z=0.32 crossed 0,-8297.366228,70,0.7942099777,116184.0841,False
+2022-02-17,2022-02-24,short A / long B,entry short spread z=2.04,exit z=-0.73 crossed 0,9641.170524,4,0.5180415278,107886.7179,False
+2022-03-02,2022-03-07,long A / short B,entry long spread z=-3.50,stop exit |z|=4.18>=3.5,-8719.438718,3,0.5180415278,117527.8884,False
+2022-06-10,2022-08-04,long A / short B,entry long spread z=-2.33,exit z=0.38 crossed 0,4255.965684,37,0.3727937321,108808.4497,False
+2024-07-25,2024-08-06,long A / short B,entry long spread z=-2.29,stop exit |z|=3.61>=3.5,-6271.997292,8,0.2292748675,113064.4154,False
+2024-09-27,2025-02-24,short A / long B,entry short spread z=2.54,exit z=-1.33 crossed 0,-16102.48186,100,0.2292748675,106792.4181,False
+2026-05-28,2026-07-24,short A / long B,entry short spread z=2.56,exit z=-0.06 crossed 0,-1749.063488,39,0.2495376428,90689.93626,False
+2026-09-02,2026-10-26,long A / short B,entry long spread z=-2.29,open at end of sample (marked to last close),-6091.233972,37,0.5710571549,88940.87277,True
