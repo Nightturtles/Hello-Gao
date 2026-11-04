@@ -2,7 +2,7 @@
 
 # Paper-trading summary
 
-_Generated 2026-11-03T03:02:22Z (UTC)._
+_Generated 2026-11-04T01:36:45Z (UTC)._
 
 **Status: running** · start 2026-11-02 · end 2026-12-02 · capital $100,000 per pick ($500,000 total)
 Latest daily report: [2026-11-02](daily/2026-11-02.md)
@@ -33,4 +33,8 @@ Latest daily report: [2026-11-02](daily/2026-11-02.md)
 
 ## Data issues (latest run)
 
-none
+- pick_1: [2026-11-03] NTR: no usable close bar for 2026-11-03; not advanced past 2026-11-02
+- pick_2: [2026-11-03] RRC: no usable close bar for 2026-11-03; not advanced past 2026-11-02
+- pick_3: [2026-11-03] SLV: no usable close bar for 2026-11-03; not advanced past 2026-11-02
+- pick_4: [2026-11-03] YPF: no usable close bar for 2026-11-03; not advanced past 2026-11-02
+- pick_5: [2026-11-03] ET: no usable close bar for 2026-11-03; not advanced past 2026-11-02
