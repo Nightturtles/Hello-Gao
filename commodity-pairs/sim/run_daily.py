@@ -124,7 +124,7 @@ def run(base_dir=None, provider="yahoo", asof=None, now: dt.datetime | None = No
                 if pid not in live or d not in todo[pid]:
                     continue
                 ps = state["picks"][pid]
-                msg = engine.check_data(live[pid], i)
+                msg = engine.check_data(live[pid], i, ps)
                 if msg:
                     issues.append(Issue(f"{msg}; not advanced past {ps['last_processed']}", pid, str(d.date())))
                     del live[pid]

@@ -113,3 +113,8 @@ The sections before "Post-audit engine fix" were fixed **before any backtest res
 - **Nothing was corrupted.** Every price used through 2026-11-03 was checked against Yahoo's final bars: 10 closes and 6 fill opens, all identical.
 - **Change (owner's choice).** A session is processed from the next New York calendar day on, never on its own day: `asof` defaults to yesterday in New York. Reports run one session behind.
 - **Effect on results: none.** Fills, marks and signals come from the bars themselves, not from when the run happens.
+- **Splits (caught in review, fixed before merge).** CodeRabbit's review of the change pointed out that the session before a split is now always processed on or after the split date. By then Yahoo has already restated its prices to the post-split basis, while the position still holds pre-split shares, and the engine multiplies the shares by the ratio again on the split date.
+  - **Fix:** the Yahoo provider now returns prices as traded on each date (see `SIM_SPEC.md`, "Prices").
+  - **Safety net:** a run refuses to advance a pick whose previous close no longer matches the one it was marked at.
+  - **Checks:** a test with a synthetic 2-for-1 split doubles the shares exactly once and leaves equity unchanged. Against real data, NVDA's 2024-06-07 close comes back at $1,208.88 as traded, not at the restated $120.89.
+  - None of the five picks has split during the run.

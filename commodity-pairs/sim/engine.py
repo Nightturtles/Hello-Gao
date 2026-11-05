@@ -33,6 +33,7 @@ from .data import DataError
 TOL = 1e-12
 SPY = "SPY"
 LOOKBACK = 61               # z_window + 1 adjusted closes are all any rule needs from the recent past
+BASIS_TOL = 0.005           # a re-fetched previous close may differ from the recorded one by at most 0.5%
 
 
 # --------------------------------------------------------------------------- small helpers
@@ -129,12 +130,19 @@ def grid_window_at(sess: pd.DatetimeIndex, i: int):
     return w if w.test_start == i else None
 
 
-def check_data(pdta: PickData, i: int) -> str | None:
-    """None if session index i can be processed, else a human-readable reason (a missing/invalid bar or a gap in the
-    history the rules read).  A bar with a NaN, zero or negative price counts as missing."""
+def check_data(pdta: PickData, i: int, ps: dict | None = None) -> str | None:
+    """None if session index i can be processed, else a human-readable reason (a missing/invalid bar, a gap in the
+    history the rules read, or -- given the pick state ``ps`` -- a previous close that no longer matches the one the
+    position was marked at).  A bar with a NaN, zero or negative price counts as missing."""
     d = pdta.sess[i]
     w = grid_window_at(pdta.sess, i)
+    prev = (ps or {}).get("last_close")         # absent in state saved before this check existed: nothing to compare
     for leg, t in enumerate(pdta.tickers):
+        if prev is not None and i > 0:
+            was, now = float(prev[leg]), float(pdta.cl[leg][i - 1])
+            if not (np.isfinite(now) and abs(now / was - 1.0) <= BASIS_TOL):
+                return (f"{t}: close for {pdta.sess[i - 1].date()} was {was:.6g} when processed, the data now gives "
+                        f"{now:.6g} (price basis changed, e.g. a split the data source has not fully reflected)")
         for name, arr in (("open", pdta.op[leg]), ("close", pdta.cl[leg]), ("adjusted close", pdta.ac[leg])):
             v = arr[i]
             if not (np.isfinite(v) and v > 0):
@@ -341,6 +349,7 @@ def process_session(ps: dict, pdta: PickData, i: int, run_utc: str) -> tuple[dic
     ps["hwm"] = max(ps["hwm"], eq)
     dd = (ps["hwm"] - eq) / ps["hwm"] if ps["hwm"] > 0 else 0.0
     ps["last_processed"] = dstr
+    ps["last_close"] = [float(pdta.cl[0][i]), float(pdta.cl[1][i])]   # the next run checks its data still agrees
     ps["n_days"] += 1
     if sh[0] != 0.0 or sh[1] != 0.0:
         ps["n_days_in_market"] += 1

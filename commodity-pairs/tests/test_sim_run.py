@@ -8,7 +8,7 @@ import pytest
 
 from backtest import config, walkforward
 from sim import cal, compare, engine, reports, store
-from sim.data import CacheProvider
+from sim.data import CacheProvider, YahooProvider
 
 from .sim_support import (END, START, Synthetic, assert_banner, copy_base, ctl_run, init, patched, real_picks,
                           reports_under, run, snapshot, strip_run_stamps, write_picks)
@@ -82,6 +82,54 @@ def test_weekend_and_holiday_process_nothing(tmp_path):
     for asof in ("2026-07-11", "2026-07-12"):
         assert run(base, asof) == 0
         assert snapshot(base) == snap
+
+
+def _yahoo_after_split(ticker_split: str, split_day: str):
+    """A YahooProvider factory whose responses look like Yahoo's AFTER `ticker_split` split 2-for-1 on `split_day`.
+    As traded, that ticker is the research cache before the split and half of it from the split on; Yahoo restates
+    the earlier bars (prices and per-share dividends halved, volume doubled, adj close halved throughout)."""
+    d = pd.Timestamp(split_day)
+    cache = CacheProvider(END)
+    names = {"open": "Open", "high": "High", "low": "Low", "close": "Close", "adjclose": "Adj Close",
+             "volume": "Volume", "dividends": "Dividends", "splits": "Stock Splits"}
+
+    def history(ticker, start, end):
+        df = cache.fetch(ticker).copy()
+        if ticker == ticker_split:
+            for c in ("open", "high", "low", "close", "adjclose", "dividends"):
+                df[c] = df[c] / 2.0
+            df["volume"] = df["volume"] * 2.0
+            df.loc[d, "splits"] = 2.0
+        h = df.rename(columns=names)
+        h.index = pd.DatetimeIndex(h.index).tz_localize("America/New_York")
+        return h
+
+    return lambda asof: YahooProvider(asof, history_fn=history, sleep=lambda s: None)
+
+
+def test_session_before_a_split_is_processed_on_its_traded_share_basis(tmp_path):
+    # RRC (pick_2's leg A; the rotation rule is always in the market) splits 2-for-1 on Wednesday 2026-07-22.  The
+    # session before it is processed by a run that already sees Yahoo's restated history, as every next-day run does.
+    picks = subset(tmp_path, "pick_2")
+    plain, split = tmp_path / "plain", tmp_path / "split"
+    for b in (plain, split):
+        assert init(b, START, END, picks) == 0
+    after_split = _yahoo_after_split("RRC", "2026-07-22")
+    assert run(plain, "2026-07-21") == 0 and run(plain, "2026-07-31") == 0
+    assert run(split, "2026-07-21", provider=after_split) == 0 and run(split, "2026-07-31", provider=after_split) == 0
+    a = pd.read_csv(plain / "sim" / "state" / "equity.csv", index_col="date")
+    b = pd.read_csv(split / "sim" / "state" / "equity.csv", index_col="date")
+    assert list(a.index) == list(b.index) and a.index[-1] == "2026-07-31"
+    pre, post = a.index < "2026-07-22", a.index >= "2026-07-22"
+    # before the split the two worlds are identical; RRC was marked at its traded (pre-split) price
+    assert np.allclose(b.loc[pre, ["equity", "shares_a", "shares_b", "close_a"]], a.loc[pre, ["equity", "shares_a",
+                                                                                              "shares_b", "close_a"]])
+    # from the split on: twice the RRC shares at half the price -- doubled exactly once -- and the same equity, up to
+    # the per-share commission on any post-split fill
+    assert (a.loc[post, "shares_a"] != 0).all()
+    assert np.allclose(b.loc[post, "shares_a"], 2.0 * a.loc[post, "shares_a"], rtol=1e-3)
+    assert np.allclose(b.loc[post, "close_a"], a.loc[post, "close_a"] / 2.0)
+    assert np.allclose(b.loc[post, "equity"], a.loc[post, "equity"], rtol=1e-4)
 
 
 def test_catch_up_in_two_steps_equals_one_run(warm_template, tmp_path):
