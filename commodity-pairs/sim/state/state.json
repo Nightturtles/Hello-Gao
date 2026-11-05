@@ -24,10 +24,10 @@
     "valid": true
    },
    "hwm": 100000.0,
-   "last_processed": "2026-11-02",
+   "last_processed": "2026-11-03",
    "margin_calls": 0,
    "n_closed": 0,
-   "n_days": 1,
+   "n_days": 2,
    "n_days_in_market": 0,
    "n_entries": 0,
    "n_sync": 0,
@@ -49,12 +49,12 @@
     "k_entry": null,
     "kalman": null,
     "pos": 0,
-    "spread": -2.3361662050312546,
+    "spread": -2.346092048563582,
     "w": [
      0.0,
      0.0
     ],
-    "z": -1.054669133268897
+    "z": -1.2500825095623664
    },
    "warm": {
     "backtest_held_wA": 0.0,
@@ -70,13 +70,13 @@
    }
   },
   "pick_2": {
-   "cash": 99872.33829519225,
-   "costs_total": 127.66170480775018,
+   "cash": 99866.65685013782,
+   "costs_total": 133.3431498621787,
    "cur_w": [
     0.5,
     -0.5
    ],
-   "equity": 102031.08292917357,
+   "equity": 102356.35211128785,
    "fit": {
     "alpha": null,
     "beta": null,
@@ -92,12 +92,12 @@
     "tstat": null,
     "valid": true
    },
-   "hwm": 102031.08292917357,
-   "last_processed": "2026-11-02",
+   "hwm": 102356.35211128785,
+   "last_processed": "2026-11-03",
    "margin_calls": 0,
    "n_closed": 0,
-   "n_days": 1,
-   "n_days_in_market": 1,
+   "n_days": 2,
+   "n_days_in_market": 2,
    "n_entries": 0,
    "n_sync": 1,
    "open_trade": {
@@ -127,7 +127,7 @@
      0.5,
      -0.5
     ],
-    "z": 0.3320158890877458
+    "z": 0.335655701582646
    },
    "warm": {
     "backtest_held_wA": 0.6222961802381682,
@@ -143,13 +143,13 @@
    }
   },
   "pick_3": {
-   "cash": 90755.29304218551,
-   "costs_total": 94.95092861202573,
+   "cash": 90754.41218043551,
+   "costs_total": 95.83179036202624,
    "cur_w": [
     -0.4542512198539875,
     0.5457487801460125
    ],
-   "equity": 99479.27086376763,
+   "equity": 99302.9920475296,
    "fit": {
     "alpha": null,
     "beta": null,
@@ -166,11 +166,11 @@
     "valid": true
    },
    "hwm": 100000.0,
-   "last_processed": "2026-11-02",
+   "last_processed": "2026-11-03",
    "margin_calls": 0,
    "n_closed": 0,
-   "n_days": 1,
-   "n_days_in_market": 1,
+   "n_days": 2,
+   "n_days_in_market": 2,
    "n_entries": 0,
    "n_sync": 1,
    "open_trade": {
@@ -191,7 +191,7 @@
     "armed": true,
     "beta_entry": 0.8323449110274782,
     "beta_used": 0.8323449110274782,
-    "days_held": 1,
+    "days_held": 2,
     "k_entry": 5,
     "kalman": null,
     "pos": 1,
@@ -216,13 +216,13 @@
    }
   },
   "pick_4": {
-   "cash": 100000.0,
-   "costs_total": 0.0,
+   "cash": 87935.93972511445,
+   "costs_total": 114.68687014985548,
    "cur_w": [
-    0.0,
-    0.0
+    -0.4402531329763215,
+    0.5597468670236784
    ],
-   "equity": 100000.0,
+   "equity": 99232.97248147323,
    "fit": {
     "alpha": null,
     "beta": null,
@@ -239,35 +239,32 @@
     "valid": true
    },
    "hwm": 100000.0,
-   "last_processed": "2026-11-02",
+   "last_processed": "2026-11-03",
    "margin_calls": 0,
    "n_closed": 0,
-   "n_days": 1,
-   "n_days_in_market": 0,
-   "n_entries": 0,
+   "n_days": 2,
+   "n_days_in_market": 1,
+   "n_entries": 1,
    "n_sync": 0,
-   "open_trade": null,
-   "pending": {
+   "open_trade": {
+    "entry_date": "2026-11-03",
     "reason": "entry long follower z_x=-1.56 k=9",
-    "signal_date": "2026-11-02",
-    "target": {
-     "A": -0.4402531329763215,
-     "B": 0.5597468670236784
-    }
+    "sync": false
    },
+   "pending": null,
    "pick_id": "pick_4",
    "ruined_on": null,
    "rule": "leadlag",
    "shares": [
-    0.0,
-    0.0
+    -1016.2814775571709,
+    836.8169713428073
    ],
    "start_equity": 100000.0,
    "strategy_state": {
     "armed": true,
     "beta_entry": 0.786521834980986,
     "beta_used": 0.786521834980986,
-    "days_held": 0,
+    "days_held": 1,
     "k_entry": 9,
     "kalman": null,
     "pos": 1,
@@ -315,15 +312,22 @@
     "valid": true
    },
    "hwm": 100000.0,
-   "last_processed": "2026-11-02",
+   "last_processed": "2026-11-03",
    "margin_calls": 0,
    "n_closed": 0,
-   "n_days": 1,
+   "n_days": 2,
    "n_days_in_market": 0,
    "n_entries": 0,
    "n_sync": 0,
    "open_trade": null,
-   "pending": null,
+   "pending": {
+    "reason": "entry long spread z=-2.70",
+    "signal_date": "2026-11-03",
+    "target": {
+     "A": 0.5596990373432047,
+     "B": -0.4403009626567953
+    }
+   },
    "pick_id": "pick_5",
    "ruined_on": null,
    "rule": "coint_ols",
@@ -334,18 +338,18 @@
    "start_equity": 100000.0,
    "strategy_state": {
     "armed": true,
-    "beta_entry": null,
+    "beta_entry": 0.7866745041171206,
     "beta_used": 0.7866745041171206,
     "days_held": 0,
     "k_entry": null,
     "kalman": null,
-    "pos": 0,
-    "spread": 0.16414469068039095,
+    "pos": 1,
+    "spread": 0.15252382943375986,
     "w": [
-     0.0,
-     0.0
+     0.5596990373432047,
+     -0.4403009626567953
     ],
-    "z": -1.9697022991043054
+    "z": -2.695797185667744
    },
    "warm": {
     "backtest_held_wA": 0.0,
