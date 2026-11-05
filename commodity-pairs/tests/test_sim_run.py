@@ -44,16 +44,16 @@ def test_waiting_for_start_does_nothing(tmp_path):
     assert not (tmp_path / "sim" / "state").exists() and not (tmp_path / "reports").exists()
 
 
-def test_close_cutoff_new_york_16_10(tmp_path):
+def test_session_processed_the_next_new_york_day(tmp_path):
     assert init(tmp_path) == 0
-    # 15:00 EDT on the start date: the close of the start-1 session is final (warm start), the start session is not
+    # 15:00 EDT on the start date: the start-1 session is yesterday, so it counts as final (warm start)
     assert run(tmp_path, None, now=dt.datetime(2026, 7, 15, 19, 0, tzinfo=UTC)) == 0
     assert state_of(tmp_path)["picks"]["pick_1"]["last_processed"] == "2026-07-14" and daily_files(tmp_path) == []
-    # 16:09 EDT: still not final
-    assert run(tmp_path, None, now=dt.datetime(2026, 7, 15, 20, 9, tzinfo=UTC)) == 0
+    # 23:59 EDT on the start date: the start session is not processed on its own day, however late
+    assert run(tmp_path, None, now=dt.datetime(2026, 7, 16, 3, 59, tzinfo=UTC)) == 0
     assert daily_files(tmp_path) == []
-    # 16:10 EDT: final
-    assert run(tmp_path, None, now=dt.datetime(2026, 7, 15, 20, 10, tzinfo=UTC)) == 0
+    # 00:00 EDT the next day: processed
+    assert run(tmp_path, None, now=dt.datetime(2026, 7, 16, 4, 0, tzinfo=UTC)) == 0
     assert daily_files(tmp_path) == ["2026-07-15.md"]
 
 

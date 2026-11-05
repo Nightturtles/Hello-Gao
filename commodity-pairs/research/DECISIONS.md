@@ -106,3 +106,10 @@ The sections before "Post-audit engine fix" were fixed **before any backtest res
   - prefer a commodity group not yet represented.
 - **Result:** NTR/DE `coint_ols`, RRC/CRK `rotation`, SLV/SILJ `leadlag`, YPF/VIST `leadlag`, ET/EPD `coint_ols`. BTU/EQT was skipped because its group was already represented. Details are in `research/near_miss_selection.md`.
 - **Warm start.** The simulator's first run replays the real backtest engine on live data sliced to dates ≤ start − 1, so it starts in the backtest's state. A test guards against look-ahead.
+
+## Live operation: sessions are processed the next New York day (changed 2026-11-05, after launch)
+- **Problem.** The simulator treated a session's close as final from 16:10 New York time. GitHub started the scheduled runs 4–5½ hours late (around 20:40 New York time). Even then, Yahoo's daily bar for that day had an open but **no close**.
+- **What happened.** On 2026-11-03 and 2026-11-04 the simulator rightly refused the incomplete bar. It processed the previous session and exited 1, so both runs failed.
+- **Nothing was corrupted.** Every price used through 2026-11-03 was checked against Yahoo's final bars: 10 closes and 6 fill opens, all identical.
+- **Change (owner's choice).** A session is processed from the next New York calendar day on, never on its own day: `asof` defaults to yesterday in New York. Reports run one session behind.
+- **Effect on results: none.** Fills, marks and signals come from the bars themselves, not from when the run happens.

@@ -182,13 +182,16 @@ def test_warm_start_fails_loudly_when_the_close_before_start_is_missing():
 
 # --------------------------------------------------------------------------- calendar and cutoff
 @pytest.mark.parametrize("utc, expected", [
-    (dt.datetime(2026, 7, 15, 19, 59, tzinfo=dt.timezone.utc), "2026-07-14"),     # 15:59 EDT: not final
-    (dt.datetime(2026, 7, 15, 20, 9, tzinfo=dt.timezone.utc), "2026-07-14"),      # 16:09 EDT
-    (dt.datetime(2026, 7, 15, 20, 10, tzinfo=dt.timezone.utc), "2026-07-15"),     # 16:10 EDT: final
-    (dt.datetime(2026, 12, 15, 21, 9, tzinfo=dt.timezone.utc), "2026-12-14"),     # 16:09 EST
-    (dt.datetime(2026, 12, 15, 21, 10, tzinfo=dt.timezone.utc), "2026-12-15"),    # 16:10 EST
+    (dt.datetime(2026, 7, 15, 13, 0, tzinfo=dt.timezone.utc), "2026-07-14"),      # 09:00 EDT: yesterday
+    (dt.datetime(2026, 7, 15, 21, 30, tzinfo=dt.timezone.utc), "2026-07-14"),     # 17:30 EDT: today's bar not final
+    (dt.datetime(2026, 7, 16, 3, 59, tzinfo=dt.timezone.utc), "2026-07-14"),      # 23:59 EDT: still the same NY day
+    (dt.datetime(2026, 7, 16, 4, 0, tzinfo=dt.timezone.utc), "2026-07-15"),       # 00:00 EDT next day: final
+    (dt.datetime(2026, 11, 5, 1, 44, tzinfo=dt.timezone.utc), "2026-11-03"),      # the failed 2026-11-04 run, 20:44 EST
+    (dt.datetime(2026, 12, 16, 4, 59, tzinfo=dt.timezone.utc), "2026-12-14"),     # 23:59 EST
+    (dt.datetime(2026, 12, 16, 5, 0, tzinfo=dt.timezone.utc), "2026-12-15"),      # 00:00 EST next day
+    (dt.datetime(2026, 12, 15, 23, 0), "2026-12-14"),                             # naive datetimes are read as UTC
 ])
-def test_default_asof_close_cutoff(utc, expected):
+def test_default_asof_is_yesterday_in_new_york(utc, expected):
     assert cal.default_asof(utc) == pd.Timestamp(expected)
 
 

@@ -1,4 +1,4 @@
-"""NYSE calendar helpers for the simulator (thin wrappers around exchange_calendars XNYS) and the close cutoff."""
+"""NYSE calendar helpers for the simulator (thin wrappers around exchange_calendars XNYS) and the data cutoff."""
 from __future__ import annotations
 
 import datetime as dt
@@ -8,7 +8,6 @@ import exchange_calendars as xc
 import pandas as pd
 
 NY = ZoneInfo("America/New_York")
-CLOSE_FINAL_AFTER = dt.time(16, 10)      # a session's close is treated as final from 16:10 New York time
 
 
 def _cal():
@@ -61,11 +60,11 @@ def sessions_between(first, last) -> pd.DatetimeIndex:
 
 
 def default_asof(now: dt.datetime | None = None) -> pd.Timestamp:
-    """The latest calendar date whose closing prices are final: today (New York) once it is past 16:10 New York time,
-    else yesterday.  The caller only ever processes sessions <= this date (weekends and holidays have no session)."""
+    """The latest calendar date whose daily bars are treated as final: yesterday in New York.  A session is processed
+    from the next New York calendar day on, never on its own day: Yahoo publishes a day's final daily bar hours after
+    the bell (on 2026-11-03 and 2026-11-04 the bar still had no close at about 20:40 New York time).  The caller only
+    ever processes sessions <= this date (weekends and holidays have no session)."""
     now = now or dt.datetime.now(dt.timezone.utc)
     if now.tzinfo is None:
         now = now.replace(tzinfo=dt.timezone.utc)
-    ny = now.astimezone(NY)
-    today = pd.Timestamp(ny.date())
-    return today if ny.time() >= CLOSE_FINAL_AFTER else today - pd.Timedelta(days=1)
+    return pd.Timestamp(now.astimezone(NY).date()) - pd.Timedelta(days=1)

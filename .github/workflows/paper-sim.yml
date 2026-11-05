@@ -1,8 +1,10 @@
 # Daily paper-trading run for commodity-pairs/ (paper only: no brokerage, no real orders).
 #
 # Schedule: 21:30 UTC, Mon-Fri = 1:30pm Pacific Standard Time (2:30pm during PDT).
-# The simulator skips NYSE holidays itself and is idempotent, so a late, repeated
-# or manual run never double-trades.
+# Each run processes sessions through yesterday (New York time), once Yahoo's daily
+# bars are final, so reports are one session behind. GitHub often starts scheduled
+# runs hours late; that is harmless. The simulator skips NYSE holidays itself and is
+# idempotent, so a late, repeated or manual run never double-trades.
 # Scheduled workflows only run from the default branch (master).
 #
 # Manual control: Actions tab -> paper-sim -> "Run workflow", then pick a command:

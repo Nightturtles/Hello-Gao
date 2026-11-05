@@ -66,8 +66,9 @@ reports/daily/YYYY-MM-DD.md, reports/summary.md, reports/final_sim_report.md
 ## `run_daily`: one run
 1. Load the config and state. If the status is not `running`, print the status and exit 0 without changing anything.
 2. **Sessions to process:** the NYSE sessions (`exchange_calendars` XNYS) with `last_processed < d ≤ min(asof, end_date)`.
-   - `asof` defaults to today in America/New_York.
-   - If d is today and it is before 16:30 New York time, today is not processed yet because the close isn't final.
+   - `asof` defaults to **yesterday** in America/New_York: a session is processed from the next New York calendar day on, never on its own day.
+   - Reason: Yahoo publishes a day's final daily bar hours after the bell. On 2026-11-03 and 2026-11-04 the bar still had no close at about 20:40 New York time. See `DECISIONS.md`, "Live operation".
+   - A missing or incomplete bar for a session ≤ `asof` is still a data error, as below.
 3. **For each pick, for each session d in order:**
    1. Fill pending orders at d's raw open, apply slippage and commission, and append to `trades.csv`. Each row has: timestamp (UTC run time), session date, pick, ticker, side, shares, price, slippage, commission, reason, and the signal date.
    2. Apply that day's splits and dividends.

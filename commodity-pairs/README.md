@@ -25,6 +25,7 @@ You chose to paper-trade the **5 best near-misses** anyway, each one labeled **F
 - Each pick runs as a separate **$100,000** sub-portfolio at 1x gross. Reports also show a combined view and a comparison with SPY.
 - **Same rules as the backtest.** The simulator imports `backtest/strategies.py` unchanged, along with the same cost model and the same margin and ruin rule. Parameters are frozen in `sim/config.json` when the run is initialised.
 - **Timing:** a signal from a session's close fills at the **next session's open**. Fills include slippage, commission and borrow fees.
+- **Reports run one session behind.** A run processes sessions through **yesterday** (New York time), because Yahoo's final daily bar for a day appears hours after the close. A run on Wednesday, for example, reports Tuesday. This doesn't change any simulated result: fills and marks come from the bars, not from when the run happens.
 - **Warm start:** the first run replays the real backtest engine on live data through the day before the start. The simulator therefore begins exactly where the backtest would be.
 - **Idempotent:**
   - running it twice on the same day changes nothing;
@@ -70,7 +71,7 @@ The same commands are available from GitHub. Go to **Actions → paper-sim → R
 You chose both schedulers: GitHub Actions as the main one and a Mac launchd job as the backup. **Enable only one at a time.** Both pull first and the simulator is idempotent, so an accidental double run changes nothing, but one scheduler is cleaner.
 
 **GitHub Actions (the main scheduler):** `.github/workflows/paper-sim.yml` at the repo root.
-- **When it runs:** cron `30 21 * * 1-5`, which is 21:30 UTC on weekdays: 1:30pm Pacific in winter, 2:30pm while daylight saving is in effect. GitHub often starts scheduled runs a few minutes late, sometimes later; that is harmless.
+- **When it runs:** cron `30 21 * * 1-5`, which is 21:30 UTC on weekdays: 1:30pm Pacific in winter, 2:30pm while daylight saving is in effect. GitHub often starts scheduled runs late; the first week's runs started 4 to 5½ hours late. That is harmless: each run processes sessions through yesterday (New York time) and catches up anything missed.
 - **What it does:** installs `requirements.txt` on Python 3.13, runs `python -m sim.run_daily`, then commits `sim/state`, `sim/config.json` and `reports/` back to `master`. It commits even when the run failed, so failure reports are visible.
 - **Branch:** scheduled workflows only fire from the default branch, `master`. Merging the PR activates it.
 - **Strengths:** runs while your laptop is asleep, keeps a full history of runs, and GitHub emails you on failures.
