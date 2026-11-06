@@ -124,7 +124,7 @@ def run(base_dir=None, provider="yahoo", asof=None, now: dt.datetime | None = No
                 if pid not in live or d not in todo[pid]:
                     continue
                 ps = state["picks"][pid]
-                msg = engine.check_data(live[pid], i)
+                msg = engine.check_data(live[pid], i, ps)
                 if msg:
                     issues.append(Issue(f"{msg}; not advanced past {ps['last_processed']}", pid, str(d.date())))
                     del live[pid]
@@ -195,8 +195,8 @@ def render_console(cfg, state, asof_ts, newly, warmed, issues, work, provider) -
 
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(prog="sim.run_daily", description=__doc__.splitlines()[0])
-    ap.add_argument("--asof", help="treat sessions up to this date (YYYY-MM-DD) as final; default: today in New York "
-                    "once it is past 16:10 New York time, else yesterday")
+    ap.add_argument("--asof", help="treat sessions up to this date (YYYY-MM-DD) as final; default: yesterday in "
+                    "New York (a session is processed the day after it closes, once Yahoo's daily bar is final)")
     ap.add_argument("--provider", choices=["yahoo", "cache"], default="yahoo")
     ap.add_argument("--base-dir", help="directory holding sim/ and reports/ (default: the project root)")
     a = ap.parse_args(argv)

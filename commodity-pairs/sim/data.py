@@ -5,8 +5,10 @@
 
 Both return a per-ticker frame indexed by session date with the cache columns
 ``open, high, low, close, adjclose, volume, dividends, splits`` and **never contain a bar after ``asof``**.
-``close``/``open`` are the "raw" prices (split-adjusted by Yahoo, not dividend-adjusted); ``adjclose`` is the
-dividend-adjusted close the rules trade on.
+``adjclose`` is the split- and dividend-adjusted close the rules trade on.  ``open``/``close`` are the raw prices
+the engine fills and marks at.  The engine applies a split itself on its date, so ``YahooProvider`` returns them **as
+traded** on each date (see ``as_traded``): Yahoo restates every earlier bar once a split takes effect, so a session
+processed after its next-day split would otherwise be priced on the post-split basis with pre-split share counts.
 """
 from __future__ import annotations
 
@@ -20,6 +22,7 @@ from backtest import config
 from backtest import data as bdata
 
 VALUE_COLS = [c for c in bdata.CACHE_COLS if c != "date"]
+_NO_CAP = "2200-01-01"      # bdata._normalise caps at the research snapshot end by default; live data keeps every bar
 
 
 class DataError(Exception):
@@ -87,7 +90,7 @@ class CacheProvider(Provider):
         return df
 
 
-def _yf_history(ticker: str, start: str, end: str) -> pd.DataFrame:
+def _yf_history(ticker: str, start: str, end: str | None) -> pd.DataFrame:
     import yfinance as yf
 
     with warnings.catch_warnings():
@@ -95,8 +98,26 @@ def _yf_history(ticker: str, start: str, end: str) -> pd.DataFrame:
         return yf.Ticker(ticker).history(start=start, end=end, auto_adjust=False, actions=True)
 
 
+def as_traded(df: pd.DataFrame) -> pd.DataFrame:
+    """Undo Yahoo's backward split adjustment of the raw columns: every row is multiplied by the product of the split
+    ratios dated strictly AFTER it (prices and per-share dividends; volume divided), so each bar is on the share basis
+    that applied on its own date and the engine's own split step (shares x ratio on the split date) is the only one.
+    ``adjclose`` is left as Yahoo gives it: the rules trade on it, exactly as in the backtest.  A split dated after
+    ``asof`` is the only thing read from bars after ``asof``; it is announced in advance, so this is not look-ahead."""
+    r = df["splits"].astype(float)
+    r = r.where(r > 0.0, 1.0).fillna(1.0)
+    after = r[::-1].cumprod()[::-1].shift(-1, fill_value=1.0)       # product of the ratios strictly after each row
+    out = df.copy()
+    for c in ("open", "high", "low", "close", "dividends"):
+        out[c] = out[c].astype(float) * after
+    out["volume"] = out["volume"].astype(float) / after
+    return out
+
+
 class YahooProvider(Provider):
-    """``Ticker(t).history(start=DOWNLOAD_START, end=asof+1 day, auto_adjust=False, actions=True)`` with retries.
+    """``Ticker(t).history(start=DOWNLOAD_START, end=None, auto_adjust=False, actions=True)`` with retries, converted
+    to as-traded raw prices (``as_traded``) and then cut at ``asof``.  The request runs to the latest bar, not to
+    ``asof``, so that a split after ``asof`` (which Yahoo has already applied to every earlier bar) is seen.
     ``history_fn`` / ``sleep`` are injectable so the retry logic is testable without a network."""
 
     name = "yahoo"
@@ -108,15 +129,14 @@ class YahooProvider(Provider):
         self._sleep = sleep
 
     def _fetch(self, ticker: str) -> pd.DataFrame:
-        end = (self.asof + pd.Timedelta(days=1)).strftime("%Y-%m-%d")
         last = "no attempt made"
         for attempt in range(self.retries):
             try:
-                h = self._history(ticker, config.DOWNLOAD_START, end)
+                h = self._history(ticker, config.DOWNLOAD_START, None)
                 if h is not None and len(h) > 0:
-                    df = bdata._normalise(h, end=str(self.asof.date()))
+                    df = bdata._normalise(h, end=_NO_CAP)
                     if len(df):
-                        return df.set_index("date")
+                        return as_traded(df.set_index("date"))      # Provider.fetch then cuts at asof
                 last = "empty response"
             except Exception as e:  # noqa: BLE001 - any network/parse failure is retried
                 last = f"{type(e).__name__}: {e}"

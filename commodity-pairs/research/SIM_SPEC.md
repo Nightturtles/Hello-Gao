@@ -48,6 +48,8 @@ reports/daily/YYYY-MM-DD.md, reports/summary.md, reports/final_sim_report.md
 - **Fills and mark-to-market** use **raw** open and close prices: the prices you would actually have traded at.
 - **Dividends:** on the ex-date, long positions are credited shares × dividend, and short positions are debited the same amount.
 - **Splits:** share counts are multiplied by the split ratio on the split date.
+  - **Prices are as traded on each date.** Once a split takes effect, Yahoo restates every earlier open and close. So the Yahoo provider fetches through the latest bar, reads the split ratios, and multiplies each earlier bar by the product of the ratios dated after it. Per-share dividends are rescaled the same way. Bars after `asof` are then cut off; only their split ratios are read, and splits are announced in advance, so this is no look-ahead.
+  - **Safety net:** each pick's state records the closes it was last marked at. If a later fetch gives a previous close more than 0.5% different, the pick is not advanced and the run reports a data issue. This catches, for example, a split that Yahoo has only partly reflected.
 - **Costs are identical to the backtest:**
   - slippage tier per leg, applied to the open price;
   - commission $0.005/share with a $1 minimum;
@@ -66,8 +68,9 @@ reports/daily/YYYY-MM-DD.md, reports/summary.md, reports/final_sim_report.md
 ## `run_daily`: one run
 1. Load the config and state. If the status is not `running`, print the status and exit 0 without changing anything.
 2. **Sessions to process:** the NYSE sessions (`exchange_calendars` XNYS) with `last_processed < d ≤ min(asof, end_date)`.
-   - `asof` defaults to today in America/New_York.
-   - If d is today and it is before 16:30 New York time, today is not processed yet because the close isn't final.
+   - `asof` defaults to **yesterday** in America/New_York: a session is processed from the next New York calendar day on, never on its own day.
+   - Reason: Yahoo publishes a day's final daily bar hours after the bell. On 2026-11-03 and 2026-11-04 the bar still had no close at about 20:40 New York time. See `DECISIONS.md`, "Live operation".
+   - A missing or incomplete bar for a session ≤ `asof` is still a data error, as below.
 3. **For each pick, for each session d in order:**
    1. Fill pending orders at d's raw open, apply slippage and commission, and append to `trades.csv`. Each row has: timestamp (UTC run time), session date, pick, ticker, side, shares, price, slippage, commission, reason, and the signal date.
    2. Apply that day's splits and dividends.
