@@ -25,13 +25,13 @@
    },
    "hwm": 100000.0,
    "last_close": [
-    71.6500015258789,
-    691.75
+    71.22000122070312,
+    678.7899780273438
    ],
-   "last_processed": "2026-11-11",
+   "last_processed": "2026-11-12",
    "margin_calls": 0,
    "n_closed": 0,
-   "n_days": 8,
+   "n_days": 9,
    "n_days_in_market": 0,
    "n_entries": 0,
    "n_sync": 0,
@@ -53,12 +53,12 @@
     "k_entry": null,
     "kalman": null,
     "pos": 0,
-    "spread": -2.351714773057485,
+    "spread": -2.338577638382594,
     "w": [
      0.0,
      0.0
     ],
-    "z": -1.2423513901195244
+    "z": -0.9315091238850493
    },
    "warm": {
     "backtest_held_wA": 0.0,
@@ -74,13 +74,13 @@
    }
   },
   "pick_2": {
-   "cash": 99832.40808153963,
-   "costs_total": 167.5919184603625,
+   "cash": 99826.22171056474,
+   "costs_total": 173.7782894352493,
    "cur_w": [
     0.5,
     -0.5
    ],
-   "equity": 95874.94535111469,
+   "equity": 95703.77009246795,
    "fit": {
     "alpha": null,
     "beta": null,
@@ -98,14 +98,14 @@
    },
    "hwm": 102356.35211128785,
    "last_close": [
-    51.86000061035156,
-    15.130000114440918
+    51.459999084472656,
+    15.069999694824219
    ],
-   "last_processed": "2026-11-11",
+   "last_processed": "2026-11-12",
    "margin_calls": 0,
    "n_closed": 0,
-   "n_days": 8,
-   "n_days_in_market": 8,
+   "n_days": 9,
+   "n_days_in_market": 9,
    "n_entries": 0,
    "n_sync": 1,
    "open_trade": {
@@ -135,7 +135,7 @@
      0.5,
      -0.5
     ],
-    "z": 0.13510417190477542
+    "z": 0.12609873739975308
    },
    "warm": {
     "backtest_held_wA": 0.6222961802381682,
@@ -175,13 +175,13 @@
    },
    "hwm": 104412.5802337923,
    "last_close": [
-    46.650001525878906,
-    24.31999969482422
+    45.119998931884766,
+    23.25
    ],
-   "last_processed": "2026-11-11",
+   "last_processed": "2026-11-12",
    "margin_calls": 0,
    "n_closed": 1,
-   "n_days": 8,
+   "n_days": 9,
    "n_days_in_market": 5,
    "n_entries": 0,
    "n_sync": 1,
@@ -208,7 +208,7 @@
      0.0,
      0.0
     ],
-    "z": -0.1544847286486914
+    "z": -0.5588210642413116
    },
    "warm": {
     "backtest_held_wA": 0.0,
@@ -224,13 +224,13 @@
    }
   },
   "pick_4": {
-   "cash": 87907.91213381257,
-   "costs_total": 142.71446145173903,
+   "cash": 87903.41145860536,
+   "costs_total": 147.21513665893997,
    "cur_w": [
     -0.4402531329763215,
     0.5597468670236784
    ],
-   "equity": 96776.2824195497,
+   "equity": 96532.71486249924,
    "fit": {
     "alpha": null,
     "beta": null,
@@ -248,14 +248,14 @@
    },
    "hwm": 100000.0,
    "last_close": [
-    37.36000061035156,
-    55.970001220703125
+    37.20000076293945,
+    55.4900016784668
    ],
-   "last_processed": "2026-11-11",
+   "last_processed": "2026-11-12",
    "margin_calls": 0,
    "n_closed": 0,
-   "n_days": 8,
-   "n_days_in_market": 7,
+   "n_days": 9,
+   "n_days_in_market": 8,
    "n_entries": 1,
    "n_sync": 0,
    "open_trade": {
@@ -276,7 +276,7 @@
     "armed": true,
     "beta_entry": 0.786521834980986,
     "beta_used": 0.786521834980986,
-    "days_held": 7,
+    "days_held": 8,
     "k_entry": 9,
     "kalman": null,
     "pos": 1,
@@ -325,18 +325,25 @@
    },
    "hwm": 100000.0,
    "last_close": [
-    19.450000762939453,
-    37.15999984741211
+    19.420000076293945,
+    37.400001525878906
    ],
-   "last_processed": "2026-11-11",
+   "last_processed": "2026-11-12",
    "margin_calls": 0,
    "n_closed": 1,
-   "n_days": 8,
+   "n_days": 9,
    "n_days_in_market": 1,
    "n_entries": 1,
    "n_sync": 0,
    "open_trade": null,
-   "pending": null,
+   "pending": {
+    "reason": "entry long spread z=-2.06",
+    "signal_date": "2026-11-12",
+    "target": {
+     "A": 0.5596990373432047,
+     "B": -0.4403009626567953
+    }
+   },
    "pick_id": "pick_5",
    "ruined_on": null,
    "rule": "coint_ols",
@@ -347,18 +354,18 @@
    "start_equity": 100000.0,
    "strategy_state": {
     "armed": true,
-    "beta_entry": null,
+    "beta_entry": 0.7866745041171206,
     "beta_used": 0.7866745041171206,
     "days_held": 0,
     "k_entry": null,
     "kalman": null,
-    "pos": 0,
-    "spread": 0.12383555267433044,
+    "pos": 1,
+    "spread": 0.11722742922086304,
     "w": [
-     0.0,
-     0.0
+     0.5596990373432047,
+     -0.4403009626567953
     ],
-    "z": -1.8803171757991226
+    "z": -2.0612502949265252
    },
    "warm": {
     "backtest_held_wA": 0.0,
