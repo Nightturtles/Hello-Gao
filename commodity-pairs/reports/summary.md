@@ -2,28 +2,28 @@
 
 # Paper-trading summary
 
-_Generated 2026-11-18T03:05:30Z (UTC)._
+_Generated 2026-11-19T02:44:57Z (UTC)._
 
 **Status: running** · start 2026-11-02 · end 2026-12-02 · capital $100,000 per pick ($500,000 total)
-Latest daily report: [2026-11-16](daily/2026-11-16.md)
+Latest daily report: [2026-11-17](daily/2026-11-17.md)
 
 ## Per pick
 
 | Pick | Pair · rule | Last processed | Equity | Cumulative return | Max drawdown | Trades opened / closed | State | Order queued |
 |---|---|---|---|---|---|---|---|---|
-| pick_1 | NTR/DE · coint_ols | 2026-11-16 | $100,000 | +0.00% | 0.00% | 0 (+0 carried) / 0 | flat | none |
-| pick_2 | RRC/CRK · rotation | 2026-11-16 | $96,684 | -3.32% | -6.54% | 0 (+1 carried) / 0 | long A / short B | none |
-| pick_3 | SLV/SILJ · leadlag | 2026-11-16 | $104,413 | +4.41% | -0.71% | 0 (+1 carried) / 1 | flat | SLV -45.4% / SILJ +54.6% of equity — entry long follower z_x=-1.81 k=5 |
-| pick_4 | YPF/VIST · leadlag | 2026-11-16 | $95,649 | -4.35% | -4.35% | 1 (+0 carried) / 1 | flat | YPF -44.0% / VIST +56.0% of equity — entry long follower z_x=-2.43 k=9 |
-| pick_5 | ET/EPD · coint_ols | 2026-11-16 | $98,617 | -1.38% | -1.60% | 2 (+0 carried) / 1 | long A / short B | none |
-| **Combined** | 5 sub-portfolios | 2026-11-16 | $495,362 | -0.93% | -1.38% |  |  |  |
+| pick_1 | NTR/DE · coint_ols | 2026-11-17 | $100,000 | +0.00% | 0.00% | 0 (+0 carried) / 0 | flat | none |
+| pick_2 | RRC/CRK · rotation | 2026-11-17 | $96,227 | -3.77% | -6.54% | 0 (+1 carried) / 0 | long A / short B | none |
+| pick_3 | SLV/SILJ · leadlag | 2026-11-17 | $104,656 | +4.66% | -0.71% | 1 (+1 carried) / 1 | short A / long B | none |
+| pick_4 | YPF/VIST · leadlag | 2026-11-17 | $94,938 | -5.06% | -5.06% | 2 (+0 carried) / 1 | short A / long B | none |
+| pick_5 | ET/EPD · coint_ols | 2026-11-17 | $99,381 | -0.62% | -1.60% | 2 (+0 carried) / 1 | long A / short B | none |
+| **Combined** | 5 sub-portfolios | 2026-11-17 | $495,201 | -0.96% | -1.38% |  |  |  |
 
 ## Combined result vs SPY
 
 |  | Return since start | Max drawdown |
 |---|---|---|
-| Combined | -0.93% | -1.38% |
-| SPY (total return, to 2026-11-16) | -2.09% |  |
+| Combined | -0.96% | -1.38% |
+| SPY (total return, to 2026-11-17) | -3.08% |  |
 
 ## Daily combined equity
 
@@ -40,6 +40,7 @@ Latest daily report: [2026-11-16](daily/2026-11-16.md)
 | [2026-11-12](daily/2026-11-12.md) | $495,642 | -0.08% | -0.87% | +0.19% |
 | [2026-11-13](daily/2026-11-13.md) | $494,583 | -0.21% | -1.08% | -0.18% |
 | [2026-11-16](daily/2026-11-16.md) | $495,362 | +0.16% | -0.93% | -2.09% |
+| [2026-11-17](daily/2026-11-17.md) | $495,201 | -0.03% | -0.96% | -3.08% |
 
 ## Data issues (latest run)
 
